@@ -140,6 +140,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Professional men's haircut by our junior stylist team.",
     priceNote: 'Contact us for pricing',
     featured: true,
+    image: '/images/services/salon/executive-haircut.jpg',
   },
   {
     id: 'mens-haircut-senior',
@@ -150,6 +151,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Men's haircut by our experienced senior stylist team.",
     priceNote: 'Contact us for pricing',
     featured: true,
+    image: '/images/services/salon/mens-haircut.jpg',
   },
   {
     id: 'mens-haircut-creative',

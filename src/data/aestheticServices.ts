@@ -76,7 +76,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     featured: true,
     consultationRequired: true,
     medicalProcedure: true,
-    image: '/images/services/facials/chemical-peels.jpg',
+    image: '/images/services/hair/hair-transplant.jpg',
     priceNote: 'Price on consultation — varies based on individual assessment and procedure extent',
   },
   {
@@ -510,7 +510,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     relatedServices: ['hydrafacial', 'laser-treatments'],
     featured: true,
     consultationRequired: true,
-    image: '/assets/placeholder-treatment.jpg',
+    image: '/images/services/facials/chemical-peels.jpg',
     priceNote: 'Price on consultation — varies by peel type',
   },
 
