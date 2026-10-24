@@ -76,7 +76,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     featured: true,
     consultationRequired: true,
     medicalProcedure: true,
-    image: '/images/services/facials/clinical-chemical-peel.jpg',
+    image: '/images/services/facials/chemical-peels.jpg',
     priceNote: 'Price on consultation — varies based on individual assessment and procedure extent',
   },
   {
@@ -93,7 +93,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     medicalProcedure: true,
     relatedServices: ['hair-transplant', 'prp-therapy', 'gfc-therapy'],
-    image: '/images/services/hair/hair-transplant.jpg',
+    image: '/images/services/hair/bio-fue.jpg',
     priceNote: 'Price on consultation',
   },
   {
@@ -119,7 +119,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     featured: true,
     consultationRequired: true,
     medicalProcedure: true,
-    image: '/images/services/hair/prp-scalp-therapy.jpg',
+    image: '/images/services/hair/prp-therapy.jpg',
     priceNote: 'Price on consultation',
   },
   {
@@ -137,7 +137,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     medicalProcedure: true,
     relatedServices: ['prp-therapy', 'mesotherapy', 'hair-transplant'],
-    image: '/images/services/hair/prp-scalp-therapy.jpg',
+    image: '/images/services/hair/gfc-therapy.jpg',
     priceNote: 'Price on consultation',
   },
   {
@@ -155,7 +155,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     medicalProcedure: true,
     relatedServices: ['prp-therapy', 'gfc-therapy'],
-    image: '/images/services/hair/prp-scalp-therapy.jpg',
+    image: '/images/services/hair/mesotherapy.jpg',
     priceNote: 'Price on consultation',
   },
   {
@@ -172,7 +172,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     medicalProcedure: true,
     relatedServices: ['prp-therapy', 'gfc-therapy', 'hair-transplant'],
-    image: '/images/services/hair/prp-scalp-therapy.jpg',
+    image: '/images/services/hair/stem-cell-therapy.jpg',
     priceNote: 'Price on consultation',
   },
   {
@@ -188,7 +188,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     suitableFor: ['Adults with pattern baldness or thinning', 'Individuals with scalp scarring', 'Those seeking a non-surgical hair solution'],
     consultationRequired: true,
     relatedServices: ['hair-transplant'],
-    image: '/images/services/hair/prp-scalp-therapy.jpg',
+    image: '/images/services/hair/scalp-micro-pigmentation.jpg',
     priceNote: 'Price on consultation',
   },
   {
@@ -204,7 +204,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     suitableFor: ['Adults with scalp health concerns', 'Those seeking scalp wellness treatments'],
     consultationRequired: false,
     relatedServices: ['prp-therapy', 'mesotherapy'],
-    image: '/images/services/hair/prp-scalp-therapy.jpg',
+    image: '/images/services/hair/high-frequency-therapy.jpg',
     priceNote: 'Contact us for pricing',
   },
 
@@ -239,7 +239,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     ],
     consultationRequired: false,
     relatedServices: ['facials', 'hydrafacial'],
-    image: '/images/services/facials/korean-glass-facial.jpg',
+    image: '/images/services/facials/aesthetic-grooming-essentials.jpg',
     priceNote: 'Contact us for individual service pricing',
   },
 
@@ -266,7 +266,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     ],
     relatedServices: ['korean-glass-facial', 'bb-glow-facial', 'collagen-boost-facial'],
     featured: true,
-    image: '/images/services/facials/hydrafacial-treatment.jpg',
+    image: '/images/services/facials/hydrafacial.jpg',
     priceNote: 'Contact us for pricing',
   },
   {
@@ -300,7 +300,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     relatedServices: ['korean-glass-facial', 'hydrafacial'],
     featured: true,
-    image: '/images/services/facials/korean-glass-facial.jpg',
+    image: '/images/services/facials/bb-glow-facial.jpg',
     priceNote: 'Contact us for pricing',
   },
   {
@@ -319,7 +319,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     downtime: 'Some redness and sensitivity immediately after; recovery varies individually',
     relatedServices: ['prp-therapy', 'hydrafacial', 'collagen-boost-facial'],
     featured: false,
-    image: '/images/services/facials/anti-ageing-treatment.jpg',
+    image: '/images/services/facials/vampire-facial.jpg',
     priceNote: 'Price on consultation',
   },
   {
@@ -335,7 +335,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     suitableFor: ['Adults with anti-ageing skin concerns', 'Those assessed as suitable during consultation'],
     consultationRequired: false,
     relatedServices: ['hydrafacial', 'anti-ageing-treatments'],
-    image: '/images/services/facials/anti-ageing-treatment.jpg',
+    image: '/images/services/facials/collagen-boost-facial.jpg',
     priceNote: 'Contact us for pricing',
   },
   {
@@ -350,7 +350,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     benefits: ['Completely personalised', 'Addresses your specific concerns', 'Professional skin analysis included'],
     suitableFor: ['All skin types', 'Those with specific skin goals or concerns'],
     consultationRequired: false,
-    image: '/images/services/facials/korean-glass-facial.jpg',
+    image: '/images/services/facials/customised-facials.jpg',
     priceNote: 'Contact us for pricing',
   },
 
@@ -406,7 +406,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     medicalProcedure: true,
     relatedServices: ['co2-laser', 'chemical-peels'],
-    image: '/images/services/laser/laser-hair-removal.jpg',
+    image: '/images/services/laser/pico-laser.jpg',
     priceNote: 'Price on consultation',
   },
   {
@@ -424,7 +424,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     medicalProcedure: true,
     downtime: 'Recovery period varies; clinician will advise',
     relatedServices: ['pico-laser', 'chemical-peels'],
-    image: '/images/services/laser/laser-hair-removal.jpg',
+    image: '/images/services/laser/co2-laser.jpg',
     priceNote: 'Price on consultation',
   },
   {
@@ -441,7 +441,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     medicalProcedure: true,
     relatedServices: ['wart-removal', 'pico-laser'],
-    image: '/images/services/laser/laser-hair-removal.jpg',
+    image: '/images/services/laser/mole-removal.jpg',
     priceNote: 'Price on consultation',
   },
   {
@@ -458,7 +458,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     medicalProcedure: true,
     relatedServices: ['mole-removal'],
-    image: '/images/services/laser/laser-hair-removal.jpg',
+    image: '/images/services/laser/wart-removal.jpg',
     priceNote: 'Price on consultation',
   },
   {
@@ -476,7 +476,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     medicalProcedure: false,
     relatedServices: ['pico-laser'],
-    image: '/images/services/laser/laser-hair-removal.jpg',
+    image: '/images/services/laser/tattoo-removal.jpg',
     priceNote: 'Price on consultation — varies by tattoo size, colour, and complexity',
   },
 
@@ -529,7 +529,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     medicalProcedure: true,
     relatedServices: ['iv-glutathione', 'anti-ageing-treatments'],
-    image: '/images/services/aesthetic/dermal-fillers-botox.jpg',
+    image: '/images/services/aesthetic/vitamin-therapy.jpg',
     priceNote: 'Price on consultation',
   },
   {
@@ -546,7 +546,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     medicalProcedure: true,
     relatedServices: ['vitamin-therapy', 'iv-cocktail-therapy'],
-    image: '/images/services/aesthetic/dermal-fillers-botox.jpg',
+    image: '/images/services/aesthetic/iv-glutathione.jpg',
     priceNote: 'Price on consultation',
   },
   {
@@ -563,7 +563,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     medicalProcedure: true,
     relatedServices: ['vitamin-therapy', 'iv-glutathione'],
-    image: '/images/services/aesthetic/dermal-fillers-botox.jpg',
+    image: '/images/services/aesthetic/iv-cocktail-therapy.jpg',
     priceNote: 'Price on consultation',
   },
   {
@@ -582,7 +582,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     downtime: 'Mild swelling and discomfort expected; recovery varies individually',
     relatedServices: ['dermal-fillers', 'botox'],
     featured: false,
-    image: '/images/services/aesthetic/dermal-fillers-botox.jpg',
+    image: '/images/services/aesthetic/thread-lift.jpg',
     priceNote: 'Price on consultation',
   },
   {
@@ -601,7 +601,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     downtime: 'Mild swelling and bruising common initially; settles over days',
     relatedServices: ['botox', 'thread-lift'],
     featured: true,
-    image: '/images/services/aesthetic/dermal-fillers-botox.jpg',
+    image: '/images/services/aesthetic/dermal-fillers.jpg',
     priceNote: 'Price on consultation — varies by area and product',
   },
   {
@@ -624,7 +624,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     ],
     relatedServices: ['dermal-fillers', 'thread-lift', 'anti-ageing-treatments'],
     featured: true,
-    image: '/images/services/aesthetic/dermal-fillers-botox.jpg',
+    image: '/images/services/aesthetic/botox.jpg',
     priceNote: 'Price on consultation — varies by area and units',
   },
 
@@ -644,7 +644,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     relatedServices: ['hifu', 'lipo-laser', 'cool-sculpting'],
     featured: true,
-    image: '/images/services/aesthetic/body-slimming-contouring.jpg',
+    image: '/images/services/aesthetic/emsculpt.jpg',
     priceNote: 'Price on consultation',
   },
   {
@@ -661,7 +661,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     sessions: 'Multiple sessions recommended',
     consultationRequired: true,
     relatedServices: ['emsculpt', 'hifu'],
-    image: '/images/services/aesthetic/body-slimming-contouring.jpg',
+    image: '/images/services/aesthetic/lipo-laser.jpg',
     priceNote: 'Price on consultation',
   },
   {
@@ -679,7 +679,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     relatedServices: ['emsculpt', 'thread-lift'],
     featured: true,
-    image: '/images/services/aesthetic/body-slimming-contouring.jpg',
+    image: '/images/services/aesthetic/hifu.jpg',
     priceNote: 'Price on consultation',
   },
   {
@@ -695,7 +695,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     suitableFor: ['Adults with localised fat concerns', 'Near ideal weight candidates', 'Suitability assessed during consultation'],
     consultationRequired: true,
     relatedServices: ['emsculpt', 'lipo-laser'],
-    image: '/images/services/aesthetic/body-slimming-contouring.jpg',
+    image: '/images/services/aesthetic/cool-sculpting.jpg',
     priceNote: 'Contact us to confirm availability and pricing',
   },
 
@@ -716,7 +716,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     relatedServices: ['microblading', 'eyelash-extensions-aesthetic'],
     featured: false,
-    image: '/images/services/aesthetic/microblading-eyebrow.jpg',
+    image: '/images/services/aesthetic/lip-tinting.jpg',
     priceNote: 'Contact us for pricing',
   },
   {
@@ -736,7 +736,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     relatedServices: ['lip-tinting', 'eyelash-extensions-aesthetic'],
     featured: false,
-    image: '/images/services/aesthetic/microblading-eyebrow.jpg',
+    image: '/images/services/aesthetic/microblading.jpg',
     priceNote: 'Contact us for pricing',
   },
   {
@@ -753,7 +753,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     aftercare: ['Avoid water and steam for 24–48 hours after application', 'Use oil-free makeup remover around eyes', 'Brush lashes daily with provided spoolie', 'Book infill appointments to maintain fullness'],
     consultationRequired: false,
     relatedServices: ['microblading', 'lip-tinting'],
-    image: '/images/services/aesthetic/microblading-eyebrow.jpg',
+    image: '/images/services/aesthetic/eyelash-extensions.jpg',
     priceNote: 'Contact us for pricing',
   },
 ];

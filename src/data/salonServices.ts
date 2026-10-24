@@ -50,7 +50,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Gentle, caring haircut service for toddlers and young children in a comfortable, welcoming environment.",
     ageGroup: 'Children (age ranges as per menu — contact us for details)',
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/mens-haircut.jpg',
+    image: '/images/services/salon/baby-haircut.jpg',
   },
   {
     id: 'royal-baby-massage',
@@ -61,7 +61,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "A luxurious, gentle massage experience designed specially for babies, promoting relaxation and wellbeing.",
     ageGroup: 'Infants and young children (parent/guardian consent required)',
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/mens-haircut.jpg',
+    image: '/images/services/salon/royal-baby-massage.jpg',
   },
   {
     id: 'baby-milk-bath',
@@ -72,7 +72,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "A nurturing milk bath ritual for babies, soothing and softening delicate skin.",
     ageGroup: 'Infants (parent/guardian consent required)',
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/mens-haircut.jpg',
+    image: '/images/services/salon/baby-milk-bath.jpg',
   },
   {
     id: 'baby-oil-massage',
@@ -83,7 +83,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Gentle oil massage for babies to nourish skin and promote relaxation.",
     ageGroup: 'Infants (parent/guardian consent required)',
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/mens-haircut.jpg'
+    image: '/images/services/salon/baby-oil-massage.jpg'
   },
   {
     id: 'baby-butter-wrap',
@@ -94,7 +94,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "A nourishing butter wrap treatment to deeply moisturise baby's delicate skin.",
     ageGroup: 'Infants and young children (parent/guardian consent required)',
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/mens-haircut.jpg'
+    image: '/images/services/salon/baby-butter-wrap.jpg'
   },
   {
     id: 'baby-bubble-manicure',
@@ -105,7 +105,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "A fun, gentle manicure experience for little ones.",
     ageGroup: 'Children (age as per menu — contact us)',
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/spa-manicure-nail-care.jpg'
+    image: '/images/services/salon/baby-bubble-manicure.jpg'
   },
   {
     id: 'baby-soft-cleanse-facial',
@@ -116,7 +116,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "A gentle cleansing facial for children using child-safe products.",
     ageGroup: 'Children (age as per menu — contact us)',
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/mens-haircut.jpg'
+    image: '/images/services/salon/baby-soft-cleanse-facial.jpg'
   },
   {
     id: 'baby-cut-file-polish',
@@ -127,7 +127,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Gentle nail cut, file, and polish for children.",
     ageGroup: 'Children',
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/mens-haircut.jpg'
+    image: '/images/services/salon/baby-cut-file-polish.jpg'
   },
 
   // ─── MEN'S HAIRCUT ───
@@ -169,7 +169,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Precise beard trimming and shaping for a well-groomed look.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/hair/balayage-hair-colour.jpg'
+    image: '/images/services/salon/beard-trim-shape.jpg'
   },
   {
     id: 'clean-shave',
@@ -179,7 +179,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'mens-haircut',
     description: "A classic, professional clean shave service.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/hair/balayage-hair-colour.jpg'
+    image: '/images/services/salon/traditional-clean-shave.jpg'
   },
   {
     id: 'zero-trim',
@@ -189,7 +189,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'mens-haircut',
     description: "Precision zero trim for a clean, sharp look.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/hair/balayage-hair-colour.jpg'
+    image: '/images/services/salon/zero-fade-skin-fade.jpg'
   },
   {
     id: 'beard-design',
@@ -209,7 +209,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'mens-haircut',
     description: "A nourishing beard spa treatment for healthy, conditioned facial hair.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/hair/balayage-hair-colour.jpg'
+    image: '/images/services/salon/beard-spa-ritual.jpg'
   },
   {
     id: 'beard-moustache-colour',
@@ -1110,7 +1110,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Professional eyelash extensions for enhanced volume, length, and definition.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/aesthetic/microblading-eyebrow.jpg'
+    image: '/images/services/aesthetic/eyelash-extensions.jpg'
   },
   {
     id: 'hair-extensions',
