@@ -32,7 +32,7 @@ import AdminDashboardPage from './pages/AdminDashboardPage';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <ScrollToTop />
       <Routes>
         {/* Admin Routes (Standalone Layout) */}
