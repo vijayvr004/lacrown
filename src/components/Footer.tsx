@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { BRAND } from '../data/brand';
+import { getAssetUrl } from '../utils/imageUrl';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -14,7 +15,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-3.5 mb-4 group">
               <img
-                src="/assets/logo.png"
+                src={getAssetUrl('/assets/logo.png')}
                 alt="LA CROWN"
                 className="h-14 w-auto object-contain drop-shadow transition-transform duration-300 group-hover:scale-105"
               />

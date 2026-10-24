@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 import { Menu, X, Phone, ChevronDown, Calendar, ShoppingBag, User } from 'lucide-react';
 import { BRAND } from '../data/brand';
+import { getAssetUrl } from '../utils/imageUrl';
 
 const AESTHETIC_MENU = [
   {
@@ -159,7 +160,7 @@ export default function Header() {
           {/* Logo matching reference */}
           <Link to="/" className="flex items-center gap-3.5 flex-shrink-0 group">
             <img
-              src="/assets/logo.png"
+              src={getAssetUrl('/assets/logo.png')}
               alt="LA CROWN Royal Crest"
               className="h-11 md:h-13 w-auto object-contain drop-shadow-sm transition-transform duration-300 group-hover:scale-105"
             />

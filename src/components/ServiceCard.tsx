@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import { getAssetUrl } from '../utils/imageUrl';
 
 interface ServiceCardProps {
   name: string;
@@ -18,14 +19,15 @@ export default function ServiceCard({
   name, description, image, to, category, price, priceNote, badge
 }: ServiceCardProps) {
   const [imgError, setImgError] = useState(false);
+  const resolvedImage = getAssetUrl(image);
 
   return (
     <Link to={to} className="service-card block overflow-hidden group">
       {/* Image */}
       <div className="relative overflow-hidden h-48 bg-ivory-200">
-        {image && !imgError ? (
+        {resolvedImage && !imgError ? (
           <img
-            src={image}
+            src={resolvedImage}
             alt={name}
             onError={() => setImgError(true)}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -33,7 +35,7 @@ export default function ServiceCard({
           />
         ) : (
           <div className="w-full h-full bg-gradient-to-br from-ivory-200 to-cream flex items-center justify-center">
-            <img src="/assets/logo.png" alt="" className="h-16 w-auto opacity-20" />
+            <img src={getAssetUrl('/assets/logo.png')} alt="" className="h-16 w-auto opacity-20" />
           </div>
         )}
         {badge && (
