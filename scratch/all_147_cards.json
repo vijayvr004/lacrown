@@ -1,0 +1,1568 @@
+[
+  {
+    "section": "Aesthetic Clinic",
+    "id": "hair-transplant",
+    "name": "Hair Transplant",
+    "category": "Hair Restoration & Scalp",
+    "categorySlug": "hair-restoration",
+    "description": "Advanced hair transplantation procedures to restore natural-looking hair density and coverage.",
+    "currentImage": "/images/services/hair/hair-transplant.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "bio-fue",
+    "name": "Bio FUE",
+    "category": "Hair Restoration & Scalp",
+    "categorySlug": "hair-restoration",
+    "description": "Advanced Follicular Unit Extraction technique combining biological growth factors for enhanced hair restoration outcomes.",
+    "currentImage": "/images/services/hair/bio-fue.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "prp-therapy",
+    "name": "PRP Therapy",
+    "category": "Hair Restoration & Scalp",
+    "categorySlug": "hair-restoration",
+    "description": "Platelet-Rich Plasma therapy using your own blood\\",
+    "currentImage": "/images/services/hair/prp-therapy.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "gfc-therapy",
+    "name": "GFC Therapy",
+    "category": "Hair Restoration & Scalp",
+    "categorySlug": "hair-restoration",
+    "description": "Growth Factor Concentrate therapy — a next-generation approach to scalp and hair follicle support using concentrated growth factors.",
+    "currentImage": "/images/services/hair/gfc-therapy.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "mesotherapy",
+    "name": "Mesotherapy",
+    "category": "Hair Restoration & Scalp",
+    "categorySlug": "hair-restoration",
+    "description": "Micro-injection treatment delivering vitamins, minerals, and active ingredients directly to the scalp to support hair health.",
+    "currentImage": "/images/services/hair/mesotherapy.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "stem-cell-therapy",
+    "name": "Stem Cell Therapy",
+    "category": "Hair Restoration & Scalp",
+    "categorySlug": "hair-restoration",
+    "description": "Advanced regenerative treatment for hair restoration using stem cell technology under medical supervision.",
+    "currentImage": "/images/services/hair/stem-cell-therapy.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "scalp-micro-pigmentation",
+    "name": "Scalp Micro-Pigmentation",
+    "category": "Hair Restoration & Scalp",
+    "categorySlug": "hair-restoration",
+    "description": "A specialist cosmetic procedure that replicates the appearance of hair follicles using precision pigment application on the scalp.",
+    "currentImage": "/images/services/hair/scalp-micro-pigmentation.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "high-frequency-therapy",
+    "name": "High Frequency Therapy",
+    "category": "Hair Restoration & Scalp",
+    "categorySlug": "hair-restoration",
+    "description": "A scalp treatment using high frequency electrical current to support circulation and scalp health.",
+    "currentImage": "/images/services/hair/high-frequency-therapy.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "aesthetic-grooming-essentials",
+    "name": "Aesthetic Grooming Essentials",
+    "category": "Skin & Aesthetic Grooming",
+    "categorySlug": "skin-aesthetic",
+    "description": "A curated suite of precision grooming and skin enhancement services for face and eyes.",
+    "currentImage": "/images/services/facials/aesthetic-grooming-essentials.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "hydrafacial",
+    "name": "HydraFacial",
+    "category": "Facials & Medi-Facials",
+    "categorySlug": "facials",
+    "description": "The globally renowned multi-step facial treatment that cleanses, exfoliates, extracts, and hydrates simultaneously for visibly radiant skin.",
+    "currentImage": "/images/services/facials/hydrafacial.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "korean-glass-facial",
+    "name": "Korean Glass Facial",
+    "category": "Facials & Medi-Facials",
+    "categorySlug": "facials",
+    "description": "Inspired by K-beauty, this treatment targets translucent, luminous skin with deep hydration and brightening protocols.",
+    "currentImage": "/images/services/facials/korean-glass-facial.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "bb-glow-facial",
+    "name": "BB Glow Facial",
+    "category": "Facials & Medi-Facials",
+    "categorySlug": "facials",
+    "description": "A semi-permanent foundation effect achieved through micro-needling infusion of skin-tone enhancing serums.",
+    "currentImage": "/images/services/facials/bb-glow-facial.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "vampire-facial",
+    "name": "Vampire Facial",
+    "category": "Facials & Medi-Facials",
+    "categorySlug": "facials",
+    "description": "PRP-combined micro-needling treatment using your own plasma to promote collagen production and skin rejuvenation.",
+    "currentImage": "/images/services/facials/vampire-facial.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "collagen-boost-facial",
+    "name": "Collagen Boost Facial",
+    "category": "Facials & Medi-Facials",
+    "categorySlug": "facials",
+    "description": "A targeted facial treatment designed to support collagen production for firmer, more youthful-looking skin.",
+    "currentImage": "/images/services/facials/collagen-boost-facial.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "customised-facials",
+    "name": "Customised Aesthetic Facials",
+    "category": "Facials & Medi-Facials",
+    "categorySlug": "facials",
+    "description": "Bespoke facial treatments designed around your individual skin type, concerns, and goals.",
+    "currentImage": "/images/services/facials/customised-facials.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "laser-hair-removal",
+    "name": "Laser Hair Removal",
+    "category": "Laser Treatments",
+    "categorySlug": "laser",
+    "description": "Advanced laser technology for long-term hair reduction across the face and body.",
+    "currentImage": "/images/services/laser/laser-hair-removal.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "pico-laser",
+    "name": "Pico Laser",
+    "category": "Laser Treatments",
+    "categorySlug": "laser",
+    "description": "Ultra-short pulse laser technology for pigmentation, skin brightening, and tattoo removal.",
+    "currentImage": "/images/services/laser/pico-laser.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "co2-laser",
+    "name": "CO2 Laser",
+    "category": "Laser Treatments",
+    "categorySlug": "laser",
+    "description": "Fractional CO2 laser resurfacing for skin renewal, scar treatment, and anti-ageing.",
+    "currentImage": "/images/services/laser/co2-laser.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "mole-removal",
+    "name": "Mole Removal",
+    "category": "Laser Treatments",
+    "categorySlug": "laser",
+    "description": "Safe, professional removal of benign moles using appropriate laser or clinical techniques.",
+    "currentImage": "/images/services/laser/mole-removal.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "wart-removal",
+    "name": "Wart Removal",
+    "category": "Laser Treatments",
+    "categorySlug": "laser",
+    "description": "Professional removal of warts using appropriate laser or clinical techniques.",
+    "currentImage": "/images/services/laser/wart-removal.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "tattoo-removal",
+    "name": "Tattoo Removal",
+    "category": "Laser Treatments",
+    "categorySlug": "laser",
+    "description": "Advanced laser-based tattoo removal for safe, effective fading and removal of unwanted tattoos.",
+    "currentImage": "/images/services/laser/tattoo-removal.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "chemical-peels",
+    "name": "Chemical Peels",
+    "category": "Chemical Peels",
+    "categorySlug": "chemical-peels",
+    "description": "Professional-grade chemical exfoliation treatments to resurface the skin, address pigmentation, acne, and uneven texture.",
+    "currentImage": "/images/services/facials/chemical-peels.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "vitamin-therapy",
+    "name": "Vitamin Therapy",
+    "category": "Anti-Ageing Treatments",
+    "categorySlug": "anti-ageing",
+    "description": "Intravenous or injectable vitamin infusions to support skin health, energy, and overall wellness.",
+    "currentImage": "/images/services/aesthetic/vitamin-therapy.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "iv-glutathione",
+    "name": "IV Glutathione",
+    "category": "Anti-Ageing Treatments",
+    "categorySlug": "anti-ageing",
+    "description": "Intravenous glutathione infusion for skin brightening and antioxidant support, administered under medical supervision.",
+    "currentImage": "/images/services/aesthetic/iv-glutathione.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "iv-cocktail-therapy",
+    "name": "IV Cocktail Therapy",
+    "category": "Anti-Ageing Treatments",
+    "categorySlug": "anti-ageing",
+    "description": "Customised intravenous infusion blends combining vitamins, minerals, and antioxidants under medical supervision.",
+    "currentImage": "/images/services/aesthetic/iv-cocktail-therapy.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "thread-lift",
+    "name": "Thread Lift",
+    "category": "Anti-Ageing Treatments",
+    "categorySlug": "anti-ageing",
+    "description": "A minimally invasive lifting procedure using dissolvable threads to support facial contour and tissue position.",
+    "currentImage": "/images/services/aesthetic/thread-lift.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "dermal-fillers",
+    "name": "Dermal Fillers",
+    "category": "Anti-Ageing Treatments",
+    "categorySlug": "anti-ageing",
+    "description": "Injectable treatments to restore facial volume, smooth lines, and enhance facial features.",
+    "currentImage": "/images/services/aesthetic/dermal-fillers.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "botox",
+    "name": "Botox",
+    "category": "Anti-Ageing Treatments",
+    "categorySlug": "anti-ageing",
+    "description": "Botulinum toxin injections to temporarily relax facial muscles, reducing the appearance of expression lines.",
+    "currentImage": "/images/services/aesthetic/botox.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "emsculpt",
+    "name": "EMSculpt",
+    "category": "Body Slimming & Contouring",
+    "categorySlug": "body-slimming",
+    "description": "Non-invasive body contouring technology using electromagnetic energy to simultaneously tone muscles and reduce fat.",
+    "currentImage": "/images/services/aesthetic/emsculpt.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "lipo-laser",
+    "name": "Lipo Laser",
+    "category": "Body Slimming & Contouring",
+    "categorySlug": "body-slimming",
+    "description": "Non-invasive laser technology targeting localised fat areas for body shaping and contouring.",
+    "currentImage": "/images/services/aesthetic/lipo-laser.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "hifu",
+    "name": "HIFU",
+    "category": "Body Slimming & Contouring",
+    "categorySlug": "body-slimming",
+    "description": "High-Intensity Focused Ultrasound for non-surgical skin tightening and body contouring.",
+    "currentImage": "/images/services/aesthetic/hifu.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "cool-sculpting",
+    "name": "Cool Sculpting",
+    "category": "Body Slimming & Contouring",
+    "categorySlug": "body-slimming",
+    "description": "Non-invasive fat reduction treatment using controlled cooling to target and reduce fat cells.",
+    "currentImage": "/images/services/aesthetic/cool-sculpting.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "lip-tinting",
+    "name": "Lip Tinting",
+    "category": "Semi-Permanent Makeup",
+    "categorySlug": "semi-permanent-makeup",
+    "description": "Semi-permanent lip colour treatment for natural, lasting lip tint and definition.",
+    "currentImage": "/images/services/aesthetic/lip-tinting.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "microblading",
+    "name": "Microblading",
+    "category": "Semi-Permanent Makeup",
+    "categorySlug": "semi-permanent-makeup",
+    "description": "Semi-permanent eyebrow technique creating natural hair-stroke definition using a fine blade.",
+    "currentImage": "/images/services/aesthetic/microblading.jpg"
+  },
+  {
+    "section": "Aesthetic Clinic",
+    "id": "eyelash-extensions-aesthetic",
+    "name": "Eyelash Extensions",
+    "category": "Semi-Permanent Makeup",
+    "categorySlug": "semi-permanent-makeup",
+    "description": "Professional eyelash extensions for volume, length, and definition without daily mascara.",
+    "currentImage": "/images/services/aesthetic/eyelash-extensions.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "baby-haircut",
+    "name": "Baby / Toddler Haircut",
+    "category": "Baby Pampering & Grooming",
+    "categorySlug": "baby-pampering",
+    "description": "Gentle, caring haircut service for toddlers and young children in a comfortable, welcoming environment.",
+    "currentImage": "/images/services/salon/baby-haircut.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "royal-baby-massage",
+    "name": "Royal Baby Massage",
+    "category": "Baby Pampering & Grooming",
+    "categorySlug": "baby-pampering",
+    "description": "A luxurious, gentle massage experience designed specially for babies, promoting relaxation and wellbeing.",
+    "currentImage": "/images/services/salon/royal-baby-massage.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "baby-milk-bath",
+    "name": "Baby Milk Bath",
+    "category": "Baby Pampering & Grooming",
+    "categorySlug": "baby-pampering",
+    "description": "A nurturing milk bath ritual for babies, soothing and softening delicate skin.",
+    "currentImage": "/images/services/salon/baby-milk-bath.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "baby-oil-massage",
+    "name": "Baby Oil Massage",
+    "category": "Baby Pampering & Grooming",
+    "categorySlug": "baby-pampering",
+    "description": "Gentle oil massage for babies to nourish skin and promote relaxation.",
+    "currentImage": "/images/services/salon/baby-oil-massage.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "baby-butter-wrap",
+    "name": "Baby Butter Wrap",
+    "category": "Baby Pampering & Grooming",
+    "categorySlug": "baby-pampering",
+    "description": "A nourishing butter wrap treatment to deeply moisturise baby",
+    "currentImage": "/images/services/salon/baby-butter-wrap.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "baby-bubble-manicure",
+    "name": "Bubble Manicure (Children)",
+    "category": "Baby Pampering & Grooming",
+    "categorySlug": "baby-pampering",
+    "description": "A fun, gentle manicure experience for little ones.",
+    "currentImage": "/images/services/salon/baby-bubble-manicure.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "baby-soft-cleanse-facial",
+    "name": "Soft Cleanse Facial (Children)",
+    "category": "Baby Pampering & Grooming",
+    "categorySlug": "baby-pampering",
+    "description": "A gentle cleansing facial for children using child-safe products.",
+    "currentImage": "/images/services/salon/baby-soft-cleanse-facial.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "baby-cut-file-polish",
+    "name": "Cut, File & Polish (Children)",
+    "category": "Baby Pampering & Grooming",
+    "categorySlug": "baby-pampering",
+    "description": "Gentle nail cut, file, and polish for children.",
+    "currentImage": "/images/services/salon/baby-cut-file-polish.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "mens-haircut-junior",
+    "name": "Men",
+    "category": "Men",
+    "categorySlug": "mens-haircut",
+    "description": "Professional men",
+    "currentImage": "/images/services/salon/executive-haircut.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "mens-haircut-senior",
+    "name": "Men",
+    "category": "Men",
+    "categorySlug": "mens-haircut",
+    "description": "Men",
+    "currentImage": "/images/services/salon/mens-haircut.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "mens-haircut-creative",
+    "name": "Men",
+    "category": "Men",
+    "categorySlug": "mens-haircut",
+    "description": "Premium men",
+    "currentImage": ""
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "beard-trim",
+    "name": "Beard Trim",
+    "category": "Men",
+    "categorySlug": "mens-haircut",
+    "description": "Precise beard trimming and shaping for a well-groomed look.",
+    "currentImage": "/images/services/salon/beard-trim-shape.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "clean-shave",
+    "name": "Clean Shave",
+    "category": "Men",
+    "categorySlug": "mens-haircut",
+    "description": "A classic, professional clean shave service.",
+    "currentImage": "/images/services/salon/traditional-clean-shave.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "zero-trim",
+    "name": "Zero Trim",
+    "category": "Men",
+    "categorySlug": "mens-haircut",
+    "description": "Precision zero trim for a clean, sharp look.",
+    "currentImage": "/images/services/salon/zero-fade-skin-fade.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "beard-design",
+    "name": "Beard Design",
+    "category": "Men",
+    "categorySlug": "mens-haircut",
+    "description": "Creative beard design and shaping tailored to your style.",
+    "currentImage": "/images/services/hair/balayage-hair-colour.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "beard-spa",
+    "name": "Beard Spa",
+    "category": "Men",
+    "categorySlug": "mens-haircut",
+    "description": "A nourishing beard spa treatment for healthy, conditioned facial hair.",
+    "currentImage": "/images/services/salon/beard-spa-ritual.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "beard-moustache-colour",
+    "name": "Beard & Moustache Colour",
+    "category": "Men",
+    "categorySlug": "mens-haircut",
+    "description": "Professional colour for beard and moustache, including grey coverage and fashion shades.",
+    "currentImage": "/images/services/hair/balayage-hair-colour.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "mens-hair-wash",
+    "name": "Men",
+    "category": "Men",
+    "categorySlug": "mens-haircare",
+    "description": "Professional hair wash and conditioning service.",
+    "currentImage": ""
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "mens-oil-infusion",
+    "name": "Men",
+    "category": "Men",
+    "categorySlug": "mens-haircare",
+    "description": "Nourishing oil infusion treatment for scalp and hair health.",
+    "currentImage": ""
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "mens-nourishing-hair-spa",
+    "name": "Men",
+    "category": "Men",
+    "categorySlug": "mens-haircare",
+    "description": "Deep nourishing hair spa for men to restore moisture and vitality.",
+    "currentImage": ""
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "mens-anti-dandruff",
+    "name": "Men",
+    "category": "Men",
+    "categorySlug": "mens-haircare",
+    "description": "Targeted anti-dandruff treatment to address flaking and scalp irritation.",
+    "currentImage": ""
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "mens-anti-hairfall",
+    "name": "Men",
+    "category": "Men",
+    "categorySlug": "mens-haircare",
+    "description": "Targeted hair fall control treatment for men.",
+    "currentImage": ""
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "mens-deep-conditioning",
+    "name": "Men",
+    "category": "Men",
+    "categorySlug": "mens-haircare",
+    "description": "Intensive deep conditioning for dry, damaged or stressed hair.",
+    "currentImage": ""
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "mens-grey-coverage",
+    "name": "Men",
+    "category": "Men",
+    "categorySlug": "mens-haircare",
+    "description": "Natural-looking grey coverage colour service for men.",
+    "currentImage": ""
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "mens-global-fashion-shades",
+    "name": "Men",
+    "category": "Men",
+    "categorySlug": "mens-haircare",
+    "description": "Full head global colour in fashion shades for men.",
+    "currentImage": ""
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "mens-highlights-streaks",
+    "name": "Men",
+    "category": "Men",
+    "categorySlug": "mens-haircare",
+    "description": "Cap highlights and streaks for a natural, sun-kissed or bold look.",
+    "currentImage": ""
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "mens-keratin",
+    "name": "Men",
+    "category": "Men",
+    "categorySlug": "mens-haircare",
+    "description": "Smoothing keratin treatment for men to control frizz and improve manageability.",
+    "currentImage": ""
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "mens-rebonding",
+    "name": "Men",
+    "category": "Men",
+    "categorySlug": "mens-haircare",
+    "description": "Hair re-bonding for permanently straight, smooth hair.",
+    "currentImage": ""
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "mens-skin-deep-cleansing",
+    "name": "Men",
+    "category": "Men",
+    "categorySlug": "mens-haircare",
+    "description": "Deep cleansing facial for men to remove impurities and refresh skin.",
+    "currentImage": ""
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "mens-acne-control-facial",
+    "name": "Men",
+    "category": "Men",
+    "categorySlug": "mens-haircare",
+    "description": "Targeted facial treatment to address acne and blemish concerns for men.",
+    "currentImage": ""
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "mens-detan-facial",
+    "name": "Men",
+    "category": "Men",
+    "categorySlug": "mens-haircare",
+    "description": "De-tan facial to address sun-induced pigmentation and dullness.",
+    "currentImage": ""
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "mens-brightening-facial",
+    "name": "Men",
+    "category": "Men",
+    "categorySlug": "mens-haircare",
+    "description": "Brightening facial for men targeting uneven tone and dull complexion.",
+    "currentImage": ""
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "mens-waxing",
+    "name": "Men",
+    "category": "Men",
+    "categorySlug": "mens-haircare",
+    "description": "Professional waxing services for men — chest, back, arms, and other areas.",
+    "currentImage": ""
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "womens-fringe-bangs",
+    "name": "Fringe & Bangs",
+    "category": "Women",
+    "categorySlug": "womens-haircut",
+    "description": "Precision fringe and bangs cutting for a polished, frame-enhancing look.",
+    "currentImage": "/images/services/hair/balayage-hair-colour.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "womens-regular-haircut",
+    "name": "Women",
+    "category": "Women",
+    "categorySlug": "womens-haircut",
+    "description": "Professional women",
+    "currentImage": ""
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "womens-creative-haircut",
+    "name": "Women",
+    "category": "Women",
+    "categorySlug": "womens-haircut",
+    "description": "Creative, fashion-forward haircut with a senior stylist.",
+    "currentImage": ""
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "womens-premium-haircut",
+    "name": "Women",
+    "category": "Women",
+    "categorySlug": "womens-haircut",
+    "description": "Premium haircut experience with our top stylist team.",
+    "currentImage": ""
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "blowdry",
+    "name": "Blow Dry",
+    "category": "Women",
+    "categorySlug": "womens-haircut",
+    "description": "Professional blow dry for a smooth, polished finish.",
+    "currentImage": "/images/services/hair/balayage-hair-colour.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "flat-ironing",
+    "name": "Flat Ironing",
+    "category": "Women",
+    "categorySlug": "womens-haircut",
+    "description": "Sleek flat iron styling for straight, smooth hair.",
+    "currentImage": "/images/services/hair/balayage-hair-colour.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "tonging",
+    "name": "Tonging",
+    "category": "Women",
+    "categorySlug": "womens-haircut",
+    "description": "Curl and wave styling using professional tongs.",
+    "currentImage": "/images/services/hair/balayage-hair-colour.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "crimping",
+    "name": "Crimping",
+    "category": "Women",
+    "categorySlug": "womens-haircut",
+    "description": "Textured crimping styling service.",
+    "currentImage": "/images/services/hair/balayage-hair-colour.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "hair-updo",
+    "name": "Hair Up-Do",
+    "category": "Women",
+    "categorySlug": "womens-haircut",
+    "description": "Elegant hair up-dos for events, occasions, and everyday glamour.",
+    "currentImage": "/images/services/hair/balayage-hair-colour.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "womens-hair-wash",
+    "name": "Women",
+    "category": "Women",
+    "categorySlug": "womens-haircare",
+    "description": "Professional hair wash and conditioning treatment.",
+    "currentImage": ""
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "womens-hair-spa",
+    "name": "Women",
+    "category": "Women",
+    "categorySlug": "womens-haircare",
+    "description": "Relaxing and restorative hair spa treatment.",
+    "currentImage": ""
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "womens-nourishing-hair-spa",
+    "name": "Nourishing Hair Spa",
+    "category": "Women",
+    "categorySlug": "womens-haircare",
+    "description": "Deeply nourishing hair spa with intensive moisture replenishment.",
+    "currentImage": "/images/services/hair/balayage-hair-colour.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "womens-repairing-hair-spa",
+    "name": "Repairing Hair Spa",
+    "category": "Women",
+    "categorySlug": "womens-haircare",
+    "description": "Targeted repairing hair spa for damaged, stressed or chemically treated hair.",
+    "currentImage": "/images/services/hair/balayage-hair-colour.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "womens-anti-dandruff",
+    "name": "Anti-Dandruff Control",
+    "category": "Women",
+    "categorySlug": "womens-haircare",
+    "description": "Targeted anti-dandruff scalp treatment.",
+    "currentImage": "/images/services/hair/balayage-hair-colour.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "womens-anti-hairfall",
+    "name": "Anti-Hair Fall Control",
+    "category": "Women",
+    "categorySlug": "womens-haircare",
+    "description": "Targeted hair fall control treatment for women.",
+    "currentImage": "/images/services/hair/balayage-hair-colour.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "grey-coverage",
+    "name": "Grey Coverage",
+    "category": "Women",
+    "categorySlug": "womens-haircare",
+    "description": "Natural-looking grey coverage colour service.",
+    "currentImage": "/images/services/hair/balayage-hair-colour.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "root-touch-up",
+    "name": "Root Touch-Up",
+    "category": "Women",
+    "categorySlug": "womens-haircare",
+    "description": "Precise root touch-up colour to blend regrowth seamlessly.",
+    "currentImage": "/images/services/hair/balayage-hair-colour.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "global-colour",
+    "name": "Global Hair Colour",
+    "category": "Women",
+    "categorySlug": "womens-haircare",
+    "description": "Full head global hair colour in natural or fashion shades.",
+    "currentImage": "/images/services/hair/balayage-hair-colour.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "highlights",
+    "name": "Highlights",
+    "category": "Women",
+    "categorySlug": "womens-haircare",
+    "description": "Expertly placed highlights for dimension and brightness.",
+    "currentImage": "/images/services/hair/balayage-hair-colour.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "balayage",
+    "name": "Balayage",
+    "category": "Women",
+    "categorySlug": "womens-haircare",
+    "description": "Hand-painted balayage for a natural, sun-kissed colour effect.",
+    "currentImage": "/images/services/hair/balayage-hair-colour.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "ombre",
+    "name": "Ombré",
+    "category": "Women",
+    "categorySlug": "womens-haircare",
+    "description": "Seamless ombré colour transition for a gradient effect.",
+    "currentImage": "/images/services/hair/balayage-hair-colour.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "colour-correction",
+    "name": "Colour Correction",
+    "category": "Women",
+    "categorySlug": "womens-haircare",
+    "description": "Expert colour correction to fix uneven or unwanted colour results.",
+    "currentImage": "/images/services/hair/balayage-hair-colour.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "colour-toning",
+    "name": "Colour Toning",
+    "category": "Women",
+    "categorySlug": "womens-haircare",
+    "description": "Toning service to neutralise unwanted tones and refresh colour.",
+    "currentImage": "/images/services/hair/balayage-hair-colour.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "keratin-treatment",
+    "name": "Keratin Treatment",
+    "category": "Women",
+    "categorySlug": "womens-haircare",
+    "description": "Professional keratin smoothing treatment to reduce frizz and improve hair texture.",
+    "currentImage": "/images/services/hair/balayage-hair-colour.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "rebonding",
+    "name": "Re-bonding",
+    "category": "Women",
+    "categorySlug": "womens-haircare",
+    "description": "Permanent hair straightening re-bonding treatment.",
+    "currentImage": "/images/services/hair/balayage-hair-colour.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "texture-transformation",
+    "name": "Texture Transformation",
+    "category": "Women",
+    "categorySlug": "womens-haircare",
+    "description": "Personalised hair texture transformation service including smoothing and straightening options.",
+    "currentImage": "/images/services/hair/balayage-hair-colour.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "eyebrow-threading",
+    "name": "Eyebrow Threading",
+    "category": "Threading & Grooming Essentials",
+    "categorySlug": "threading",
+    "description": "Precise eyebrow shaping using threading technique.",
+    "currentImage": "/images/services/salon/eyebrow-threading.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "upper-lip-threading",
+    "name": "Upper Lip Threading",
+    "category": "Threading & Grooming Essentials",
+    "categorySlug": "threading",
+    "description": "Upper lip hair removal by threading.",
+    "currentImage": "/images/services/salon/eyebrow-threading.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "lower-lip-threading",
+    "name": "Lower Lip Threading",
+    "category": "Threading & Grooming Essentials",
+    "categorySlug": "threading",
+    "description": "Lower lip hair removal by threading.",
+    "currentImage": "/images/services/salon/eyebrow-threading.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "chin-threading",
+    "name": "Chin Threading",
+    "category": "Threading & Grooming Essentials",
+    "categorySlug": "threading",
+    "description": "Chin hair removal by threading.",
+    "currentImage": "/images/services/salon/eyebrow-threading.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "jawline-threading",
+    "name": "Jawline Threading",
+    "category": "Threading & Grooming Essentials",
+    "categorySlug": "threading",
+    "description": "Jawline hair removal by threading.",
+    "currentImage": "/images/services/salon/eyebrow-threading.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "sidelocks-threading",
+    "name": "Side Locks Threading",
+    "category": "Threading & Grooming Essentials",
+    "categorySlug": "threading",
+    "description": "Side lock area hair removal by threading.",
+    "currentImage": "/images/services/salon/eyebrow-threading.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "neck-threading",
+    "name": "Neck Threading",
+    "category": "Threading & Grooming Essentials",
+    "categorySlug": "threading",
+    "description": "Neck hair removal by threading.",
+    "currentImage": "/images/services/salon/eyebrow-threading.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "full-face-threading",
+    "name": "Full Face Threading",
+    "category": "Threading & Grooming Essentials",
+    "categorySlug": "threading",
+    "description": "Complete full face threading package.",
+    "currentImage": "/images/services/salon/eyebrow-threading.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "face-waxing",
+    "name": "Face Waxing",
+    "category": "Waxing",
+    "categorySlug": "waxing",
+    "description": "Gentle face waxing for smooth, hair-free facial skin.",
+    "currentImage": "/images/services/laser/laser-hair-removal.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "underarm-waxing",
+    "name": "Underarm Waxing",
+    "category": "Waxing",
+    "categorySlug": "waxing",
+    "description": "Effective underarm hair removal by waxing.",
+    "currentImage": "/images/services/laser/laser-hair-removal.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "half-arm-waxing",
+    "name": "Half Arm Waxing",
+    "category": "Waxing",
+    "categorySlug": "waxing",
+    "description": "Waxing for the lower arm.",
+    "currentImage": "/images/services/laser/laser-hair-removal.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "full-arm-waxing",
+    "name": "Full Arm Waxing",
+    "category": "Waxing",
+    "categorySlug": "waxing",
+    "description": "Complete arm waxing for smooth, hair-free arms.",
+    "currentImage": "/images/services/laser/laser-hair-removal.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "half-leg-waxing",
+    "name": "Half Leg Waxing",
+    "category": "Waxing",
+    "categorySlug": "waxing",
+    "description": "Waxing for the lower leg.",
+    "currentImage": "/images/services/laser/laser-hair-removal.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "full-leg-waxing",
+    "name": "Full Leg Waxing",
+    "category": "Waxing",
+    "categorySlug": "waxing",
+    "description": "Complete leg waxing from ankle to thigh.",
+    "currentImage": "/images/services/laser/laser-hair-removal.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "back-waxing",
+    "name": "Back Waxing",
+    "category": "Waxing",
+    "categorySlug": "waxing",
+    "description": "Back hair removal by waxing.",
+    "currentImage": "/images/services/laser/laser-hair-removal.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "brazilian-waxing",
+    "name": "Brazilian Waxing",
+    "category": "Waxing",
+    "categorySlug": "waxing",
+    "description": "Complete Brazilian waxing service in a private, professional environment.",
+    "currentImage": "/images/services/laser/laser-hair-removal.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "bikini-waxing",
+    "name": "Bikini Waxing",
+    "category": "Waxing",
+    "categorySlug": "waxing",
+    "description": "Bikini line waxing for a clean, neat finish.",
+    "currentImage": "/images/services/laser/laser-hair-removal.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "face-detan",
+    "name": "Face De-Tan",
+    "category": "De-Tan & Bleach",
+    "categorySlug": "detan-bleach",
+    "description": "Targeted de-tan treatment for the face to address sun-induced pigmentation.",
+    "currentImage": "/images/services/facials/clinical-chemical-peel.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "full-body-detan",
+    "name": "Full Body De-Tan",
+    "category": "De-Tan & Bleach",
+    "categorySlug": "detan-bleach",
+    "description": "Comprehensive full body de-tan treatment.",
+    "currentImage": "/images/services/facials/clinical-chemical-peel.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "face-bleach",
+    "name": "Face Bleach",
+    "category": "De-Tan & Bleach",
+    "categorySlug": "detan-bleach",
+    "description": "Professional face bleach treatment to lighten facial hair and brighten skin tone.",
+    "currentImage": "/images/services/facials/clinical-chemical-peel.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "full-body-bleach",
+    "name": "Full Body Bleach",
+    "category": "De-Tan & Bleach",
+    "categorySlug": "detan-bleach",
+    "description": "Full body bleach treatment for an even, brightened skin tone.",
+    "currentImage": "/images/services/facials/clinical-chemical-peel.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "arms-detan",
+    "name": "Arms De-Tan",
+    "category": "De-Tan & Bleach",
+    "categorySlug": "detan-bleach",
+    "description": "De-tan treatment for the arms.",
+    "currentImage": "/images/services/facials/clinical-chemical-peel.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "back-detan",
+    "name": "Back De-Tan",
+    "category": "De-Tan & Bleach",
+    "categorySlug": "detan-bleach",
+    "description": "De-tan treatment for the back.",
+    "currentImage": "/images/services/facials/clinical-chemical-peel.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "salon-basic-facial",
+    "name": "Basic Facial",
+    "category": "Luxury Facials & Skin Peels",
+    "categorySlug": "luxury-facials",
+    "description": "A foundational cleansing and hydration facial suitable for regular skin maintenance.",
+    "currentImage": "/images/services/facials/korean-glass-facial.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "salon-brightening-facial",
+    "name": "Brightening Facial",
+    "category": "Luxury Facials & Skin Peels",
+    "categorySlug": "luxury-facials",
+    "description": "Brightening facial targeting dullness and uneven skin tone for a radiant complexion.",
+    "currentImage": "/images/services/facials/korean-glass-facial.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "salon-detan-facial",
+    "name": "De-Tan Facial",
+    "category": "Luxury Facials & Skin Peels",
+    "categorySlug": "luxury-facials",
+    "description": "Targeted de-tan facial to address sun-induced pigmentation and dullness.",
+    "currentImage": "/images/services/facials/korean-glass-facial.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "salon-anti-acne-facial",
+    "name": "Anti-Acne Facial",
+    "category": "Luxury Facials & Skin Peels",
+    "categorySlug": "luxury-facials",
+    "description": "Targeted facial treatment to address acne, blemishes and oily skin concerns.",
+    "currentImage": "/images/services/facials/korean-glass-facial.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "salon-luxury-facial",
+    "name": "Luxury Facial",
+    "category": "Luxury Facials & Skin Peels",
+    "categorySlug": "luxury-facials",
+    "description": "A premium, indulgent facial experience using high-quality products and advanced techniques.",
+    "currentImage": "/images/services/facials/korean-glass-facial.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "salon-skin-peel",
+    "name": "Salon Skin Peel",
+    "category": "Luxury Facials & Skin Peels",
+    "categorySlug": "luxury-facials",
+    "description": "Professional skin peel treatment for exfoliation and skin renewal. (Note: Salon skin peels are cosmetic treatments distinct from medical-grade chemical peels.)",
+    "currentImage": "/images/services/facials/korean-glass-facial.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "salon-anti-ageing-facial",
+    "name": "Anti-Ageing Beauty Facial",
+    "category": "Anti-Ageing Beauty Treatments",
+    "categorySlug": "anti-ageing-salon",
+    "description": "A luxurious salon anti-ageing facial using premium actives to address fine lines, dullness, and loss of firmness. Suitable for all genders.",
+    "currentImage": "/images/services/facials/anti-ageing-treatment.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "salon-firming-treatment",
+    "name": "Firming & Lifting Treatment",
+    "category": "Anti-Ageing Beauty Treatments",
+    "categorySlug": "anti-ageing-salon",
+    "description": "Salon-grade firming treatment to support skin tone and radiance.",
+    "currentImage": "/images/services/facials/anti-ageing-treatment.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "salon-eye-treatment",
+    "name": "Eye Revitalising Treatment",
+    "category": "Anti-Ageing Beauty Treatments",
+    "categorySlug": "anti-ageing-salon",
+    "description": "Targeted eye treatment to address dark circles, puffiness, and fine lines around the eye area.",
+    "currentImage": "/images/services/facials/anti-ageing-treatment.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "basic-manicure",
+    "name": "Basic Manicure",
+    "category": "Hand & Foot Care",
+    "categorySlug": "hand-foot",
+    "description": "Classic manicure including soak, cuticle care, nail shaping, and polish.",
+    "currentImage": "/images/services/salon/spa-manicure-nail-care.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "spa-manicure",
+    "name": "Spa Manicure",
+    "category": "Hand & Foot Care",
+    "categorySlug": "hand-foot",
+    "description": "Relaxing spa manicure with exfoliation, mask, and massage.",
+    "currentImage": "/images/services/salon/spa-manicure-nail-care.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "luxury-manicure",
+    "name": "Luxury Manicure",
+    "category": "Hand & Foot Care",
+    "categorySlug": "hand-foot",
+    "description": "Premium manicure experience with high-end products and extended care.",
+    "currentImage": "/images/services/salon/spa-manicure-nail-care.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "basic-pedicure",
+    "name": "Basic Pedicure",
+    "category": "Hand & Foot Care",
+    "categorySlug": "hand-foot",
+    "description": "Classic pedicure with soak, callus removal, nail care, and polish.",
+    "currentImage": "/images/services/salon/luxury-pedicure.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "spa-pedicure",
+    "name": "Spa Pedicure",
+    "category": "Hand & Foot Care",
+    "categorySlug": "hand-foot",
+    "description": "Indulgent spa pedicure with exfoliation, mask, and foot massage.",
+    "currentImage": "/images/services/salon/luxury-pedicure.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "luxury-pedicure",
+    "name": "Luxury Pedicure",
+    "category": "Hand & Foot Care",
+    "categorySlug": "hand-foot",
+    "description": "Premium pedicure with high-end products and extended relaxation.",
+    "currentImage": "/images/services/salon/luxury-pedicure.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "gel-nails",
+    "name": "Gel Nails",
+    "category": "Nails",
+    "categorySlug": "nails",
+    "description": "Long-lasting gel nail application for beautiful, chip-resistant colour.",
+    "currentImage": "/images/services/salon/spa-manicure-nail-care.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "acrylic-nails",
+    "name": "Acrylic Nails",
+    "category": "Nails",
+    "categorySlug": "nails",
+    "description": "Strong acrylic nail extension service for added length and strength.",
+    "currentImage": "/images/services/salon/spa-manicure-nail-care.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "nail-art",
+    "name": "Nail Art",
+    "category": "Nails",
+    "categorySlug": "nails",
+    "description": "Creative nail art designs — from subtle to statement looks.",
+    "currentImage": "/images/services/salon/spa-manicure-nail-care.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "nail-polish",
+    "name": "Nail Polish",
+    "category": "Nails",
+    "categorySlug": "nails",
+    "description": "Classic nail polish application in a wide range of colours.",
+    "currentImage": "/images/services/salon/spa-manicure-nail-care.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "nail-extensions",
+    "name": "Nail Extensions",
+    "category": "Nails",
+    "categorySlug": "nails",
+    "description": "Custom nail extensions for added length and style.",
+    "currentImage": "/images/services/salon/spa-manicure-nail-care.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "salon-eyelash-extensions",
+    "name": "Eyelash Extensions",
+    "category": "Eyelash & Hair Extensions",
+    "categorySlug": "eyelash-hair-extensions",
+    "description": "Professional eyelash extensions for enhanced volume, length, and definition.",
+    "currentImage": "/images/services/aesthetic/eyelash-extensions.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "hair-extensions",
+    "name": "Hair Extensions",
+    "category": "Eyelash & Hair Extensions",
+    "categorySlug": "eyelash-hair-extensions",
+    "description": "Premium hair extensions for added length and volume.",
+    "currentImage": "/images/services/hair/balayage-hair-colour.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "lash-lift",
+    "name": "Lash Lift",
+    "category": "Eyelash & Hair Extensions",
+    "categorySlug": "eyelash-hair-extensions",
+    "description": "Lash lifting treatment to curl and lift natural lashes for an open-eyed effect.",
+    "currentImage": "/images/services/aesthetic/microblading-eyebrow.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "swedish-massage",
+    "name": "Swedish Massage",
+    "category": "Body Relaxation & Massages",
+    "categorySlug": "body-relaxation",
+    "description": "Classic Swedish massage for full-body relaxation and stress relief.",
+    "currentImage": "/images/services/aesthetic/body-slimming-contouring.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "deep-tissue-massage",
+    "name": "Deep Tissue Massage",
+    "category": "Body Relaxation & Massages",
+    "categorySlug": "body-relaxation",
+    "description": "Therapeutic deep tissue massage targeting muscle tension and knots.",
+    "currentImage": "/images/services/aesthetic/body-slimming-contouring.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "aromatherapy-massage",
+    "name": "Aromatherapy Massage",
+    "category": "Body Relaxation & Massages",
+    "categorySlug": "body-relaxation",
+    "description": "Relaxing aromatherapy massage using essential oils for mind and body balance.",
+    "currentImage": "/images/services/aesthetic/body-slimming-contouring.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "head-massage",
+    "name": "Head Massage",
+    "category": "Body Relaxation & Massages",
+    "categorySlug": "body-relaxation",
+    "description": "Relaxing scalp and head massage to relieve tension.",
+    "currentImage": "/images/services/aesthetic/body-slimming-contouring.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "foot-reflexology",
+    "name": "Foot Reflexology",
+    "category": "Body Relaxation & Massages",
+    "categorySlug": "body-relaxation",
+    "description": "Therapeutic foot reflexology for relaxation and wellbeing.",
+    "currentImage": "/images/services/aesthetic/body-slimming-contouring.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "full-body-polish",
+    "name": "Full Body Polishing",
+    "category": "Body Polishing",
+    "categorySlug": "body-polishing",
+    "description": "Luxurious full body polishing treatment using exfoliating scrubs and nourishing masks for silky, glowing skin.",
+    "currentImage": "/images/services/facials/clinical-chemical-peel.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "back-polish",
+    "name": "Back Polishing",
+    "category": "Body Polishing",
+    "categorySlug": "body-polishing",
+    "description": "Targeted back exfoliation and polishing treatment.",
+    "currentImage": "/images/services/facials/clinical-chemical-peel.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "luxury-body-polish",
+    "name": "Luxury Body Polishing",
+    "category": "Body Polishing",
+    "categorySlug": "body-polishing",
+    "description": "A premium body polishing ritual with high-end exfoliants and skin-nourishing treatments.",
+    "currentImage": "/images/services/facials/clinical-chemical-peel.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "party-makeup",
+    "name": "Party Makeup",
+    "category": "Makeup & Bridal Beauty",
+    "categorySlug": "makeup",
+    "description": "Glamorous party makeup for events, celebrations, and special occasions.",
+    "currentImage": "/images/services/makeup/bridal-makeup.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "engagement-makeup",
+    "name": "Engagement Makeup",
+    "category": "Makeup & Bridal Beauty",
+    "categorySlug": "makeup",
+    "description": "Elegant engagement makeup for one of your most special occasions.",
+    "currentImage": "/images/services/makeup/bridal-makeup.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "bridal-makeup",
+    "name": "Bridal Makeup",
+    "category": "Makeup & Bridal Beauty",
+    "categorySlug": "makeup",
+    "description": "Exquisite bridal makeup tailored to your wedding day vision — from traditional to contemporary looks.",
+    "currentImage": "/images/services/makeup/bridal-makeup.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "reception-makeup",
+    "name": "Reception Makeup",
+    "category": "Makeup & Bridal Beauty",
+    "categorySlug": "makeup",
+    "description": "Stunning reception makeup for the celebration after your wedding.",
+    "currentImage": "/images/services/makeup/bridal-makeup.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "airbrush-makeup",
+    "name": "Airbrush Makeup",
+    "category": "Makeup & Bridal Beauty",
+    "categorySlug": "makeup",
+    "description": "Flawless, long-lasting airbrush makeup application for a perfect finish.",
+    "currentImage": "/images/services/makeup/bridal-makeup.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "saree-draping",
+    "name": "Saree Draping",
+    "category": "Makeup & Bridal Beauty",
+    "categorySlug": "makeup",
+    "description": "Expert saree draping in various regional and contemporary styles.",
+    "currentImage": "/images/services/makeup/bridal-makeup.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "kids-haircut",
+    "name": "Kids",
+    "category": "Kids",
+    "categorySlug": "kids-grooming",
+    "description": "Gentle, fun haircut service for children in a welcoming environment.",
+    "currentImage": ""
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "kids-hair-wash",
+    "name": "Kids",
+    "category": "Kids",
+    "categorySlug": "kids-grooming",
+    "description": "Gentle hair wash and styling for children.",
+    "currentImage": ""
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "kids-nail-care",
+    "name": "Kids",
+    "category": "Kids",
+    "categorySlug": "kids-grooming",
+    "description": "Safe, gentle nail care service for children.",
+    "currentImage": ""
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "loyalty-membership",
+    "name": "Loyalty Membership",
+    "category": "Loyalty Membership & Referrals",
+    "categorySlug": "loyalty",
+    "description": "Join the LA CROWN Loyalty Programme and enjoy exclusive member benefits. Contact us for current programme details and terms.",
+    "currentImage": "/images/services/makeup/bridal-makeup.jpg"
+  },
+  {
+    "section": "Luxury Salon",
+    "id": "referral-programme",
+    "name": "Referral Programme",
+    "category": "Loyalty Membership & Referrals",
+    "categorySlug": "loyalty",
+    "description": "Refer a friend to LA CROWN and enjoy exclusive rewards. Contact us for current referral programme terms and conditions.",
+    "currentImage": "/images/services/makeup/bridal-makeup.jpg"
+  },
+  {
+    "section": "Other Website Sections",
+    "subcategory": "Curated Packages & Offers",
+    "id": "package-bridal-glow",
+    "name": "The Royal Bridal Glow Ritual",
+    "category": "Exclusive Package",
+    "description": "Designed across 4-6 weeks leading up to your wedding day. Includes customized HydraFacial sessions, full-body polishing, de-tan rituals, luxury hair spa, and bridal trial.",
+    "currentImage": "/images/services/makeup/bridal-makeup.jpg"
+  },
+  {
+    "section": "Other Website Sections",
+    "subcategory": "Curated Packages & Offers",
+    "id": "package-skin-rejuvenation",
+    "name": "Signature Glass Skin & Hydration Series",
+    "category": "Aesthetic Clinic Package",
+    "description": "A curated 3-session series combining deep vortex pore extraction, Korean Glass Facial infusion, and targeted LED light therapy for luminous, translucent skin.",
+    "currentImage": "/images/services/facials/korean-glass-facial.jpg"
+  },
+  {
+    "section": "Other Website Sections",
+    "subcategory": "Curated Packages & Offers",
+    "id": "package-gentlemans-grooming",
+    "name": "The Executive Gentleman's Experience",
+    "category": "Luxury Salon Package",
+    "description": "Precision haircut by Senior Stylist, beard sculpting & spa, deep cleansing facial, and invigorating hair wash & deep conditioning.",
+    "currentImage": "/images/services/salon/mens-haircut.jpg"
+  },
+  {
+    "section": "Other Website Sections",
+    "subcategory": "Curated Packages & Offers",
+    "id": "package-laser-hair-reduction",
+    "name": "Laser Hair Reduction Complete Course",
+    "category": "Clinical Package",
+    "description": "Special session-bundle pricing for full-body, underarms, or facial laser hair removal courses. Clinically supervised by qualified practitioners.",
+    "currentImage": "/images/services/laser/laser-hair-removal.jpg"
+  },
+  {
+    "section": "Other Website Sections",
+    "subcategory": "Academy Professional Training",
+    "id": "academy-cosmetology-skincare",
+    "name": "Diploma in Cosmetology & Clinical Skincare",
+    "category": "Academy Training",
+    "description": "In-depth foundation covering skin biology, modern aesthetic facial treatments, chemical peel fundamentals, and salon hygiene standards.",
+    "currentImage": "/images/services/facials/customised-facials.jpg"
+  },
+  {
+    "section": "Other Website Sections",
+    "subcategory": "Academy Professional Training",
+    "id": "academy-spmu-masterclass",
+    "name": "Masterclass in Semi-Permanent Makeup (SPMU)",
+    "category": "Academy Training",
+    "description": "Precision artistry training in microblading techniques, lip tinting, shading, color theory, and aftercare management.",
+    "currentImage": "/images/services/aesthetic/microblading.jpg"
+  },
+  {
+    "section": "Other Website Sections",
+    "subcategory": "Academy Professional Training",
+    "id": "academy-hair-styling-texture",
+    "name": "Advanced Hair Styling & Texture Transformation",
+    "category": "Academy Training",
+    "description": "Creative cutting mastery, international balayage application, keratin smoothing protocols, and executive men’s grooming techniques.",
+    "currentImage": "/images/services/hair/balayage-hair-colour.jpg"
+  },
+  {
+    "section": "Other Website Sections",
+    "subcategory": "Educational Blog Articles",
+    "id": "blog-hydrafacial-guide",
+    "name": "Complete Guide to HydraFacial: What to Expect",
+    "category": "Skincare Blog",
+    "description": "HydraFacial is one of the most popular non-invasive skin treatments in the world. Learn what the treatment involves and what to expect.",
+    "currentImage": "/images/services/facials/hydrafacial-treatment.jpg"
+  },
+  {
+    "section": "Other Website Sections",
+    "subcategory": "Educational Blog Articles",
+    "id": "blog-laser-hair-removal-facts",
+    "name": "Laser Hair Removal: Facts, Expectations & Aftercare",
+    "category": "Laser Treatments Blog",
+    "description": "Considering laser hair removal? This guide covers how the treatment works, sessions needed, and required aftercare.",
+    "currentImage": "/images/services/laser/laser-hair-removal.jpg"
+  },
+  {
+    "section": "Other Website Sections",
+    "subcategory": "Educational Blog Articles",
+    "id": "blog-professional-hair-care-tips",
+    "name": "10 Professional Hair Care Tips from Our Salon Team",
+    "category": "Hair Care Blog",
+    "description": "Expert advice on maintaining healthy, vibrant hair between salon visits from the master stylists at LA CROWN.",
+    "currentImage": "/images/services/hair/balayage-hair-colour.jpg"
+  },
+  {
+    "section": "Other Website Sections",
+    "subcategory": "Educational Blog Articles",
+    "id": "blog-bridal-makeup-guide",
+    "name": "Bridal Makeup Consultation: How to Prepare",
+    "category": "Bridal Beauty Blog",
+    "description": "Everything brides need to know about scheduling trials, skin preparation timelines, and achieving their dream bridal look.",
+    "currentImage": "/images/services/makeup/bridal-makeup.jpg"
+  },
+  {
+    "section": "Other Website Sections",
+    "subcategory": "Educational Blog Articles",
+    "id": "blog-prp-therapy-hair-loss",
+    "name": "PRP Therapy for Hair Loss: Understanding the Treatment",
+    "category": "Hair Restoration Blog",
+    "description": "An evidence-based overview of Platelet-Rich Plasma therapy for androgenetic alopecia and hair thinning.",
+    "currentImage": "/images/services/hair/prp-therapy.jpg"
+  },
+  {
+    "section": "Other Website Sections",
+    "subcategory": "Educational Blog Articles",
+    "id": "blog-skincare-routine-advice",
+    "name": "Building a Skincare Routine: Advice from Our Aestheticians",
+    "category": "Skincare Routine Blog",
+    "description": "How to build an effective daily skincare regimen with cleanser, actives, moisturizer, and broad-spectrum sunscreen.",
+    "currentImage": "/images/services/facials/korean-glass-facial.jpg"
+  },
+  {
+    "section": "Other Website Sections",
+    "subcategory": "Homepage Experience Cards",
+    "id": "home-aesthetic-clinic-experience",
+    "name": "Aesthetic Clinic Experience — Where Beauty Meets Science",
+    "category": "Homepage Feature",
+    "description": "Advanced Aesthetic Medicine: Skin Treatments & Medi-Facials, Hair Restoration, Laser Therapies, Anti-Ageing & Body Contouring.",
+    "currentImage": "/images/services/facials/korean-glass-facial.jpg"
+  },
+  {
+    "section": "Other Website Sections",
+    "subcategory": "Homepage Experience Cards",
+    "id": "home-luxury-salon-experience",
+    "name": "Luxury Salon Experience — Artistry, Indulgence & Style",
+    "category": "Homepage Feature",
+    "description": "Premium Salon Services: Haircuts, Styling & Colour, Spa & Keratin, Facials, Waxing, Nails, Bridal Beauty & Massages.",
+    "currentImage": "/images/services/hair/balayage-hair-colour.jpg"
+  }
+]

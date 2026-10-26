@@ -1,0 +1,825 @@
+{
+  "aesthetic": [
+    {
+      "id": "hair-transplant",
+      "slug": "hair-transplant",
+      "name": "Hair Transplant",
+      "category": "Hair Restoration & Scalp"
+    },
+    {
+      "id": "bio-fue",
+      "slug": "bio-fue",
+      "name": "Bio FUE",
+      "category": "Hair Restoration & Scalp"
+    },
+    {
+      "id": "mesotherapy",
+      "slug": "mesotherapy",
+      "name": "Mesotherapy",
+      "category": "Hair Restoration & Scalp"
+    },
+    {
+      "id": "stem-cell-therapy",
+      "slug": "stem-cell-therapy",
+      "name": "Stem Cell Therapy",
+      "category": "Hair Restoration & Scalp"
+    },
+    {
+      "id": "scalp-micro-pigmentation",
+      "slug": "scalp-micro-pigmentation",
+      "name": "Scalp Micro-Pigmentation",
+      "category": "Hair Restoration & Scalp"
+    },
+    {
+      "id": "high-frequency-therapy",
+      "slug": "high-frequency-therapy",
+      "name": "High Frequency Therapy",
+      "category": "Hair Restoration & Scalp"
+    },
+    {
+      "id": "aesthetic-grooming-essentials",
+      "slug": "aesthetic-grooming-essentials",
+      "name": "Aesthetic Grooming Essentials",
+      "category": "Skin & Aesthetic Grooming"
+    },
+    {
+      "id": "hydrafacial",
+      "slug": "hydrafacial",
+      "name": "HydraFacial",
+      "category": "Facials & Medi-Facials"
+    },
+    {
+      "id": "korean-glass-facial",
+      "slug": "korean-glass-facial",
+      "name": "Korean Glass Facial",
+      "category": "Facials & Medi-Facials"
+    },
+    {
+      "id": "bb-glow-facial",
+      "slug": "bb-glow-facial",
+      "name": "BB Glow Facial",
+      "category": "Facials & Medi-Facials"
+    },
+    {
+      "id": "vampire-facial",
+      "slug": "vampire-facial",
+      "name": "Vampire Facial",
+      "category": "Facials & Medi-Facials"
+    },
+    {
+      "id": "collagen-boost-facial",
+      "slug": "collagen-boost-facial",
+      "name": "Collagen Boost Facial",
+      "category": "Facials & Medi-Facials"
+    },
+    {
+      "id": "customised-facials",
+      "slug": "customised-facials",
+      "name": "Customised Aesthetic Facials",
+      "category": "Facials & Medi-Facials"
+    },
+    {
+      "id": "laser-hair-removal",
+      "slug": "laser-hair-removal",
+      "name": "Laser Hair Removal",
+      "category": "Laser Treatments"
+    },
+    {
+      "id": "pico-laser",
+      "slug": "pico-laser",
+      "name": "Pico Laser",
+      "category": "Laser Treatments"
+    },
+    {
+      "id": "co2-laser",
+      "slug": "co2-laser",
+      "name": "CO2 Laser",
+      "category": "Laser Treatments"
+    },
+    {
+      "id": "mole-removal",
+      "slug": "mole-removal",
+      "name": "Mole Removal",
+      "category": "Laser Treatments"
+    },
+    {
+      "id": "wart-removal",
+      "slug": "wart-removal",
+      "name": "Wart Removal",
+      "category": "Laser Treatments"
+    },
+    {
+      "id": "tattoo-removal",
+      "slug": "tattoo-removal",
+      "name": "Tattoo Removal",
+      "category": "Laser Treatments"
+    },
+    {
+      "id": "chemical-peels",
+      "slug": "chemical-peels",
+      "name": "Chemical Peels",
+      "category": "Chemical Peels"
+    },
+    {
+      "id": "vitamin-therapy",
+      "slug": "vitamin-therapy",
+      "name": "Vitamin Therapy",
+      "category": "Anti-Ageing Treatments"
+    },
+    {
+      "id": "iv-glutathione",
+      "slug": "iv-glutathione",
+      "name": "IV Glutathione",
+      "category": "Anti-Ageing Treatments"
+    },
+    {
+      "id": "iv-cocktail-therapy",
+      "slug": "iv-cocktail-therapy",
+      "name": "IV Cocktail Therapy",
+      "category": "Anti-Ageing Treatments"
+    },
+    {
+      "id": "thread-lift",
+      "slug": "thread-lift",
+      "name": "Thread Lift",
+      "category": "Anti-Ageing Treatments"
+    },
+    {
+      "id": "dermal-fillers",
+      "slug": "dermal-fillers",
+      "name": "Dermal Fillers",
+      "category": "Anti-Ageing Treatments"
+    },
+    {
+      "id": "botox",
+      "slug": "botox",
+      "name": "Botox",
+      "category": "Anti-Ageing Treatments"
+    },
+    {
+      "id": "emsculpt",
+      "slug": "emsculpt",
+      "name": "EMSculpt",
+      "category": "Body Slimming & Contouring"
+    },
+    {
+      "id": "lipo-laser",
+      "slug": "lipo-laser",
+      "name": "Lipo Laser",
+      "category": "Body Slimming & Contouring"
+    },
+    {
+      "id": "cool-sculpting",
+      "slug": "cool-sculpting",
+      "name": "Cool Sculpting",
+      "category": "Body Slimming & Contouring"
+    },
+    {
+      "id": "lip-tinting",
+      "slug": "lip-tinting",
+      "name": "Lip Tinting",
+      "category": "Semi-Permanent Makeup"
+    },
+    {
+      "id": "microblading",
+      "slug": "microblading",
+      "name": "Microblading",
+      "category": "Semi-Permanent Makeup"
+    },
+    {
+      "id": "eyelash-extensions-aesthetic",
+      "slug": "eyelash-extensions-aesthetic",
+      "name": "Eyelash Extensions",
+      "category": "Semi-Permanent Makeup"
+    }
+  ],
+  "salon": [
+    {
+      "id": "baby-haircut",
+      "slug": "baby-haircut",
+      "name": "Baby / Toddler Haircut",
+      "category": "Baby Pampering & Grooming"
+    },
+    {
+      "id": "royal-baby-massage",
+      "slug": "royal-baby-massage",
+      "name": "Royal Baby Massage",
+      "category": "Baby Pampering & Grooming"
+    },
+    {
+      "id": "baby-milk-bath",
+      "slug": "baby-milk-bath",
+      "name": "Baby Milk Bath",
+      "category": "Baby Pampering & Grooming"
+    },
+    {
+      "id": "baby-oil-massage",
+      "slug": "baby-oil-massage",
+      "name": "Baby Oil Massage",
+      "category": "Baby Pampering & Grooming"
+    },
+    {
+      "id": "baby-butter-wrap",
+      "slug": "baby-butter-wrap",
+      "name": "Baby Butter Wrap",
+      "category": "Baby Pampering & Grooming"
+    },
+    {
+      "id": "baby-bubble-manicure",
+      "slug": "baby-bubble-manicure",
+      "name": "Bubble Manicure (Children)",
+      "category": "Baby Pampering & Grooming"
+    },
+    {
+      "id": "baby-soft-cleanse-facial",
+      "slug": "baby-soft-cleanse-facial",
+      "name": "Soft Cleanse Facial (Children)",
+      "category": "Baby Pampering & Grooming"
+    },
+    {
+      "id": "baby-cut-file-polish",
+      "slug": "baby-cut-file-polish",
+      "name": "Cut, File & Polish (Children)",
+      "category": "Baby Pampering & Grooming"
+    },
+    {
+      "id": "beard-trim",
+      "slug": "beard-trim",
+      "name": "Beard Trim",
+      "category": "Men"
+    },
+    {
+      "id": "clean-shave",
+      "slug": "clean-shave",
+      "name": "Clean Shave",
+      "category": "Men"
+    },
+    {
+      "id": "zero-trim",
+      "slug": "zero-trim",
+      "name": "Zero Trim",
+      "category": "Men"
+    },
+    {
+      "id": "beard-design",
+      "slug": "beard-design",
+      "name": "Beard Design",
+      "category": "Men"
+    },
+    {
+      "id": "beard-spa",
+      "slug": "beard-spa",
+      "name": "Beard Spa",
+      "category": "Men"
+    },
+    {
+      "id": "beard-moustache-colour",
+      "slug": "beard-moustache-colour",
+      "name": "Beard & Moustache Colour",
+      "category": "Men"
+    },
+    {
+      "id": "womens-fringe-bangs",
+      "slug": "womens-fringe-bangs",
+      "name": "Fringe & Bangs",
+      "category": "Women"
+    },
+    {
+      "id": "blowdry",
+      "slug": "blowdry",
+      "name": "Blow Dry",
+      "category": "Women"
+    },
+    {
+      "id": "flat-ironing",
+      "slug": "flat-ironing",
+      "name": "Flat Ironing",
+      "category": "Women"
+    },
+    {
+      "id": "tonging",
+      "slug": "tonging",
+      "name": "Tonging",
+      "category": "Women"
+    },
+    {
+      "id": "crimping",
+      "slug": "crimping",
+      "name": "Crimping",
+      "category": "Women"
+    },
+    {
+      "id": "hair-updo",
+      "slug": "hair-updo",
+      "name": "Hair Up-Do",
+      "category": "Women"
+    },
+    {
+      "id": "womens-nourishing-hair-spa",
+      "slug": "womens-nourishing-hair-spa",
+      "name": "Nourishing Hair Spa",
+      "category": "Women"
+    },
+    {
+      "id": "womens-repairing-hair-spa",
+      "slug": "womens-repairing-hair-spa",
+      "name": "Repairing Hair Spa",
+      "category": "Women"
+    },
+    {
+      "id": "womens-anti-dandruff",
+      "slug": "womens-anti-dandruff",
+      "name": "Anti-Dandruff Control",
+      "category": "Women"
+    },
+    {
+      "id": "womens-anti-hairfall",
+      "slug": "womens-anti-hairfall",
+      "name": "Anti-Hair Fall Control",
+      "category": "Women"
+    },
+    {
+      "id": "grey-coverage",
+      "slug": "grey-coverage",
+      "name": "Grey Coverage",
+      "category": "Women"
+    },
+    {
+      "id": "root-touch-up",
+      "slug": "root-touch-up",
+      "name": "Root Touch-Up",
+      "category": "Women"
+    },
+    {
+      "id": "global-colour",
+      "slug": "global-colour",
+      "name": "Global Hair Colour",
+      "category": "Women"
+    },
+    {
+      "id": "highlights",
+      "slug": "highlights",
+      "name": "Highlights",
+      "category": "Women"
+    },
+    {
+      "id": "balayage",
+      "slug": "balayage",
+      "name": "Balayage",
+      "category": "Women"
+    },
+    {
+      "id": "ombre",
+      "slug": "ombre",
+      "name": "Ombré",
+      "category": "Women"
+    },
+    {
+      "id": "colour-correction",
+      "slug": "colour-correction",
+      "name": "Colour Correction",
+      "category": "Women"
+    },
+    {
+      "id": "colour-toning",
+      "slug": "colour-toning",
+      "name": "Colour Toning",
+      "category": "Women"
+    },
+    {
+      "id": "keratin-treatment",
+      "slug": "keratin-treatment",
+      "name": "Keratin Treatment",
+      "category": "Women"
+    },
+    {
+      "id": "rebonding",
+      "slug": "rebonding",
+      "name": "Re-bonding",
+      "category": "Women"
+    },
+    {
+      "id": "texture-transformation",
+      "slug": "texture-transformation",
+      "name": "Texture Transformation",
+      "category": "Women"
+    },
+    {
+      "id": "eyebrow-threading",
+      "slug": "eyebrow-threading",
+      "name": "Eyebrow Threading",
+      "category": "Threading & Grooming Essentials"
+    },
+    {
+      "id": "upper-lip-threading",
+      "slug": "upper-lip-threading",
+      "name": "Upper Lip Threading",
+      "category": "Threading & Grooming Essentials"
+    },
+    {
+      "id": "lower-lip-threading",
+      "slug": "lower-lip-threading",
+      "name": "Lower Lip Threading",
+      "category": "Threading & Grooming Essentials"
+    },
+    {
+      "id": "chin-threading",
+      "slug": "chin-threading",
+      "name": "Chin Threading",
+      "category": "Threading & Grooming Essentials"
+    },
+    {
+      "id": "jawline-threading",
+      "slug": "jawline-threading",
+      "name": "Jawline Threading",
+      "category": "Threading & Grooming Essentials"
+    },
+    {
+      "id": "sidelocks-threading",
+      "slug": "sidelocks-threading",
+      "name": "Side Locks Threading",
+      "category": "Threading & Grooming Essentials"
+    },
+    {
+      "id": "neck-threading",
+      "slug": "neck-threading",
+      "name": "Neck Threading",
+      "category": "Threading & Grooming Essentials"
+    },
+    {
+      "id": "full-face-threading",
+      "slug": "full-face-threading",
+      "name": "Full Face Threading",
+      "category": "Threading & Grooming Essentials"
+    },
+    {
+      "id": "face-waxing",
+      "slug": "face-waxing",
+      "name": "Face Waxing",
+      "category": "Waxing"
+    },
+    {
+      "id": "underarm-waxing",
+      "slug": "underarm-waxing",
+      "name": "Underarm Waxing",
+      "category": "Waxing"
+    },
+    {
+      "id": "half-arm-waxing",
+      "slug": "half-arm-waxing",
+      "name": "Half Arm Waxing",
+      "category": "Waxing"
+    },
+    {
+      "id": "full-arm-waxing",
+      "slug": "full-arm-waxing",
+      "name": "Full Arm Waxing",
+      "category": "Waxing"
+    },
+    {
+      "id": "half-leg-waxing",
+      "slug": "half-leg-waxing",
+      "name": "Half Leg Waxing",
+      "category": "Waxing"
+    },
+    {
+      "id": "full-leg-waxing",
+      "slug": "full-leg-waxing",
+      "name": "Full Leg Waxing",
+      "category": "Waxing"
+    },
+    {
+      "id": "back-waxing",
+      "slug": "back-waxing",
+      "name": "Back Waxing",
+      "category": "Waxing"
+    },
+    {
+      "id": "brazilian-waxing",
+      "slug": "brazilian-waxing",
+      "name": "Brazilian Waxing",
+      "category": "Waxing"
+    },
+    {
+      "id": "bikini-waxing",
+      "slug": "bikini-waxing",
+      "name": "Bikini Waxing",
+      "category": "Waxing"
+    },
+    {
+      "id": "face-detan",
+      "slug": "face-detan",
+      "name": "Face De-Tan",
+      "category": "De-Tan & Bleach"
+    },
+    {
+      "id": "full-body-detan",
+      "slug": "full-body-detan",
+      "name": "Full Body De-Tan",
+      "category": "De-Tan & Bleach"
+    },
+    {
+      "id": "face-bleach",
+      "slug": "face-bleach",
+      "name": "Face Bleach",
+      "category": "De-Tan & Bleach"
+    },
+    {
+      "id": "full-body-bleach",
+      "slug": "full-body-bleach",
+      "name": "Full Body Bleach",
+      "category": "De-Tan & Bleach"
+    },
+    {
+      "id": "arms-detan",
+      "slug": "arms-detan",
+      "name": "Arms De-Tan",
+      "category": "De-Tan & Bleach"
+    },
+    {
+      "id": "back-detan",
+      "slug": "back-detan",
+      "name": "Back De-Tan",
+      "category": "De-Tan & Bleach"
+    },
+    {
+      "id": "salon-basic-facial",
+      "slug": "salon-basic-facial",
+      "name": "Basic Facial",
+      "category": "Luxury Facials & Skin Peels"
+    },
+    {
+      "id": "salon-brightening-facial",
+      "slug": "salon-brightening-facial",
+      "name": "Brightening Facial",
+      "category": "Luxury Facials & Skin Peels"
+    },
+    {
+      "id": "salon-detan-facial",
+      "slug": "salon-detan-facial",
+      "name": "De-Tan Facial",
+      "category": "Luxury Facials & Skin Peels"
+    },
+    {
+      "id": "salon-anti-acne-facial",
+      "slug": "salon-anti-acne-facial",
+      "name": "Anti-Acne Facial",
+      "category": "Luxury Facials & Skin Peels"
+    },
+    {
+      "id": "salon-luxury-facial",
+      "slug": "salon-luxury-facial",
+      "name": "Luxury Facial",
+      "category": "Luxury Facials & Skin Peels"
+    },
+    {
+      "id": "salon-skin-peel",
+      "slug": "salon-skin-peel",
+      "name": "Salon Skin Peel",
+      "category": "Luxury Facials & Skin Peels"
+    },
+    {
+      "id": "salon-anti-ageing-facial",
+      "slug": "salon-anti-ageing-facial",
+      "name": "Anti-Ageing Beauty Facial",
+      "category": "Anti-Ageing Beauty Treatments"
+    },
+    {
+      "id": "salon-firming-treatment",
+      "slug": "salon-firming-treatment",
+      "name": "Firming & Lifting Treatment",
+      "category": "Anti-Ageing Beauty Treatments"
+    },
+    {
+      "id": "salon-eye-treatment",
+      "slug": "salon-eye-treatment",
+      "name": "Eye Revitalising Treatment",
+      "category": "Anti-Ageing Beauty Treatments"
+    },
+    {
+      "id": "basic-manicure",
+      "slug": "basic-manicure",
+      "name": "Basic Manicure",
+      "category": "Hand & Foot Care"
+    },
+    {
+      "id": "spa-manicure",
+      "slug": "spa-manicure",
+      "name": "Spa Manicure",
+      "category": "Hand & Foot Care"
+    },
+    {
+      "id": "luxury-manicure",
+      "slug": "luxury-manicure",
+      "name": "Luxury Manicure",
+      "category": "Hand & Foot Care"
+    },
+    {
+      "id": "basic-pedicure",
+      "slug": "basic-pedicure",
+      "name": "Basic Pedicure",
+      "category": "Hand & Foot Care"
+    },
+    {
+      "id": "spa-pedicure",
+      "slug": "spa-pedicure",
+      "name": "Spa Pedicure",
+      "category": "Hand & Foot Care"
+    },
+    {
+      "id": "luxury-pedicure",
+      "slug": "luxury-pedicure",
+      "name": "Luxury Pedicure",
+      "category": "Hand & Foot Care"
+    },
+    {
+      "id": "gel-nails",
+      "slug": "gel-nails",
+      "name": "Gel Nails",
+      "category": "Nails"
+    },
+    {
+      "id": "acrylic-nails",
+      "slug": "acrylic-nails",
+      "name": "Acrylic Nails",
+      "category": "Nails"
+    },
+    {
+      "id": "nail-art",
+      "slug": "nail-art",
+      "name": "Nail Art",
+      "category": "Nails"
+    },
+    {
+      "id": "nail-polish",
+      "slug": "nail-polish",
+      "name": "Nail Polish",
+      "category": "Nails"
+    },
+    {
+      "id": "nail-extensions",
+      "slug": "nail-extensions",
+      "name": "Nail Extensions",
+      "category": "Nails"
+    },
+    {
+      "id": "salon-eyelash-extensions",
+      "slug": "salon-eyelash-extensions",
+      "name": "Eyelash Extensions",
+      "category": "Eyelash & Hair Extensions"
+    },
+    {
+      "id": "hair-extensions",
+      "slug": "hair-extensions",
+      "name": "Hair Extensions",
+      "category": "Eyelash & Hair Extensions"
+    },
+    {
+      "id": "lash-lift",
+      "slug": "lash-lift",
+      "name": "Lash Lift",
+      "category": "Eyelash & Hair Extensions"
+    },
+    {
+      "id": "swedish-massage",
+      "slug": "swedish-massage",
+      "name": "Swedish Massage",
+      "category": "Body Relaxation & Massages"
+    },
+    {
+      "id": "deep-tissue-massage",
+      "slug": "deep-tissue-massage",
+      "name": "Deep Tissue Massage",
+      "category": "Body Relaxation & Massages"
+    },
+    {
+      "id": "aromatherapy-massage",
+      "slug": "aromatherapy-massage",
+      "name": "Aromatherapy Massage",
+      "category": "Body Relaxation & Massages"
+    },
+    {
+      "id": "head-massage",
+      "slug": "head-massage",
+      "name": "Head Massage",
+      "category": "Body Relaxation & Massages"
+    },
+    {
+      "id": "foot-reflexology",
+      "slug": "foot-reflexology",
+      "name": "Foot Reflexology",
+      "category": "Body Relaxation & Massages"
+    },
+    {
+      "id": "full-body-polish",
+      "slug": "full-body-polish",
+      "name": "Full Body Polishing",
+      "category": "Body Polishing"
+    },
+    {
+      "id": "back-polish",
+      "slug": "back-polish",
+      "name": "Back Polishing",
+      "category": "Body Polishing"
+    },
+    {
+      "id": "luxury-body-polish",
+      "slug": "luxury-body-polish",
+      "name": "Luxury Body Polishing",
+      "category": "Body Polishing"
+    },
+    {
+      "id": "party-makeup",
+      "slug": "party-makeup",
+      "name": "Party Makeup",
+      "category": "Makeup & Bridal Beauty"
+    },
+    {
+      "id": "engagement-makeup",
+      "slug": "engagement-makeup",
+      "name": "Engagement Makeup",
+      "category": "Makeup & Bridal Beauty"
+    },
+    {
+      "id": "bridal-makeup",
+      "slug": "bridal-makeup",
+      "name": "Bridal Makeup",
+      "category": "Makeup & Bridal Beauty"
+    },
+    {
+      "id": "reception-makeup",
+      "slug": "reception-makeup",
+      "name": "Reception Makeup",
+      "category": "Makeup & Bridal Beauty"
+    },
+    {
+      "id": "airbrush-makeup",
+      "slug": "airbrush-makeup",
+      "name": "Airbrush Makeup",
+      "category": "Makeup & Bridal Beauty"
+    },
+    {
+      "id": "saree-draping",
+      "slug": "saree-draping",
+      "name": "Saree Draping",
+      "category": "Makeup & Bridal Beauty"
+    },
+    {
+      "id": "loyalty-membership",
+      "slug": "loyalty-membership",
+      "name": "Loyalty Membership",
+      "category": "Loyalty Membership & Referrals"
+    },
+    {
+      "id": "referral-programme",
+      "slug": "referral-programme",
+      "name": "Referral Programme",
+      "category": "Loyalty Membership & Referrals"
+    }
+  ],
+  "offers": [
+    {
+      "id": "bridal-glow",
+      "title": "The Royal Bridal Glow Ritual"
+    },
+    {
+      "id": "skin-rejuvenation",
+      "title": "Signature Glass Skin & Hydration Series"
+    },
+    {
+      "id": "gentlemans-grooming",
+      "title": "The Executive Gentleman"
+    },
+    {
+      "id": "laser-package",
+      "title": "Laser Hair Reduction Complete Course"
+    }
+  ],
+  "academy": [],
+  "blogs": [
+    {
+      "id": "hydrafacial-guide",
+      "title": "Complete Guide to HydraFacial: What to Expect"
+    },
+    {
+      "id": "laser-hair-removal-facts",
+      "title": "Laser Hair Removal: Facts, Expectations & Aftercare"
+    },
+    {
+      "id": "hair-care-tips",
+      "title": "10 Professional Hair Care Tips from Our Salon Team"
+    },
+    {
+      "id": "bridal-makeup-guide",
+      "title": "Bridal Makeup Consultation: How to Prepare"
+    },
+    {
+      "id": "prp-therapy-explained",
+      "title": "PRP Therapy for Hair Loss: Understanding the Treatment"
+    },
+    {
+      "id": "skincare-routine",
+      "title": "Building a Skincare Routine: Advice from Our Aestheticians"
+    }
+  ]
+}

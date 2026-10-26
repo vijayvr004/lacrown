@@ -5,6 +5,7 @@ import { getFeaturedServices } from '../data/aestheticServices';
 import { getFeaturedSalonServices } from '../data/salonServices';
 import ServiceCard from '../components/ServiceCard';
 import FAQAccordion from '../components/FAQAccordion';
+import { getAssetUrl } from '../utils/imageUrl';
 
 const FEATURED_AESTHETIC = getFeaturedServices().slice(0, 8);
 const FEATURED_SALON = getFeaturedSalonServices().slice(0, 8);
@@ -199,7 +200,7 @@ export default function HomePage() {
             {/* Aesthetic Clinic */}
             <div className="group relative overflow-hidden bg-burgundy text-white rounded-2xl border border-gold/20 shadow-luxury">
               <div className="absolute inset-0 opacity-25">
-                <img src="/images/services/facials/korean-glass-facial.jpg" alt="Aesthetic Clinic" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                <img src={getAssetUrl('/images/lacrown/other/homepage/home-aesthetic-clinic.webp')} alt="LA CROWN Aesthetic Clinic" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               </div>
               <div className="relative p-10">
                 <div className="font-script text-gold text-2xl mb-2">Aesthetic Clinic</div>
@@ -231,7 +232,7 @@ export default function HomePage() {
             {/* Salon */}
             <div className="group relative overflow-hidden bg-burgundy-900 text-white rounded-2xl border border-gold/20 shadow-luxury">
               <div className="absolute inset-0 opacity-25">
-                <img src="/images/services/hair/balayage-hair-colour.jpg" alt="Luxury Salon" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                <img src={getAssetUrl('/images/lacrown/other/homepage/home-luxury-salon.webp')} alt="LA CROWN Luxury Salon" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               </div>
               <div className="relative p-10">
                 <div className="font-script text-gold text-2xl mb-2">Luxury Salon</div>

@@ -30,7 +30,7 @@ At LA CROWN, founder Sunitha Devaraj brings specialized expertise to tailoring e
     date: '2026-10-15',
     readTime: '5 min read',
     author: 'Sunitha Devaraj',
-    image: '/images/services/facials/hydrafacial-treatment.jpg',
+    image: '/images/lacrown/other/blog/blog-hydrafacial-guide.webp',
     published: true,
   },
   {
@@ -54,7 +54,7 @@ Because hair grows in distinct cycles (anagen, catagen, and telogen), multiple t
     date: '2026-10-10',
     readTime: '6 min read',
     author: 'LA CROWN Clinical Team',
-    image: '/images/services/laser/laser-hair-removal.jpg',
+    image: '/images/lacrown/other/blog/blog-laser-hair-removal-facts.webp',
     published: true,
   },
   {
@@ -74,7 +74,7 @@ Because hair grows in distinct cycles (anagen, catagen, and telogen), multiple t
     date: '2026-10-05',
     readTime: '4 min read',
     author: 'LA CROWN Salon Styling Team',
-    image: '/images/services/hair/balayage-hair-colour.jpg',
+    image: '/images/lacrown/other/blog/blog-professional-hair-care-tips.webp',
     published: true,
   },
   {
@@ -96,7 +96,7 @@ Start professional facials and hydration regimens 3 to 6 months in advance so yo
     date: '2026-09-28',
     readTime: '5 min read',
     author: 'Bridal Beauty Specialists',
-    image: '/images/services/makeup/bridal-makeup.jpg',
+    image: '/images/lacrown/other/blog/blog-bridal-makeup-guide.webp',
     published: true,
   },
   {
@@ -115,7 +115,7 @@ All PRP procedures at LA CROWN are performed under clinical protocols by experie
     date: '2026-09-20',
     readTime: '7 min read',
     author: 'Clinical Dermatology Team',
-    image: '/images/services/hair/prp-scalp-therapy.jpg',
+    image: '/images/lacrown/other/blog/blog-prp-therapy-hair-loss.webp',
     published: true,
   },
   {
@@ -134,7 +134,7 @@ All PRP procedures at LA CROWN are performed under clinical protocols by experie
     date: '2026-09-15',
     readTime: '5 min read',
     author: 'Sunitha Devaraj',
-    image: '/images/services/facials/korean-glass-facial.jpg',
+    image: '/images/lacrown/other/blog/blog-skincare-routine-advice.webp',
     published: true,
   },
 ];

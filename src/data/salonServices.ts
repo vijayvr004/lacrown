@@ -50,7 +50,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Gentle, caring haircut service for toddlers and young children in a comfortable, welcoming environment.",
     ageGroup: 'Children (age ranges as per menu — contact us for details)',
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/baby-haircut.jpg',
+    image: '/images/lacrown/luxury-salon/baby-toddler/salon-baby-haircut.webp',
   },
   {
     id: 'royal-baby-massage',
@@ -61,7 +61,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "A luxurious, gentle massage experience designed specially for babies, promoting relaxation and wellbeing.",
     ageGroup: 'Infants and young children (parent/guardian consent required)',
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/royal-baby-massage.jpg',
+    image: '/images/lacrown/luxury-salon/baby-toddler/salon-royal-baby-massage.webp',
   },
   {
     id: 'baby-milk-bath',
@@ -72,7 +72,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "A nurturing milk bath ritual for babies, soothing and softening delicate skin.",
     ageGroup: 'Infants (parent/guardian consent required)',
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/baby-milk-bath.jpg',
+    image: '/images/lacrown/luxury-salon/baby-toddler/salon-baby-milk-bath.webp',
   },
   {
     id: 'baby-oil-massage',
@@ -83,7 +83,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Gentle oil massage for babies to nourish skin and promote relaxation.",
     ageGroup: 'Infants (parent/guardian consent required)',
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/baby-oil-massage.jpg'
+    image: '/images/lacrown/luxury-salon/baby-toddler/salon-baby-oil-massage.webp'
   },
   {
     id: 'baby-butter-wrap',
@@ -94,7 +94,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "A nourishing butter wrap treatment to deeply moisturise baby's delicate skin.",
     ageGroup: 'Infants and young children (parent/guardian consent required)',
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/baby-butter-wrap.jpg'
+    image: '/images/lacrown/luxury-salon/baby-toddler/salon-baby-butter-wrap.webp'
   },
   {
     id: 'baby-bubble-manicure',
@@ -105,7 +105,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "A fun, gentle manicure experience for little ones.",
     ageGroup: 'Children (age as per menu — contact us)',
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/baby-bubble-manicure.jpg'
+    image: '/images/lacrown/luxury-salon/baby-toddler/salon-baby-bubble-manicure.webp'
   },
   {
     id: 'baby-soft-cleanse-facial',
@@ -116,7 +116,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "A gentle cleansing facial for children using child-safe products.",
     ageGroup: 'Children (age as per menu — contact us)',
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/baby-soft-cleanse-facial.jpg'
+    image: '/images/lacrown/luxury-salon/baby-toddler/salon-baby-soft-cleanse-facial.webp'
   },
   {
     id: 'baby-cut-file-polish',
@@ -127,7 +127,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Gentle nail cut, file, and polish for children.",
     ageGroup: 'Children',
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/baby-cut-file-polish.jpg'
+    image: '/images/lacrown/luxury-salon/baby-toddler/salon-baby-cut-file-polish.webp'
   },
 
   // ─── MEN'S HAIRCUT ───
@@ -140,7 +140,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Professional men's haircut by our junior stylist team.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/salon/executive-haircut.jpg',
+    image: '/images/lacrown/luxury-salon/mens-grooming/salon-executive-haircut.webp',
   },
   {
     id: 'mens-haircut-senior',
@@ -151,7 +151,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Men's haircut by our experienced senior stylist team.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/salon/mens-haircut.jpg',
+    image: '/images/lacrown/luxury-salon/mens-grooming/salon-mens-haircut-senior.webp',
   },
   {
     id: 'mens-haircut-creative',
@@ -160,6 +160,7 @@ export const SALON_SERVICES: SalonService[] = [
     category: "Men's Haircut & Grooming",
     categorySlug: 'mens-haircut',
     description: "Premium men's haircut by our creative director.",
+    image: '/images/lacrown/luxury-salon/mens-grooming/salon-mens-haircut-creative.webp',
     priceNote: 'Contact us for pricing',
   },
   {
@@ -171,7 +172,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Precise beard trimming and shaping for a well-groomed look.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/salon/beard-trim-shape.jpg'
+    image: '/images/lacrown/luxury-salon/mens-grooming/salon-beard-trim-shape.webp'
   },
   {
     id: 'clean-shave',
@@ -181,7 +182,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'mens-haircut',
     description: "A classic, professional clean shave service.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/traditional-clean-shave.jpg'
+    image: '/images/lacrown/luxury-salon/mens-grooming/salon-traditional-clean-shave.webp'
   },
   {
     id: 'zero-trim',
@@ -191,7 +192,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'mens-haircut',
     description: "Precision zero trim for a clean, sharp look.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/zero-fade-skin-fade.jpg'
+    image: '/images/lacrown/luxury-salon/mens-grooming/salon-zero-fade-skin-fade.webp'
   },
   {
     id: 'beard-design',
@@ -381,7 +382,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'womens-haircut',
     description: "Precision fringe and bangs cutting for a polished, frame-enhancing look.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/hair/balayage-hair-colour.jpg'
+    image: '/images/lacrown/luxury-salon/womens-hair/salon-womens-fringe-bangs.webp'
   },
   {
     id: 'womens-regular-haircut',
@@ -390,6 +391,7 @@ export const SALON_SERVICES: SalonService[] = [
     category: "Women's Haircut & Styling",
     categorySlug: 'womens-haircut',
     description: "Professional women's haircut tailored to your hair type and style.",
+    image: '/images/lacrown/luxury-salon/womens-hair/salon-womens-regular-haircut.webp',
     priceNote: 'Contact us for pricing',
     featured: true,
   },
@@ -400,6 +402,7 @@ export const SALON_SERVICES: SalonService[] = [
     category: "Women's Haircut & Styling",
     categorySlug: 'womens-haircut',
     description: "Creative, fashion-forward haircut with a senior stylist.",
+    image: '/images/lacrown/luxury-salon/womens-hair/salon-womens-creative-haircut.webp',
     priceNote: 'Contact us for pricing',
   },
   {
@@ -409,6 +412,7 @@ export const SALON_SERVICES: SalonService[] = [
     category: "Women's Haircut & Styling",
     categorySlug: 'womens-haircut',
     description: "Premium haircut experience with our top stylist team.",
+    image: '/images/lacrown/luxury-salon/womens-hair/salon-womens-premium-haircut.webp',
     priceNote: 'Contact us for pricing',
   },
   {
@@ -420,7 +424,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Professional blow dry for a smooth, polished finish.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/hair/balayage-hair-colour.jpg'
+    image: '/images/lacrown/luxury-salon/womens-hair/salon-blowdry.webp'
   },
   {
     id: 'flat-ironing',
@@ -430,7 +434,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'womens-haircut',
     description: "Sleek flat iron styling for straight, smooth hair.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/hair/balayage-hair-colour.jpg'
+    image: '/images/lacrown/luxury-salon/womens-hair/salon-flat-ironing.webp'
   },
   {
     id: 'tonging',
@@ -440,7 +444,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'womens-haircut',
     description: "Curl and wave styling using professional tongs.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/hair/balayage-hair-colour.jpg'
+    image: '/images/lacrown/luxury-salon/womens-hair/salon-tonging.webp'
   },
   {
     id: 'crimping',
@@ -450,7 +454,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'womens-haircut',
     description: "Textured crimping styling service.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/hair/balayage-hair-colour.jpg'
+    image: '/images/lacrown/luxury-salon/womens-hair/salon-crimping.webp'
   },
   {
     id: 'hair-updo',
@@ -461,7 +465,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Elegant hair up-dos for events, occasions, and everyday glamour.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/hair/balayage-hair-colour.jpg'
+    image: '/images/lacrown/luxury-salon/womens-hair/salon-hair-updo.webp'
   },
 
   // ─── WOMEN'S HAIR CARE & COLOUR ───
@@ -472,6 +476,7 @@ export const SALON_SERVICES: SalonService[] = [
     category: "Women's Hair Care & Colour",
     categorySlug: 'womens-haircare',
     description: "Professional hair wash and conditioning treatment.",
+    image: '/images/lacrown/luxury-salon/womens-hair/salon-womens-hair-wash.webp',
     priceNote: 'Contact us for pricing',
   },
   {
@@ -481,6 +486,7 @@ export const SALON_SERVICES: SalonService[] = [
     category: "Women's Hair Care & Colour",
     categorySlug: 'womens-haircare',
     description: "Relaxing and restorative hair spa treatment.",
+    image: '/images/lacrown/luxury-salon/womens-hair/salon-womens-hair-spa.webp',
     priceNote: 'Contact us for pricing',
     featured: true,
   },
@@ -492,7 +498,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'womens-haircare',
     description: "Deeply nourishing hair spa with intensive moisture replenishment.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/hair/balayage-hair-colour.jpg'
+    image: '/images/lacrown/luxury-salon/womens-hair/salon-womens-nourishing-hair-spa.webp'
   },
   {
     id: 'womens-repairing-hair-spa',
@@ -502,7 +508,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'womens-haircare',
     description: "Targeted repairing hair spa for damaged, stressed or chemically treated hair.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/hair/balayage-hair-colour.jpg'
+    image: '/images/lacrown/luxury-salon/womens-hair/salon-womens-repairing-hair-spa.webp'
   },
   {
     id: 'womens-anti-dandruff',
@@ -512,7 +518,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'womens-haircare',
     description: "Targeted anti-dandruff scalp treatment.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/hair/balayage-hair-colour.jpg'
+    image: '/images/lacrown/luxury-salon/womens-hair/salon-womens-anti-dandruff.webp'
   },
   {
     id: 'womens-anti-hairfall',
@@ -522,7 +528,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'womens-haircare',
     description: "Targeted hair fall control treatment for women.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/hair/balayage-hair-colour.jpg'
+    image: '/images/lacrown/luxury-salon/womens-hair/salon-womens-anti-hairfall.webp'
   },
   {
     id: 'grey-coverage',
@@ -533,7 +539,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Natural-looking grey coverage colour service.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/hair/balayage-hair-colour.jpg'
+    image: '/images/lacrown/luxury-salon/womens-hair/salon-grey-coverage.webp'
   },
   {
     id: 'root-touch-up',
@@ -543,7 +549,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'womens-haircare',
     description: "Precise root touch-up colour to blend regrowth seamlessly.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/hair/balayage-hair-colour.jpg'
+    image: '/images/lacrown/luxury-salon/womens-hair/salon-root-touch-up.webp'
   },
   {
     id: 'global-colour',
@@ -554,7 +560,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Full head global hair colour in natural or fashion shades.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/hair/balayage-hair-colour.jpg'
+    image: '/images/lacrown/luxury-salon/womens-hair/salon-global-colour.webp'
   },
   {
     id: 'highlights',
@@ -565,7 +571,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Expertly placed highlights for dimension and brightness.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/hair/balayage-hair-colour.jpg'
+    image: '/images/lacrown/luxury-salon/womens-hair/salon-highlights.webp'
   },
   {
     id: 'balayage',
@@ -576,7 +582,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Hand-painted balayage for a natural, sun-kissed colour effect.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/hair/balayage-hair-colour.jpg'
+    image: '/images/lacrown/luxury-salon/womens-hair/salon-balayage.webp'
   },
   {
     id: 'ombre',
@@ -586,7 +592,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'womens-haircare',
     description: "Seamless ombré colour transition for a gradient effect.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/hair/balayage-hair-colour.jpg'
+    image: '/images/lacrown/luxury-salon/womens-hair/salon-ombre.webp'
   },
   {
     id: 'colour-correction',
@@ -654,7 +660,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Precise eyebrow shaping using threading technique.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/salon/eyebrow-threading.jpg'
+    image: '/images/lacrown/luxury-salon/threading/salon-eyebrows-threading.webp'
   },
   {
     id: 'upper-lip-threading',
@@ -664,7 +670,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'threading',
     description: "Upper lip hair removal by threading.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/eyebrow-threading.jpg'
+    image: '/images/lacrown/luxury-salon/threading/salon-upper-lip-threading.webp'
   },
   {
     id: 'lower-lip-threading',
@@ -674,7 +680,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'threading',
     description: "Lower lip hair removal by threading.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/eyebrow-threading.jpg'
+    image: '/images/lacrown/luxury-salon/threading/salon-lower-lip-threading.webp'
   },
   {
     id: 'chin-threading',
@@ -684,7 +690,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'threading',
     description: "Chin hair removal by threading.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/eyebrow-threading.jpg'
+    image: '/images/lacrown/luxury-salon/threading/salon-chin-threading.webp'
   },
   {
     id: 'jawline-threading',
@@ -694,7 +700,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'threading',
     description: "Jawline hair removal by threading.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/eyebrow-threading.jpg'
+    image: '/images/lacrown/luxury-salon/threading/salon-forehead-threading.webp'
   },
   {
     id: 'sidelocks-threading',
@@ -704,7 +710,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'threading',
     description: "Side lock area hair removal by threading.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/eyebrow-threading.jpg'
+    image: '/images/lacrown/luxury-salon/threading/salon-sides-threading.webp'
   },
   {
     id: 'neck-threading',
@@ -714,7 +720,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'threading',
     description: "Neck hair removal by threading.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/eyebrow-threading.jpg'
+    image: '/images/lacrown/luxury-salon/threading/salon-neck-threading.webp'
   },
   {
     id: 'full-face-threading',
@@ -725,7 +731,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Complete full face threading package.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/salon/eyebrow-threading.jpg'
+    image: '/images/lacrown/luxury-salon/threading/salon-full-face-threading.webp'
   },
 
   // ─── WAXING ───
@@ -737,7 +743,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'waxing',
     description: "Gentle face waxing for smooth, hair-free facial skin.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/laser/laser-hair-removal.jpg'
+    image: '/images/lacrown/luxury-salon/waxing/salon-full-front-waxing.webp'
   },
   {
     id: 'underarm-waxing',
@@ -748,7 +754,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Effective underarm hair removal by waxing.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/laser/laser-hair-removal.jpg'
+    image: '/images/lacrown/luxury-salon/waxing/salon-underarms-waxing.webp'
   },
   {
     id: 'half-arm-waxing',
@@ -758,7 +764,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'waxing',
     description: "Waxing for the lower arm.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/laser/laser-hair-removal.jpg'
+    image: '/images/lacrown/luxury-salon/waxing/salon-half-arms-waxing.webp'
   },
   {
     id: 'full-arm-waxing',
@@ -768,7 +774,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'waxing',
     description: "Complete arm waxing for smooth, hair-free arms.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/laser/laser-hair-removal.jpg'
+    image: '/images/lacrown/luxury-salon/waxing/salon-full-arms-waxing.webp'
   },
   {
     id: 'half-leg-waxing',
@@ -778,7 +784,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'waxing',
     description: "Waxing for the lower leg.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/laser/laser-hair-removal.jpg'
+    image: '/images/lacrown/luxury-salon/waxing/salon-half-legs-waxing.webp'
   },
   {
     id: 'full-leg-waxing',
@@ -789,7 +795,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Complete leg waxing from ankle to thigh.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/laser/laser-hair-removal.jpg'
+    image: '/images/lacrown/luxury-salon/waxing/salon-full-legs-waxing.webp'
   },
   {
     id: 'back-waxing',
@@ -799,7 +805,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'waxing',
     description: "Back hair removal by waxing.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/laser/laser-hair-removal.jpg'
+    image: '/images/lacrown/luxury-salon/waxing/salon-full-back-waxing.webp'
   },
   {
     id: 'brazilian-waxing',
@@ -809,7 +815,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'waxing',
     description: "Complete Brazilian waxing service in a private, professional environment.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/laser/laser-hair-removal.jpg'
+    image: '/images/lacrown/luxury-salon/waxing/salon-full-body-waxing.webp'
   },
   {
     id: 'bikini-waxing',
@@ -819,7 +825,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'waxing',
     description: "Bikini line waxing for a clean, neat finish.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/laser/laser-hair-removal.jpg'
+    image: '/images/lacrown/luxury-salon/waxing/salon-bikini-waxing.webp'
   },
 
   // ─── DE-TAN & BLEACH ───
@@ -832,7 +838,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Targeted de-tan treatment for the face to address sun-induced pigmentation.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/facials/clinical-chemical-peel.jpg'
+    image: '/images/lacrown/luxury-salon/detan-bleach/salon-face-neck-detan.webp'
   },
   {
     id: 'full-body-detan',
@@ -842,7 +848,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'detan-bleach',
     description: "Comprehensive full body de-tan treatment.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/facials/clinical-chemical-peel.jpg'
+    image: '/images/lacrown/luxury-salon/detan-bleach/salon-full-body-detan.webp'
   },
   {
     id: 'face-bleach',
@@ -853,7 +859,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Professional face bleach treatment to lighten facial hair and brighten skin tone.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/facials/clinical-chemical-peel.jpg'
+    image: '/images/lacrown/luxury-salon/detan-bleach/salon-half-arms-detan.webp'
   },
   {
     id: 'full-body-bleach',
@@ -863,7 +869,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'detan-bleach',
     description: "Full body bleach treatment for an even, brightened skin tone.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/facials/clinical-chemical-peel.jpg'
+    image: '/images/lacrown/luxury-salon/detan-bleach/salon-full-legs-detan.webp'
   },
   {
     id: 'arms-detan',
@@ -873,7 +879,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'detan-bleach',
     description: "De-tan treatment for the arms.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/facials/clinical-chemical-peel.jpg'
+    image: '/images/lacrown/luxury-salon/detan-bleach/salon-full-arms-detan.webp'
   },
   {
     id: 'back-detan',
@@ -883,7 +889,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'detan-bleach',
     description: "De-tan treatment for the back.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/facials/clinical-chemical-peel.jpg'
+    image: '/images/lacrown/luxury-salon/detan-bleach/salon-full-back-detan.webp'
   },
 
   // ─── LUXURY FACIALS (Salon) ───
@@ -895,7 +901,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'luxury-facials',
     description: "A foundational cleansing and hydration facial suitable for regular skin maintenance.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/facials/korean-glass-facial.jpg'
+    image: '/images/lacrown/luxury-salon/facials/salon-clean-up.webp'
   },
   {
     id: 'salon-brightening-facial',
@@ -906,7 +912,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Brightening facial targeting dullness and uneven skin tone for a radiant complexion.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/facials/korean-glass-facial.jpg'
+    image: '/images/lacrown/luxury-salon/facials/salon-fruit-facial.webp'
   },
   {
     id: 'salon-detan-facial',
@@ -916,7 +922,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'luxury-facials',
     description: "Targeted de-tan facial to address sun-induced pigmentation and dullness.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/facials/korean-glass-facial.jpg'
+    image: '/images/lacrown/luxury-salon/facials/salon-radiance-facial.webp'
   },
   {
     id: 'salon-anti-acne-facial',
@@ -926,7 +932,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'luxury-facials',
     description: "Targeted facial treatment to address acne, blemishes and oily skin concerns.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/facials/korean-glass-facial.jpg'
+    image: '/images/lacrown/luxury-salon/facials/salon-gold-radiance-facial.webp'
   },
   {
     id: 'salon-luxury-facial',
@@ -937,7 +943,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "A premium, indulgent facial experience using high-quality products and advanced techniques.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/facials/korean-glass-facial.jpg'
+    image: '/images/lacrown/luxury-salon/facials/salon-diamond-luxury-facial.webp'
   },
   {
     id: 'salon-skin-peel',
@@ -948,7 +954,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Professional skin peel treatment for exfoliation and skin renewal. (Note: Salon skin peels are cosmetic treatments distinct from medical-grade chemical peels.)",
     priceNote: 'Contact us for pricing',
     consultationRequired: false,
-    image: '/images/services/facials/korean-glass-facial.jpg'
+    image: '/images/lacrown/luxury-salon/facials/salon-salon-peel.webp'
   },
 
   // ─── ANTI-AGEING (Salon) ───
@@ -961,7 +967,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "A luxurious salon anti-ageing facial using premium actives to address fine lines, dullness, and loss of firmness. Suitable for all genders.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/facials/anti-ageing-treatment.jpg'
+    image: '/images/lacrown/luxury-salon/anti-ageing/salon-anti-ageing-facial.webp'
   },
   {
     id: 'salon-firming-treatment',
@@ -971,7 +977,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'anti-ageing-salon',
     description: "Salon-grade firming treatment to support skin tone and radiance.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/facials/anti-ageing-treatment.jpg'
+    image: '/images/lacrown/luxury-salon/anti-ageing/salon-collagen-rejuvenation-facial.webp'
   },
   {
     id: 'salon-eye-treatment',
@@ -981,7 +987,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'anti-ageing-salon',
     description: "Targeted eye treatment to address dark circles, puffiness, and fine lines around the eye area.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/facials/anti-ageing-treatment.jpg'
+    image: '/images/lacrown/luxury-salon/anti-ageing/salon-skin-firming-lift-treatment.webp'
   },
 
   // ─── HAND & FOOT CARE ───
@@ -994,7 +1000,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Classic manicure including soak, cuticle care, nail shaping, and polish.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/salon/spa-manicure-nail-care.jpg'
+    image: '/images/lacrown/luxury-salon/hand-foot-care/salon-classic-manicure.webp'
   },
   {
     id: 'spa-manicure',
@@ -1004,7 +1010,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'hand-foot',
     description: "Relaxing spa manicure with exfoliation, mask, and massage.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/spa-manicure-nail-care.jpg'
+    image: '/images/lacrown/luxury-salon/hand-foot-care/salon-spa-manicure.webp'
   },
   {
     id: 'luxury-manicure',
@@ -1014,7 +1020,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'hand-foot',
     description: "Premium manicure experience with high-end products and extended care.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/spa-manicure-nail-care.jpg'
+    image: '/images/lacrown/luxury-salon/hand-foot-care/salon-luxury-manicure.webp'
   },
   {
     id: 'basic-pedicure',
@@ -1025,7 +1031,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Classic pedicure with soak, callus removal, nail care, and polish.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/salon/luxury-pedicure.jpg'
+    image: '/images/lacrown/luxury-salon/hand-foot-care/salon-classic-pedicure.webp'
   },
   {
     id: 'spa-pedicure',
@@ -1035,7 +1041,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'hand-foot',
     description: "Indulgent spa pedicure with exfoliation, mask, and foot massage.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/luxury-pedicure.jpg'
+    image: '/images/lacrown/luxury-salon/hand-foot-care/salon-spa-pedicure.webp'
   },
   {
     id: 'luxury-pedicure',
@@ -1045,7 +1051,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'hand-foot',
     description: "Premium pedicure with high-end products and extended relaxation.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/luxury-pedicure.jpg'
+    image: '/images/lacrown/luxury-salon/hand-foot-care/salon-luxury-pedicure.webp'
   },
 
   // ─── NAILS ───
@@ -1058,7 +1064,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Long-lasting gel nail application for beautiful, chip-resistant colour.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/salon/spa-manicure-nail-care.jpg'
+    image: '/images/lacrown/luxury-salon/nails/salon-gel-polish.webp'
   },
   {
     id: 'acrylic-nails',
@@ -1068,7 +1074,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'nails',
     description: "Strong acrylic nail extension service for added length and strength.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/spa-manicure-nail-care.jpg'
+    image: '/images/lacrown/luxury-salon/nails/salon-french-polish.webp'
   },
   {
     id: 'nail-art',
@@ -1079,7 +1085,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Creative nail art designs — from subtle to statement looks.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/salon/spa-manicure-nail-care.jpg'
+    image: '/images/lacrown/luxury-salon/nails/salon-nail-art-accent.webp'
   },
   {
     id: 'nail-polish',
@@ -1089,7 +1095,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'nails',
     description: "Classic nail polish application in a wide range of colours.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/spa-manicure-nail-care.jpg'
+    image: '/images/lacrown/luxury-salon/nails/salon-cut-file-polish.webp'
   },
   {
     id: 'nail-extensions',
@@ -1099,7 +1105,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'nails',
     description: "Custom nail extensions for added length and style.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/salon/spa-manicure-nail-care.jpg'
+    image: '/images/lacrown/luxury-salon/nails/salon-full-set-nail-art.webp'
   },
 
   // ─── EYELASH & HAIR EXTENSIONS ───
@@ -1112,7 +1118,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Professional eyelash extensions for enhanced volume, length, and definition.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/aesthetic/eyelash-extensions.jpg'
+    image: '/images/lacrown/luxury-salon/extensions-lashes/salon-eyelash-extensions.webp'
   },
   {
     id: 'hair-extensions',
@@ -1124,7 +1130,7 @@ export const SALON_SERVICES: SalonService[] = [
     priceNote: 'Price on consultation — varies by method and length',
     consultationRequired: true,
     featured: true,
-    image: '/images/services/hair/balayage-hair-colour.jpg'
+    image: '/images/lacrown/luxury-salon/extensions-lashes/salon-hair-extensions.webp'
   },
   {
     id: 'lash-lift',
@@ -1134,7 +1140,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'eyelash-hair-extensions',
     description: "Lash lifting treatment to curl and lift natural lashes for an open-eyed effect.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/aesthetic/microblading-eyebrow.jpg'
+    image: '/images/lacrown/luxury-salon/extensions-lashes/salon-lash-lift.webp'
   },
 
   // ─── BODY RELAXATION ───
@@ -1147,7 +1153,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Classic Swedish massage for full-body relaxation and stress relief.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/aesthetic/body-slimming-contouring.jpg'
+    image: '/images/lacrown/luxury-salon/massages/salon-full-body-relaxation-massage.webp'
   },
   {
     id: 'deep-tissue-massage',
@@ -1157,7 +1163,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'body-relaxation',
     description: "Therapeutic deep tissue massage targeting muscle tension and knots.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/aesthetic/body-slimming-contouring.jpg'
+    image: '/images/lacrown/luxury-salon/massages/salon-deep-tissue-massage.webp'
   },
   {
     id: 'aromatherapy-massage',
@@ -1168,7 +1174,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Relaxing aromatherapy massage using essential oils for mind and body balance.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/aesthetic/body-slimming-contouring.jpg'
+    image: '/images/lacrown/luxury-salon/massages/salon-back-shoulder-massage.webp'
   },
   {
     id: 'head-massage',
@@ -1178,7 +1184,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'body-relaxation',
     description: "Relaxing scalp and head massage to relieve tension.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/aesthetic/body-slimming-contouring.jpg'
+    image: '/images/lacrown/luxury-salon/massages/salon-head-massage.webp'
   },
   {
     id: 'foot-reflexology',
@@ -1188,7 +1194,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'body-relaxation',
     description: "Therapeutic foot reflexology for relaxation and wellbeing.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/aesthetic/body-slimming-contouring.jpg'
+    image: '/images/lacrown/luxury-salon/massages/salon-foot-reflexology.webp'
   },
 
   // ─── BODY POLISHING ───
@@ -1201,7 +1207,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Luxurious full body polishing treatment using exfoliating scrubs and nourishing masks for silky, glowing skin.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/facials/clinical-chemical-peel.jpg'
+    image: '/images/lacrown/luxury-salon/body-polishing/salon-classic-body-polishing.webp'
   },
   {
     id: 'back-polish',
@@ -1211,7 +1217,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'body-polishing',
     description: "Targeted back exfoliation and polishing treatment.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/facials/clinical-chemical-peel.jpg'
+    image: '/images/lacrown/luxury-salon/body-polishing/salon-bridal-body-polishing.webp'
   },
   {
     id: 'luxury-body-polish',
@@ -1221,7 +1227,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'body-polishing',
     description: "A premium body polishing ritual with high-end exfoliants and skin-nourishing treatments.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/facials/clinical-chemical-peel.jpg'
+    image: '/images/lacrown/luxury-salon/body-polishing/salon-luxury-gold-body-polishing.webp'
   },
 
   // ─── MAKEUP ───
@@ -1234,7 +1240,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Glamorous party makeup for events, celebrations, and special occasions.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/makeup/bridal-makeup.jpg'
+    image: '/images/lacrown/luxury-salon/bridal-makeup/salon-party-makeup.webp'
   },
   {
     id: 'engagement-makeup',
@@ -1244,7 +1250,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'makeup',
     description: "Elegant engagement makeup for one of your most special occasions.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/makeup/bridal-makeup.jpg'
+    image: '/images/lacrown/luxury-salon/bridal-makeup/salon-engagement-makeup.webp'
   },
   {
     id: 'bridal-makeup',
@@ -1256,7 +1262,7 @@ export const SALON_SERVICES: SalonService[] = [
     priceNote: 'Price on consultation — bespoke packages available',
     consultationRequired: true,
     featured: true,
-    image: '/images/services/makeup/bridal-makeup.jpg'
+    image: '/images/lacrown/luxury-salon/bridal-makeup/salon-signature-bridal-makeup.webp'
   },
   {
     id: 'reception-makeup',
@@ -1266,7 +1272,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'makeup',
     description: "Stunning reception makeup for the celebration after your wedding.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/makeup/bridal-makeup.jpg'
+    image: '/images/lacrown/luxury-salon/bridal-makeup/salon-reception-makeup.webp'
   },
   {
     id: 'airbrush-makeup',
@@ -1277,7 +1283,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Flawless, long-lasting airbrush makeup application for a perfect finish.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/services/makeup/bridal-makeup.jpg'
+    image: '/images/lacrown/luxury-salon/bridal-makeup/salon-airbrush-bridal-makeup.webp'
   },
   {
     id: 'saree-draping',
@@ -1287,7 +1293,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'makeup',
     description: "Expert saree draping in various regional and contemporary styles.",
     priceNote: 'Contact us for pricing',
-    image: '/images/services/makeup/bridal-makeup.jpg'
+    image: '/images/lacrown/luxury-salon/bridal-makeup/salon-saree-draping-styling.webp'
   },
 
   // ─── KIDS GROOMING ───
@@ -1333,7 +1339,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Join the LA CROWN Loyalty Programme and enjoy exclusive member benefits. Contact us for current programme details and terms.",
     priceNote: 'Contact us for membership details',
     featured: false,
-    image: '/images/services/makeup/bridal-makeup.jpg'
+    image: '/images/lacrown/luxury-salon/memberships/salon-crown-royale-membership.webp'
   },
   {
     id: 'referral-programme',
@@ -1344,7 +1350,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Refer a friend to LA CROWN and enjoy exclusive rewards. Contact us for current referral programme terms and conditions.",
     priceNote: 'Contact us for referral details',
     featured: false,
-    image: '/images/services/makeup/bridal-makeup.jpg'
+    image: '/images/lacrown/luxury-salon/memberships/salon-crown-privilege-circle.webp'
   },
 ];
 

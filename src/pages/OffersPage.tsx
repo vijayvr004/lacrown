@@ -11,7 +11,7 @@ const PACKAGES = [
     type: 'Exclusive Package',
     validity: 'Prior consultation required',
     badge: 'Popular',
-    image: '/images/services/makeup/bridal-makeup.jpg',
+    image: '/images/lacrown/other/packages/package-royal-bridal-glow.webp',
   },
   {
     id: 'skin-rejuvenation',
@@ -21,7 +21,7 @@ const PACKAGES = [
     type: 'Aesthetic Clinic',
     validity: 'Consultation-based customization',
     badge: 'Best Value',
-    image: '/images/services/facials/korean-glass-facial.jpg',
+    image: '/images/lacrown/other/packages/package-signature-glass-skin.webp',
   },
   {
     id: 'gentlemans-grooming',
@@ -31,7 +31,7 @@ const PACKAGES = [
     type: 'Luxury Salon',
     validity: 'Available Mon - Sun',
     badge: 'Signature',
-    image: '/images/services/salon/mens-haircut.jpg',
+    image: '/images/lacrown/other/packages/package-executive-gentleman.webp',
   },
   {
     id: 'laser-package',
@@ -41,7 +41,7 @@ const PACKAGES = [
     type: 'Clinical Package',
     validity: 'Medical assessment included',
     badge: 'Clinical Course',
-    image: '/images/services/laser/laser-hair-removal.jpg',
+    image: '/images/lacrown/other/packages/package-laser-hair-reduction.webp',
   },
 ];
 

@@ -7,6 +7,7 @@ const COURSES = [
     title: 'Diploma in Cosmetology & Clinical Skincare',
     duration: 'Comprehensive Modular Course',
     level: 'Beginner to Advanced',
+    image: '/images/lacrown/other/academy/academy-cosmetology-skincare.webp',
     overview: 'In-depth foundation covering skin biology, modern aesthetic facial treatments, chemical peel fundamentals, and salon hygiene standards.',
     modules: ['Skin Anatomy & Physiology', 'Advanced Facial Techniques & Vortex Extraction', 'Chemical Peeling Protocols', 'Sterilization & Client Consultation'],
   },
@@ -14,6 +15,7 @@ const COURSES = [
     title: 'Masterclass in Semi-Permanent Makeup (SPMU)',
     duration: 'Specialized Certificate Training',
     level: 'Intermediate Practitioners',
+    image: '/images/lacrown/other/academy/academy-spmu-masterclass.webp',
     overview: 'Precision artistry training in microblading techniques, lip tinting, shading, color theory, and aftercare management.',
     modules: ['Eyebrow Mapping & Architecture', 'Microblading Stroke Techniques', 'Lip Neutralization & Tinting', 'Safety, Needles & Pigment Science'],
   },
@@ -21,6 +23,7 @@ const COURSES = [
     title: 'Advanced Hair Styling & Texture Transformation',
     duration: 'Professional Salon Series',
     level: 'Salon Stylists',
+    image: '/images/lacrown/other/academy/academy-hair-styling-texture.webp',
     overview: 'Creative cutting mastery, international balayage application, keratin smoothing protocols, and executive men’s grooming techniques.',
     modules: ['Geometric & Creative Haircuts', 'Balayage & Ombré Freehand Techniques', 'Keratin & Rebonding Science', 'Client Consultations & Styling Portfolio'],
   },
@@ -104,33 +107,47 @@ export default function AcademyPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {COURSES.map((c) => (
-                <div key={c.title} className="border border-ivory-300 p-6 bg-white shadow-card flex flex-col justify-between">
+                <div key={c.title} className="border border-ivory-300 bg-white shadow-card hover:shadow-luxury transition-all duration-300 rounded-xl overflow-hidden flex flex-col justify-between group">
                   <div>
-                    <div className="flex items-center justify-between text-xs font-sans text-taupe mb-3">
-                      <span className="text-gold font-semibold uppercase tracking-wider">{c.level}</span>
-                      <span>{c.duration}</span>
+                    <div className="relative h-48 overflow-hidden bg-ivory-200">
+                      <img
+                        src={c.image}
+                        alt={c.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        loading="lazy"
+                      />
+                      <div className="absolute top-3 left-3 bg-burgundy text-white text-[10px] font-sans font-semibold px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                        {c.level}
+                      </div>
                     </div>
-                    <h3 className="font-serif text-xl text-burgundy font-semibold mb-3">{c.title}</h3>
-                    <p className="font-sans text-sm text-taupe leading-relaxed mb-5">{c.overview}</p>
+                    <div className="p-6 pb-2">
+                      <div className="flex items-center justify-between text-xs font-sans text-taupe mb-2">
+                        <span className="text-gold font-semibold uppercase tracking-wider">{c.duration}</span>
+                      </div>
+                      <h3 className="font-serif text-xl text-burgundy font-semibold mb-3 leading-snug">{c.title}</h3>
+                      <p className="font-sans text-sm text-taupe leading-relaxed mb-5">{c.overview}</p>
 
-                    <h4 className="font-serif text-xs text-charcoal uppercase tracking-wider font-semibold mb-3">Core Modules:</h4>
-                    <ul className="space-y-2 mb-6">
-                      {c.modules.map((m) => (
-                        <li key={m} className="font-sans text-xs text-taupe flex items-start gap-2">
-                          <CheckCircle size={14} className="text-gold flex-shrink-0 mt-0.5" />
-                          <span>{m}</span>
-                        </li>
-                      ))}
-                    </ul>
+                      <h4 className="font-serif text-xs text-charcoal uppercase tracking-wider font-semibold mb-3">Core Modules:</h4>
+                      <ul className="space-y-2 mb-6">
+                        {c.modules.map((m) => (
+                          <li key={m} className="font-sans text-xs text-taupe flex items-start gap-2">
+                            <CheckCircle size={14} className="text-gold flex-shrink-0 mt-0.5" />
+                            <span>{m}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
 
-                  <a
-                    href="#enrolment-form"
-                    onClick={() => setCourse(c.title)}
-                    className="btn-secondary text-xs w-full text-center block mt-auto"
-                  >
-                    Enquire for this Course
-                  </a>
+                  <div className="p-6 pt-0">
+                    <a
+                      href="#enrolment-form"
+                      onClick={() => setCourse(c.title)}
+                      className="btn-secondary text-xs w-full text-center block mt-auto"
+                    >
+                      Enquire for this Course
+                    </a>
+                  </div>
                 </div>
               ))}
             </div>
