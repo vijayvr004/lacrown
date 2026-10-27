@@ -3,13 +3,14 @@ import { ArrowRight } from 'lucide-react';
 import Breadcrumb from '../components/Breadcrumb';
 import ServiceCard from '../components/ServiceCard';
 import { AESTHETIC_CATEGORIES, AESTHETIC_SERVICES } from '../data/aestheticServices';
+import { getAssetUrl } from '../utils/imageUrl';
 
 export default function AestheticClinicPage() {
   return (
     <div>
       <section className="relative py-24 bg-burgundy text-white overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/assets/hero-bg.jpg" alt="" className="w-full h-full object-cover" />
+          <img src={getAssetUrl('/assets/hero-bg.jpg')} alt="" className="w-full h-full object-cover" />
           <div className="absolute inset-0 hero-overlay" />
         </div>
         <div className="container-luxury relative z-10">
@@ -45,7 +46,7 @@ export default function AestheticClinicPage() {
               <Link to="/appointment" className="btn-primary text-sm">Book a Consultation <ArrowRight size={15} /></Link>
             </div>
             <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-luxury border border-rose-border">
-              <img src="/images/services/facials/hydrafacial-treatment.jpg" alt="LA CROWN Aesthetic Clinic" className="w-full h-full object-cover" loading="lazy" />
+              <img src={getAssetUrl('/images/services/facials/hydrafacial-treatment.jpg')} alt="LA CROWN Aesthetic Clinic" className="w-full h-full object-cover" loading="lazy" />
             </div>
           </div>
         </div>

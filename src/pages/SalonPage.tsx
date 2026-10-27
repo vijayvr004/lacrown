@@ -3,13 +3,14 @@ import { ArrowRight } from 'lucide-react';
 import Breadcrumb from '../components/Breadcrumb';
 import ServiceCard from '../components/ServiceCard';
 import { SALON_CATEGORIES, SALON_SERVICES } from '../data/salonServices';
+import { getAssetUrl } from '../utils/imageUrl';
 
 export default function SalonPage() {
   return (
     <div>
       <section className="relative py-24 bg-burgundy text-white overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/assets/hero-bg.jpg" alt="" className="w-full h-full object-cover" />
+          <img src={getAssetUrl('/assets/hero-bg.jpg')} alt="" className="w-full h-full object-cover" />
           <div className="absolute inset-0 hero-overlay" />
         </div>
         <div className="container-luxury relative z-10">
@@ -45,7 +46,7 @@ export default function SalonPage() {
               <Link to="/appointment" className="btn-primary text-sm">Book a Salon Appointment <ArrowRight size={15} /></Link>
             </div>
             <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-luxury border border-rose-border">
-              <img src="/images/services/hair/balayage-hair-colour.jpg" alt="LA CROWN Luxury Salon" className="w-full h-full object-cover" loading="lazy" />
+              <img src={getAssetUrl('/images/services/hair/balayage-hair-colour.jpg')} alt="LA CROWN Luxury Salon" className="w-full h-full object-cover" loading="lazy" />
             </div>
           </div>
         </div>

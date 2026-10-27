@@ -5,6 +5,7 @@ import FAQAccordion from '../components/FAQAccordion';
 import ServiceCard from '../components/ServiceCard';
 import AppointmentForm from '../components/AppointmentForm';
 import { getServiceBySlug, AESTHETIC_SERVICES } from '../data/aestheticServices';
+import { getAssetUrl } from '../utils/imageUrl';
 
 export default function AestheticServicePage() {
   const { slug } = useParams<{ slug: string }>();
@@ -21,8 +22,12 @@ export default function AestheticServicePage() {
       {/* Hero */}
       <section className="relative py-20 bg-burgundy text-white overflow-hidden">
         <div className="absolute inset-0">
-          <img src={service.image || '/assets/hero-bg.jpg'} alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 hero-overlay" />
+          <img
+            src={getAssetUrl(service.image || '/assets/hero-bg.jpg')}
+            alt={service.name}
+            className="w-full h-full object-cover opacity-35"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-burgundy-950/90 via-burgundy/80 to-burgundy-900/70" />
         </div>
         <div className="container-luxury relative z-10">
           <Breadcrumb
@@ -57,6 +62,22 @@ export default function AestheticServicePage() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Main content */}
           <div className="lg:col-span-2 space-y-10">
+            {/* High-Resolution Showcase Image */}
+            {service.image && (
+              <div className="relative w-full rounded-2xl overflow-hidden shadow-luxury border border-rose-border bg-ivory-100 group">
+                <img
+                  src={getAssetUrl(service.image)}
+                  alt={service.name}
+                  className="w-full h-auto max-h-[500px] object-cover object-center transition-all duration-300"
+                  loading="eager"
+                  decoding="async"
+                />
+                <div className="absolute bottom-3 right-3 bg-burgundy/85 backdrop-blur-md text-gold text-xs px-3.5 py-1.5 rounded-full border border-gold/40 font-serif tracking-wide shadow-md">
+                  LA CROWN Signature Treatment
+                </div>
+              </div>
+            )}
+
             {/* Overview */}
             <div>
               <h2 className="font-serif text-charcoal text-2xl mb-4">Overview</h2>
