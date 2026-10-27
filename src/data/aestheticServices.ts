@@ -529,7 +529,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     medicalProcedure: true,
     relatedServices: ['iv-glutathione', 'anti-ageing-treatments'],
-    image: '/images/lacrown/aesthetic-clinic/anti-ageing/aesthetic-vitamin-therapy.webp',
+    image: '/images/lacrown/aesthetic-clinic/anti-ageing/vitamin-therapy.png',
     priceNote: 'Price on consultation',
   },
   {
@@ -546,7 +546,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     medicalProcedure: true,
     relatedServices: ['vitamin-therapy', 'iv-cocktail-therapy'],
-    image: '/images/lacrown/aesthetic-clinic/anti-ageing/aesthetic-iv-glutathione.webp',
+    image: '/images/lacrown/aesthetic-clinic/anti-ageing/iv-glutathione.png',
     priceNote: 'Price on consultation',
   },
   {
@@ -563,7 +563,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     medicalProcedure: true,
     relatedServices: ['vitamin-therapy', 'iv-glutathione'],
-    image: '/images/lacrown/aesthetic-clinic/anti-ageing/aesthetic-iv-cocktail-therapy.webp',
+    image: '/images/lacrown/aesthetic-clinic/anti-ageing/iv-cocktail-therapy.png',
     priceNote: 'Price on consultation',
   },
   {

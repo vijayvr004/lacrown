@@ -284,7 +284,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'anti-ageing',
     title: 'Vitamin Therapy Infusions',
     description: 'Intravenous or intramuscular micronutrient infusions formulated with Vitamin C, B-Complex, Zinc, and electrolytes for deep cellular radiance.',
-    image: '/images/lacrown/aesthetic-clinic/anti-ageing/aesthetic-vitamin-therapy.webp',
+    image: '/images/lacrown/aesthetic-clinic/anti-ageing/vitamin-therapy.png',
     alt: 'IV vitamin therapy nutrient infusion drip at luxury clinic lounge',
     priceNote: 'From ₹2,500'
   },
@@ -295,7 +295,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'anti-ageing',
     title: 'IV Glutathione Infusion',
     description: 'High-potency antioxidant IV protocol to neutralize free radicals, reduce systemic melanin production, and illuminate the complexion.',
-    image: '/images/lacrown/aesthetic-clinic/anti-ageing/aesthetic-iv-glutathione.webp',
+    image: '/images/lacrown/aesthetic-clinic/anti-ageing/iv-glutathione.png',
     alt: 'IV Glutathione antioxidant skin brightening therapy administration',
     priceNote: 'From ₹3,500',
     featured: true
@@ -307,7 +307,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'anti-ageing',
     title: 'IV Cocktail Therapy',
     description: 'Curated wellness cocktails (Myers formulation, Beauty Elixir, Immune Shield) restoring cellular hydration and full-body vitality.',
-    image: '/images/lacrown/aesthetic-clinic/anti-ageing/aesthetic-iv-cocktail-therapy.webp',
+    image: '/images/lacrown/aesthetic-clinic/anti-ageing/iv-cocktail-therapy.png',
     alt: 'Comprehensive IV wellness cocktail infusion for skin vitality',
     priceNote: 'From ₹4,000'
   },
