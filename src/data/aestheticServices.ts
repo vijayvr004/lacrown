@@ -389,7 +389,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     featured: true,
     consultationRequired: true,
     medicalProcedure: false,
-    image: '/images/lacrown/aesthetic-clinic/laser-treatments/aesthetic-laser-hair-removal.webp',
+    image: '/images/lacrown/aesthetic-clinic/laser-treatments/laser-hair-removal.png',
     priceNote: 'Price on consultation — varies by area and number of sessions',
   },
   {
@@ -406,7 +406,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     medicalProcedure: true,
     relatedServices: ['co2-laser', 'chemical-peels'],
-    image: '/images/lacrown/aesthetic-clinic/laser-treatments/aesthetic-pico-laser.webp',
+    image: '/images/lacrown/aesthetic-clinic/laser-treatments/pico-laser.png',
     priceNote: 'Price on consultation',
   },
   {
@@ -424,7 +424,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     medicalProcedure: true,
     downtime: 'Recovery period varies; clinician will advise',
     relatedServices: ['pico-laser', 'chemical-peels'],
-    image: '/images/lacrown/aesthetic-clinic/laser-treatments/aesthetic-co2-laser.webp',
+    image: '/images/lacrown/aesthetic-clinic/laser-treatments/co2-laser.png',
     priceNote: 'Price on consultation',
   },
   {
@@ -582,7 +582,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     downtime: 'Mild swelling and discomfort expected; recovery varies individually',
     relatedServices: ['dermal-fillers', 'botox'],
     featured: false,
-    image: '/images/lacrown/aesthetic-clinic/anti-ageing/aesthetic-thread-lift.webp',
+    image: '/images/lacrown/aesthetic-clinic/anti-ageing/thread-lift.png',
     priceNote: 'Price on consultation',
   },
   {
@@ -601,7 +601,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     downtime: 'Mild swelling and bruising common initially; settles over days',
     relatedServices: ['botox', 'thread-lift'],
     featured: true,
-    image: '/images/lacrown/aesthetic-clinic/anti-ageing/aesthetic-dermal-fillers.webp',
+    image: '/images/lacrown/aesthetic-clinic/anti-ageing/dermal-fillers.png',
     priceNote: 'Price on consultation — varies by area and product',
   },
   {
@@ -624,7 +624,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     ],
     relatedServices: ['dermal-fillers', 'thread-lift', 'anti-ageing-treatments'],
     featured: true,
-    image: '/images/lacrown/aesthetic-clinic/anti-ageing/aesthetic-botox.webp',
+    image: '/images/lacrown/aesthetic-clinic/anti-ageing/botox.png',
     priceNote: 'Price on consultation — varies by area and units',
   },
 

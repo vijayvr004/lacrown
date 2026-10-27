@@ -203,7 +203,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'laser',
     title: 'Laser Hair Removal',
     description: 'Triple-wavelength diode laser with chilled sapphire contact cooling for painless, permanent hair reduction across all skin tones.',
-    image: '/images/lacrown/aesthetic-clinic/laser-treatments/aesthetic-laser-hair-removal.webp',
+    image: '/images/lacrown/aesthetic-clinic/laser-treatments/laser-hair-removal.png',
     alt: 'Professional triple-wavelength diode laser hair removal session',
     priceNote: 'From ₹1,500 (per area)',
     featured: true,
@@ -216,7 +216,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'laser',
     title: 'Pico Laser Treatment',
     description: 'Picosecond photoacoustic laser targeting stubborn melasma, sun damage, deep dermal pigmentation, and post-inflammatory acne marks.',
-    image: '/images/lacrown/aesthetic-clinic/laser-treatments/aesthetic-pico-laser.webp',
+    image: '/images/lacrown/aesthetic-clinic/laser-treatments/pico-laser.png',
     alt: 'Pico laser photoacoustic pigmentation and melasma treatment',
     priceNote: 'Price on consultation',
     featured: true
@@ -228,7 +228,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'laser',
     title: 'Fractional CO2 Laser',
     description: 'Ablative fractional resurfacing that creates micro-thermal treatment zones to smooth deep acne scars, reduce pore size, and tighten skin.',
-    image: '/images/lacrown/aesthetic-clinic/laser-treatments/aesthetic-co2-laser.webp',
+    image: '/images/lacrown/aesthetic-clinic/laser-treatments/co2-laser.png',
     alt: 'Fractional CO2 laser skin resurfacing and acne scar revision',
     priceNote: 'Price on consultation'
   },
@@ -318,7 +318,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'anti-ageing',
     title: 'Thread Lift Treatment',
     description: 'Minimally invasive PDO/PLLA polydioxanone absorbable threads placed subcutaneously to lift sagging jowls, cheeks, and neck contours.',
-    image: '/images/lacrown/aesthetic-clinic/anti-ageing/aesthetic-thread-lift.webp',
+    image: '/images/lacrown/aesthetic-clinic/anti-ageing/thread-lift.png',
     alt: 'Clinical thread lift contouring procedure for non-surgical face lift',
     priceNote: 'Price on consultation',
     featured: true
@@ -330,7 +330,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'anti-ageing',
     title: 'Dermal Fillers',
     description: 'Hyaluronic acid dermal fillers expertly injected to restore lost mid-face volume, enhance lip fullness, and sculpt jawline definition.',
-    image: '/images/lacrown/aesthetic-clinic/anti-ageing/aesthetic-dermal-fillers.webp',
+    image: '/images/lacrown/aesthetic-clinic/anti-ageing/dermal-fillers.png',
     alt: 'Aesthetic doctor injecting hyaluronic acid dermal filler with micro-cannula',
     priceNote: 'Price per syringe on consultation',
     featured: true
@@ -342,7 +342,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'anti-ageing',
     title: 'Botox Wrinkle Relaxers',
     description: 'Botulinum toxin micro-injections relaxing hyperactive facial muscles to smooth forehead lines, crow’s feet, and frown furrows naturally.',
-    image: '/images/lacrown/aesthetic-clinic/anti-ageing/aesthetic-botox.webp',
+    image: '/images/lacrown/aesthetic-clinic/anti-ageing/botox.png',
     alt: 'Doctor administering anti-wrinkle Botox injection into forehead lines',
     priceNote: 'Price per unit on consultation',
     featured: true
