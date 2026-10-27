@@ -50,7 +50,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Gentle, caring haircut service for toddlers and young children in a comfortable, welcoming environment.",
     ageGroup: 'Children (age ranges as per menu — contact us for details)',
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/baby-toddler/salon-baby-haircut.webp',
+    image: '/images/lacrown/luxury-salon/baby-toddler/baby-toddler-haircut.png',
   },
   {
     id: 'royal-baby-massage',
@@ -61,7 +61,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "A luxurious, gentle massage experience designed specially for babies, promoting relaxation and wellbeing.",
     ageGroup: 'Infants and young children (parent/guardian consent required)',
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/baby-toddler/salon-royal-baby-massage.webp',
+    image: '/images/lacrown/luxury-salon/baby-toddler/royal-baby-massage.png',
   },
   {
     id: 'baby-milk-bath',
@@ -72,7 +72,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "A nurturing milk bath ritual for babies, soothing and softening delicate skin.",
     ageGroup: 'Infants (parent/guardian consent required)',
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/baby-toddler/salon-baby-milk-bath.webp',
+    image: '/images/lacrown/luxury-salon/baby-toddler/baby-milk-bath.png',
   },
   {
     id: 'baby-oil-massage',
@@ -83,7 +83,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Gentle oil massage for babies to nourish skin and promote relaxation.",
     ageGroup: 'Infants (parent/guardian consent required)',
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/baby-toddler/salon-baby-oil-massage.webp'
+    image: '/images/lacrown/luxury-salon/baby-toddler/baby-oil-massage.png'
   },
   {
     id: 'baby-butter-wrap',

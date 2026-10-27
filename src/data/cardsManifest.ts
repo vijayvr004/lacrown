@@ -440,7 +440,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'baby-pampering',
     title: 'Baby Haircut',
     description: 'Gentle, stress-free first haircut experience with child-safe sanitized scissors, patient stylists, and fun distraction seating.',
-    image: '/images/lacrown/luxury-salon/baby-toddler/salon-baby-haircut.webp',
+    image: '/images/lacrown/luxury-salon/baby-toddler/baby-toddler-haircut.png',
     alt: 'Gentle baby first haircut experience in playful, patient salon setting',
     priceNote: 'Contact us for pricing',
     featured: true
@@ -452,7 +452,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'baby-pampering',
     title: 'Royal Baby Massage',
     description: 'Calming pediatric-safe body massage using organic cold-pressed almond and virgin coconut oils to relax muscles and soothe sleep.',
-    image: '/images/lacrown/luxury-salon/baby-toddler/salon-royal-baby-massage.webp',
+    image: '/images/lacrown/luxury-salon/baby-toddler/royal-baby-massage.png',
     alt: 'Nourishing organic oil baby massage performed by pediatric care specialist',
     priceNote: 'Contact us for pricing'
   },
@@ -463,7 +463,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'baby-pampering',
     title: 'Baby Milk Bath',
     description: 'Warm, nutrient-dense organic oat and almond milk bath that tenderly hydrates delicate infant skin and calms sensitivity.',
-    image: '/images/lacrown/luxury-salon/baby-toddler/salon-baby-milk-bath.webp',
+    image: '/images/lacrown/luxury-salon/baby-toddler/baby-milk-bath.png',
     alt: 'Soothing warm organic milk and blossom baby bath ritual',
     priceNote: 'Contact us for pricing'
   },
@@ -474,7 +474,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'baby-pampering',
     title: 'Baby Oil Massage',
     description: 'Ayurvedic inspired herbal oil massage formulated specifically for toddlers to improve circulation, joint mobility, and immunity.',
-    image: '/images/lacrown/luxury-salon/baby-toddler/salon-baby-oil-massage.webp',
+    image: '/images/lacrown/luxury-salon/baby-toddler/baby-oil-massage.png',
     alt: 'Gentle toddler herbal oil massage in warm, comforting environment',
     priceNote: 'Contact us for pricing'
   },
