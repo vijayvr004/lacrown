@@ -1346,7 +1346,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'eyelash-hair-extensions',
     title: 'Luxury Lash Extensions',
     description: 'Classic, Hybrid, or Russian Volume silk lash extensions applied strand-by-strand for weightless, fluttery eyes.',
-    image: '/images/lacrown/luxury-salon/extensions-lashes/salon-eyelash-extensions.webp',
+    image: '/images/lacrown/luxury-salon/extensions-lashes/eyelash-extensions.png',
     alt: 'Lash artist placing delicate individual volume lash extensions on client',
     priceNote: 'Contact us for pricing',
     featured: true
@@ -1358,7 +1358,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'eyelash-hair-extensions',
     title: '100% Remy Human Hair Extensions',
     description: 'Seamless tape-in, keratin bond, or micro-bead natural human hair extensions providing instant length and thick fullness.',
-    image: '/images/lacrown/luxury-salon/extensions-lashes/salon-hair-extensions.webp',
+    image: '/images/lacrown/luxury-salon/extensions-lashes/hair-extensions.png',
     alt: 'Stylist seamlessly applying 100% Remy human hair tape-in extensions',
     priceNote: 'Contact us for pricing',
     featured: true
@@ -1370,7 +1370,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'eyelash-hair-extensions',
     title: 'Keratin Lash Lift & Tint',
     description: 'Perming and tinting natural eyelashes from the root on silicone shields, creating the appearance of longer, darker, curled lashes.',
-    image: '/images/lacrown/luxury-salon/extensions-lashes/salon-lash-lift.webp',
+    image: '/images/lacrown/luxury-salon/extensions-lashes/lash-lift.png',
     alt: 'Keratin lash lift and deep black tint enhancing natural eyelashes',
     priceNote: 'Contact us for pricing'
   },
@@ -1383,7 +1383,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'massages',
     title: 'Ayurvedic Champi Head Massage',
     description: 'Traditional invigorating warm herb-infused oil scalp and neck massage releasing mental tension and encouraging hair growth.',
-    image: '/images/lacrown/luxury-salon/massages/salon-head-massage.webp',
+    image: '/images/lacrown/luxury-salon/massages/head-massage.png',
     alt: 'Traditional relaxing warm herbal oil Indian head massage champi',
     priceNote: 'Contact us for pricing'
   },
@@ -1394,7 +1394,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'massages',
     title: 'Back, Neck & Shoulder Relief',
     description: 'Targeted muscular acupressure therapy working out knots and stiffness in the upper back, traps, and cervical neck zone.',
-    image: '/images/lacrown/luxury-salon/massages/salon-back-shoulder-massage.webp',
+    image: '/images/lacrown/luxury-salon/massages/aromatherapy-massage.png',
     alt: 'Therapist releasing upper back and shoulder knots with acupressure',
     priceNote: 'Contact us for pricing'
   },
@@ -1416,7 +1416,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'massages',
     title: 'Swedish Full Body Relaxation Massage',
     description: 'Full-body rhythmic effleurage and petrissage strokes with warm aromatic oils to soothe nervous tension and restore vitality.',
-    image: '/images/lacrown/luxury-salon/massages/salon-full-body-relaxation-massage.webp',
+    image: '/images/lacrown/luxury-salon/massages/swedish-massage.png',
     alt: 'Swedish full body relaxation massage with warm aromatic oils',
     priceNote: 'Contact us for pricing',
     featured: true
@@ -1428,7 +1428,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'massages',
     title: 'Deep Tissue Muscle Recovery',
     description: 'Firm, focused pressure and slow deep strokes addressing chronic muscle tightness, athletic strain, and postural tension.',
-    image: '/images/lacrown/luxury-salon/massages/salon-deep-tissue-massage.webp',
+    image: '/images/lacrown/luxury-salon/massages/deep-tissue-massage.png',
     alt: 'Therapeutic deep tissue muscle massage in serene spa environment',
     priceNote: 'Contact us for pricing',
     featured: true

@@ -1122,7 +1122,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Professional eyelash extensions for enhanced volume, length, and definition.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/lacrown/luxury-salon/extensions-lashes/salon-eyelash-extensions.webp'
+    image: '/images/lacrown/luxury-salon/extensions-lashes/eyelash-extensions.png'
   },
   {
     id: 'hair-extensions',
@@ -1134,7 +1134,7 @@ export const SALON_SERVICES: SalonService[] = [
     priceNote: 'Price on consultation — varies by method and length',
     consultationRequired: true,
     featured: true,
-    image: '/images/lacrown/luxury-salon/extensions-lashes/salon-hair-extensions.webp'
+    image: '/images/lacrown/luxury-salon/extensions-lashes/hair-extensions.png'
   },
   {
     id: 'lash-lift',
@@ -1144,7 +1144,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'eyelash-hair-extensions',
     description: "Lash lifting treatment to curl and lift natural lashes for an open-eyed effect.",
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/extensions-lashes/salon-lash-lift.webp'
+    image: '/images/lacrown/luxury-salon/extensions-lashes/lash-lift.png'
   },
 
   // ─── BODY RELAXATION ───
@@ -1157,7 +1157,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Classic Swedish massage for full-body relaxation and stress relief.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/lacrown/luxury-salon/massages/salon-full-body-relaxation-massage.webp'
+    image: '/images/lacrown/luxury-salon/massages/swedish-massage.png'
   },
   {
     id: 'deep-tissue-massage',
@@ -1167,7 +1167,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'body-relaxation',
     description: "Therapeutic deep tissue massage targeting muscle tension and knots.",
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/massages/salon-deep-tissue-massage.webp'
+    image: '/images/lacrown/luxury-salon/massages/deep-tissue-massage.png'
   },
   {
     id: 'aromatherapy-massage',
@@ -1178,7 +1178,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Relaxing aromatherapy massage using essential oils for mind and body balance.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/lacrown/luxury-salon/massages/salon-back-shoulder-massage.webp'
+    image: '/images/lacrown/luxury-salon/massages/aromatherapy-massage.png'
   },
   {
     id: 'head-massage',
@@ -1188,7 +1188,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'body-relaxation',
     description: "Relaxing scalp and head massage to relieve tension.",
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/massages/salon-head-massage.webp'
+    image: '/images/lacrown/luxury-salon/massages/head-massage.png'
   },
   {
     id: 'foot-reflexology',
