@@ -1214,7 +1214,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'hand-foot-care',
     title: 'Classic Hand Manicure',
     description: 'Warm essential oil hand soak, cuticle pushing and trimming, nail shaping, light hand massage, and buffing.',
-    image: '/images/lacrown/luxury-salon/hand-foot-care/salon-classic-manicure.webp',
+    image: '/images/lacrown/luxury-salon/hand-foot-care/basic-manicure.png',
     alt: 'Classic manicure hand care nail shaping and cuticle treatment',
     priceNote: 'Contact us for pricing'
   },
@@ -1225,7 +1225,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'hand-foot-care',
     title: 'Aromatherapy Spa Manicure',
     description: 'Dead sea salt scrub, rosehip oil soak, moisturizing hand mask with warm electric mitts, and relaxing arm massage.',
-    image: '/images/lacrown/luxury-salon/hand-foot-care/salon-spa-manicure.webp',
+    image: '/images/lacrown/luxury-salon/hand-foot-care/spa-manicure.png',
     alt: 'Aromatherapy spa manicure with hand scrub and warm oil massage',
     priceNote: 'Contact us for pricing',
     featured: true
@@ -1237,7 +1237,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'hand-foot-care',
     title: 'Royal Luxury Paraffin Manicure',
     description: 'Warm therapeutic peach paraffin wax dip sealing in intense moisture, relieving joint tension, and softening hands.',
-    image: '/images/lacrown/luxury-salon/hand-foot-care/salon-luxury-manicure.webp',
+    image: '/images/lacrown/luxury-salon/hand-foot-care/luxury-manicure.png',
     alt: 'Warm therapeutic paraffin wax hand dip luxury manicure',
     priceNote: 'Contact us for pricing',
     badge: 'Luxury'
@@ -1249,7 +1249,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'hand-foot-care',
     title: 'Classic Foot Pedicure',
     description: 'Hydrating bubble foot bath, heel callus buffing, toe nail shaping, cuticle cleanup, and peppermint foot lotion.',
-    image: '/images/lacrown/luxury-salon/hand-foot-care/salon-classic-pedicure.webp',
+    image: '/images/lacrown/luxury-salon/hand-foot-care/basic-pedicure.png',
     alt: 'Refreshing foot soak and classic pedicure heel callus care',
     priceNote: 'Contact us for pricing'
   },
@@ -1286,7 +1286,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'nails',
     title: 'Nail Cut, File & Polish',
     description: 'Quick nail length reshaping, precision filing, cuticle conditioning oil, and regular long-wear lacquer coat.',
-    image: '/images/lacrown/luxury-salon/nails/salon-cut-file-polish.webp',
+    image: '/images/lacrown/luxury-salon/nails/nail-polish.png',
     alt: 'Nail technician cutting, filing, and applying fresh glossy nail lacquer',
     priceNote: 'Contact us for pricing'
   },
@@ -1297,7 +1297,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'nails',
     title: 'Classic French Manicure Polish',
     description: 'Timeless sheer nude or baby pink base adorned with crisp, clean white smile-line tip styling on natural or extended nails.',
-    image: '/images/lacrown/luxury-salon/nails/salon-french-polish.webp',
+    image: '/images/lacrown/luxury-salon/nails/acrylic-nails.png',
     alt: 'Elegant classic French polish manicure with clean white tips',
     priceNote: 'Contact us for pricing'
   },
@@ -1308,7 +1308,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'nails',
     title: 'High-Gloss Gel Polish',
     description: 'UV/LED light-cured gel enamel delivering chip-resistant mirror shine and 3+ weeks of flawless durability.',
-    image: '/images/lacrown/luxury-salon/nails/salon-gel-polish.webp',
+    image: '/images/lacrown/luxury-salon/nails/gel-nails.png',
     alt: 'UV LED curing lamp setting high-gloss chip-resistant gel polish',
     priceNote: 'Contact us for pricing',
     featured: true
@@ -1320,7 +1320,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'nails',
     title: 'Accent Nail Art (Per Nail)',
     description: 'Hand-painted floral motifs, chrome glaze, foil flakes, Swarovski crystal placement, or minimalist geometric accents.',
-    image: '/images/lacrown/luxury-salon/nails/salon-nail-art-accent.webp',
+    image: '/images/lacrown/luxury-salon/nails/nail-art.png',
     alt: 'Hand-painted delicate nail art design with fine detail brush',
     priceNote: 'Contact us for pricing'
   },

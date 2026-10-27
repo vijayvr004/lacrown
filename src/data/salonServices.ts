@@ -1004,7 +1004,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Classic manicure including soak, cuticle care, nail shaping, and polish.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/lacrown/luxury-salon/hand-foot-care/salon-classic-manicure.webp'
+    image: '/images/lacrown/luxury-salon/hand-foot-care/basic-manicure.png'
   },
   {
     id: 'spa-manicure',
@@ -1014,7 +1014,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'hand-foot',
     description: "Relaxing spa manicure with exfoliation, mask, and massage.",
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/hand-foot-care/salon-spa-manicure.webp'
+    image: '/images/lacrown/luxury-salon/hand-foot-care/spa-manicure.png'
   },
   {
     id: 'luxury-manicure',
@@ -1024,7 +1024,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'hand-foot',
     description: "Premium manicure experience with high-end products and extended care.",
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/hand-foot-care/salon-luxury-manicure.webp'
+    image: '/images/lacrown/luxury-salon/hand-foot-care/luxury-manicure.png'
   },
   {
     id: 'basic-pedicure',
@@ -1035,7 +1035,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Classic pedicure with soak, callus removal, nail care, and polish.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/lacrown/luxury-salon/hand-foot-care/salon-classic-pedicure.webp'
+    image: '/images/lacrown/luxury-salon/hand-foot-care/basic-pedicure.png'
   },
   {
     id: 'spa-pedicure',
@@ -1068,7 +1068,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Long-lasting gel nail application for beautiful, chip-resistant colour.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/lacrown/luxury-salon/nails/salon-gel-polish.webp'
+    image: '/images/lacrown/luxury-salon/nails/gel-nails.png'
   },
   {
     id: 'acrylic-nails',
@@ -1078,7 +1078,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'nails',
     description: "Strong acrylic nail extension service for added length and strength.",
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/nails/salon-french-polish.webp'
+    image: '/images/lacrown/luxury-salon/nails/acrylic-nails.png'
   },
   {
     id: 'nail-art',
@@ -1089,7 +1089,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Creative nail art designs — from subtle to statement looks.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/lacrown/luxury-salon/nails/salon-nail-art-accent.webp'
+    image: '/images/lacrown/luxury-salon/nails/nail-art.png'
   },
   {
     id: 'nail-polish',
@@ -1099,7 +1099,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'nails',
     description: "Classic nail polish application in a wide range of colours.",
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/nails/salon-cut-file-polish.webp'
+    image: '/images/lacrown/luxury-salon/nails/nail-polish.png'
   },
   {
     id: 'nail-extensions',
