@@ -602,7 +602,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'womens-haircut',
     title: 'Fringe & Bangs Styling',
     description: 'Curtain bangs, micro-fringe, or wispy face-framing fringe cut specifically to enhance your facial symmetry and structure.',
-    image: '/images/lacrown/luxury-salon/womens-hair/salon-womens-fringe-bangs.webp',
+    image: '/images/lacrown/luxury-salon/womens-hair/fringe-and-bangs.png',
     alt: 'Hairstylist precision cutting face-framing curtain bangs on woman',
     priceNote: 'Contact us for pricing'
   },
@@ -613,7 +613,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'womens-haircut',
     title: "Women's Regular Haircut",
     description: 'Clean end trim, split-end removal, subtle layer refreshing, and professional blow-dry styling by our salon team.',
-    image: '/images/lacrown/luxury-salon/womens-hair/salon-womens-regular-haircut.webp',
+    image: '/images/lacrown/luxury-salon/womens-hair/womens-regular-haircut.png',
     alt: "Professional female hairstylist trimming long glossy brunette hair in salon",
     priceNote: 'Contact us for pricing',
     featured: true
@@ -625,7 +625,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'womens-haircut',
     title: "Women's Creative Haircut",
     description: 'Modern textured bobs, shags, wolf cuts, and sculpted long layers personalized to your hair density and movement.',
-    image: '/images/lacrown/luxury-salon/womens-hair/salon-womens-creative-haircut.webp',
+    image: '/images/lacrown/luxury-salon/womens-hair/womens-creative-haircut.png',
     alt: 'Creative textured bob haircut styling in luxury salon mirror',
     priceNote: 'Contact us for pricing'
   },
@@ -636,7 +636,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'womens-haircut',
     title: "Women's Premium Director Haircut",
     description: 'Top-tier master director haircut including deep structural hair analysis, bespoke cut, luxury wash, and signature blowout.',
-    image: '/images/lacrown/luxury-salon/womens-hair/salon-womens-premium-haircut.webp',
+    image: '/images/lacrown/luxury-salon/womens-hair/womens-premium-haircut.png',
     alt: 'Master director styling voluminous luxury blowout haircut on woman',
     priceNote: 'Contact us for pricing',
     featured: true

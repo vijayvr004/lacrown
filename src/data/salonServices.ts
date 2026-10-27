@@ -386,7 +386,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'womens-haircut',
     description: "Precision fringe and bangs cutting for a polished, frame-enhancing look.",
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/womens-hair/salon-womens-fringe-bangs.webp'
+    image: '/images/lacrown/luxury-salon/womens-hair/fringe-and-bangs.png'
   },
   {
     id: 'womens-regular-haircut',
@@ -395,7 +395,7 @@ export const SALON_SERVICES: SalonService[] = [
     category: "Women's Haircut & Styling",
     categorySlug: 'womens-haircut',
     description: "Professional women's haircut tailored to your hair type and style.",
-    image: '/images/lacrown/luxury-salon/womens-hair/salon-womens-regular-haircut.webp',
+    image: '/images/lacrown/luxury-salon/womens-hair/womens-regular-haircut.png',
     priceNote: 'Contact us for pricing',
     featured: true,
   },
@@ -406,7 +406,7 @@ export const SALON_SERVICES: SalonService[] = [
     category: "Women's Haircut & Styling",
     categorySlug: 'womens-haircut',
     description: "Creative, fashion-forward haircut with a senior stylist.",
-    image: '/images/lacrown/luxury-salon/womens-hair/salon-womens-creative-haircut.webp',
+    image: '/images/lacrown/luxury-salon/womens-hair/womens-creative-haircut.png',
     priceNote: 'Contact us for pricing',
   },
   {
@@ -416,7 +416,7 @@ export const SALON_SERVICES: SalonService[] = [
     category: "Women's Haircut & Styling",
     categorySlug: 'womens-haircut',
     description: "Premium haircut experience with our top stylist team.",
-    image: '/images/lacrown/luxury-salon/womens-hair/salon-womens-premium-haircut.webp',
+    image: '/images/lacrown/luxury-salon/womens-hair/womens-premium-haircut.png',
     priceNote: 'Contact us for pricing',
   },
   {
