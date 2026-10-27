@@ -239,7 +239,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     ],
     consultationRequired: false,
     relatedServices: ['facials', 'hydrafacial'],
-    image: '/images/lacrown/aesthetic-clinic/skin-grooming/aesthetic-grooming-essentials.webp',
+    image: '/images/lacrown/aesthetic-clinic/skin-grooming/aesthetic-grooming-essentials.png',
     priceNote: 'Contact us for individual service pricing',
   },
 
@@ -266,7 +266,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     ],
     relatedServices: ['korean-glass-facial', 'bb-glow-facial', 'collagen-boost-facial'],
     featured: true,
-    image: '/images/lacrown/aesthetic-clinic/facials/aesthetic-hydrafacial.webp',
+    image: '/images/lacrown/aesthetic-clinic/facials/hydrafacial.png',
     priceNote: 'Contact us for pricing',
   },
   {
@@ -283,7 +283,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: false,
     relatedServices: ['hydrafacial', 'bb-glow-facial'],
     featured: true,
-    image: '/images/lacrown/aesthetic-clinic/facials/aesthetic-korean-glass-facial.webp',
+    image: '/images/lacrown/aesthetic-clinic/facials/korean-glass-facial.png',
     priceNote: 'Contact us for pricing',
   },
   {
@@ -300,7 +300,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     relatedServices: ['korean-glass-facial', 'hydrafacial'],
     featured: true,
-    image: '/images/lacrown/aesthetic-clinic/facials/aesthetic-bb-glow-facial.webp',
+    image: '/images/lacrown/aesthetic-clinic/facials/bb-glow-facial.png',
     priceNote: 'Contact us for pricing',
   },
   {
@@ -319,7 +319,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     downtime: 'Some redness and sensitivity immediately after; recovery varies individually',
     relatedServices: ['prp-therapy', 'hydrafacial', 'collagen-boost-facial'],
     featured: false,
-    image: '/images/lacrown/aesthetic-clinic/facials/aesthetic-vampire-facial.webp',
+    image: '/images/lacrown/aesthetic-clinic/facials/vampire-facial.png',
     priceNote: 'Price on consultation',
   },
   {
@@ -510,7 +510,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     relatedServices: ['hydrafacial', 'laser-treatments'],
     featured: true,
     consultationRequired: true,
-    image: '/images/services/facials/chemical-peels.jpg',
+    image: '/images/lacrown/aesthetic-clinic/chemical-peels/chemical-peels.png',
     priceNote: 'Price on consultation — varies by peel type',
   },
 

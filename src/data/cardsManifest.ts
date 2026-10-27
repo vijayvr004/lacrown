@@ -120,7 +120,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'skin-aesthetic',
     title: 'Aesthetic Grooming Essentials',
     description: 'Clinical skin preparation, deep cleansing, and dermatological grooming to maintain clear, healthy skin and refined pores.',
-    image: '/images/lacrown/aesthetic-clinic/skin-grooming/aesthetic-grooming-essentials.webp',
+    image: '/images/lacrown/aesthetic-clinic/skin-grooming/aesthetic-grooming-essentials.png',
     alt: 'Aesthetic clinical skin grooming and pore refinement treatment',
     priceNote: 'From ₹1,800',
     featured: true
@@ -132,7 +132,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'facials',
     title: 'HydraFacial',
     description: 'Patented 3-step Vortex-Fusion protocol: deep pore extraction, lactic and glycolic acid peel, and antioxidant serum saturation for immediate glow.',
-    image: '/images/lacrown/aesthetic-clinic/facials/aesthetic-hydrafacial.webp',
+    image: '/images/lacrown/aesthetic-clinic/facials/hydrafacial.png',
     alt: 'HydraFacial vortex hydradermabrasion facial treatment in clinic',
     priceNote: 'From ₹4,500',
     featured: true,
@@ -145,7 +145,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'facials',
     title: 'Korean Glass Skin Facial',
     description: 'Multi-layer hyaluronic acid infusion, LED therapy, and botanical skin boosters that create translucent, reflective, glass-like radiance.',
-    image: '/images/lacrown/aesthetic-clinic/facials/aesthetic-korean-glass-facial.webp',
+    image: '/images/lacrown/aesthetic-clinic/facials/korean-glass-facial.png',
     alt: 'Korean glass skin hydrating glow facial with luminous skin finish',
     priceNote: 'From ₹3,800',
     featured: true,
@@ -158,7 +158,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'facials',
     title: 'BB Glow Facial',
     description: 'Semi-permanent tinted serum infusion via nano-needling to even skin tone, reduce redness, and deliver a smooth foundation finish.',
-    image: '/images/lacrown/aesthetic-clinic/facials/aesthetic-bb-glow-facial.webp',
+    image: '/images/lacrown/aesthetic-clinic/facials/bb-glow-facial.png',
     alt: 'BB Glow nano-needling radiance infusion facial treatment',
     priceNote: 'From ₹3,500'
   },
@@ -169,7 +169,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'facials',
     title: 'Vampire Facial (PRP Facial)',
     description: 'Micro-needling combined with autologous platelet-rich plasma (PRP) to stimulate collagen synthesis and dramatically improve skin firmness.',
-    image: '/images/lacrown/aesthetic-clinic/facials/aesthetic-vampire-facial.webp',
+    image: '/images/lacrown/aesthetic-clinic/facials/vampire-facial.png',
     alt: 'Clinical PRP vampire facial micro-needling collagen stimulation',
     priceNote: 'Price on consultation',
     featured: true
@@ -272,7 +272,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'chemical-peels',
     title: 'Clinical Chemical Peels',
     description: 'Dermatological resurfacing with customized glycolic, salicylic, lactic, TCA, and mandelic acid complexes for cellular turnover and glow.',
-    image: '/images/lacrown/aesthetic-clinic/chemical-peels/aesthetic-chemical-peels.webp',
+    image: '/images/lacrown/aesthetic-clinic/chemical-peels/chemical-peels.png',
     alt: 'Dermatologist applying clinical chemical peel solution with fan brush',
     priceNote: 'From ₹2,200',
     featured: true
