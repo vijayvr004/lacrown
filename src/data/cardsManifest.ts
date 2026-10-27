@@ -531,7 +531,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'mens-haircut',
     title: "Men's Haircut — Junior Stylist",
     description: 'Tailored executive haircut by our junior stylist team including scalp consultation, precision cut, and wash.',
-    image: '/images/lacrown/luxury-salon/mens-grooming/salon-executive-haircut.webp',
+    image: '/images/lacrown/luxury-salon/mens-grooming/mens-haircut-junior-stylist.png',
     alt: "Professional men's haircut and scissor styling session at luxury salon",
     priceNote: 'Contact us for pricing',
     featured: true
@@ -543,7 +543,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'mens-haircut',
     title: "Men's Haircut — Senior Stylist",
     description: "Expert men's haircut by senior stylists with specialized styling advice, scissor-over-comb texturing, and rinse.",
-    image: '/images/lacrown/luxury-salon/mens-grooming/salon-mens-haircut-senior.webp',
+    image: '/images/lacrown/luxury-salon/mens-grooming/mens-haircut-senior-stylist.png',
     alt: "Senior barber styling executive men's haircut with scissor over comb",
     priceNote: 'Contact us for pricing',
     featured: true
@@ -555,7 +555,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'mens-haircut',
     title: "Men's Haircut — Creative Director",
     description: "Bespoke architectural men's cut by our creative director, sculpting silhouette, texture, and individual grooming identity.",
-    image: '/images/lacrown/luxury-salon/mens-grooming/salon-mens-haircut-creative.webp',
+    image: '/images/lacrown/luxury-salon/mens-grooming/mens-haircut-creative-director.png',
     alt: 'Creative director sculpting bespoke haircut for sophisticated gentleman',
     priceNote: 'Contact us for pricing'
   },
@@ -566,7 +566,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'mens-haircut',
     title: 'Precision Beard Trim & Shape',
     description: 'Clipper and scissor contouring, line-up refinement, cheekbone fading, and premium nourishing beard oil application.',
-    image: '/images/lacrown/luxury-salon/mens-grooming/salon-beard-trim-shape.webp',
+    image: '/images/lacrown/luxury-salon/mens-grooming/beard-trim.png',
     alt: 'Precision clipper and scissor beard trim and line-up contouring',
     priceNote: 'Contact us for pricing',
     featured: true

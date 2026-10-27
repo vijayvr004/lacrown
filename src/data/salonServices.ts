@@ -140,7 +140,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Professional men's haircut by our junior stylist team.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/lacrown/luxury-salon/mens-grooming/salon-executive-haircut.webp',
+    image: '/images/lacrown/luxury-salon/mens-grooming/mens-haircut-junior-stylist.png',
   },
   {
     id: 'mens-haircut-senior',
@@ -151,7 +151,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Men's haircut by our experienced senior stylist team.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/lacrown/luxury-salon/mens-grooming/salon-mens-haircut-senior.webp',
+    image: '/images/lacrown/luxury-salon/mens-grooming/mens-haircut-senior-stylist.png',
   },
   {
     id: 'mens-haircut-creative',
@@ -160,7 +160,7 @@ export const SALON_SERVICES: SalonService[] = [
     category: "Men's Haircut & Grooming",
     categorySlug: 'mens-haircut',
     description: "Premium men's haircut by our creative director.",
-    image: '/images/lacrown/luxury-salon/mens-grooming/salon-mens-haircut-creative.webp',
+    image: '/images/lacrown/luxury-salon/mens-grooming/mens-haircut-creative-director.png',
     priceNote: 'Contact us for pricing',
   },
   {
@@ -172,7 +172,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Precise beard trimming and shaping for a well-groomed look.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/lacrown/luxury-salon/mens-grooming/salon-beard-trim-shape.webp'
+    image: '/images/lacrown/luxury-salon/mens-grooming/beard-trim.png'
   },
   {
     id: 'clean-shave',
