@@ -78,7 +78,7 @@ export default function HomePage() {
       >
         <div className="absolute inset-0">
           <img
-            src="/assets/hero-bg.jpg"
+            src={getAssetUrl('/assets/hero-bg.jpg')}
             alt=""
             className="w-full h-full object-cover object-center"
             loading="eager"
@@ -168,7 +168,7 @@ export default function HomePage() {
             <div className="relative">
               <div className="aspect-[4/5] overflow-hidden">
                 <img
-                  src="/assets/hero-bg.jpg"
+                  src={getAssetUrl('/assets/hero-bg.jpg')}
                   alt="Professional aesthetic treatment at LA CROWN"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -461,7 +461,7 @@ export default function HomePage() {
       {/* ── FINAL CTA ── */}
       <section className="py-24 bg-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
-          <img src="/assets/hero-bg.jpg" alt="" className="w-full h-full object-cover" />
+          <img src={getAssetUrl('/assets/hero-bg.jpg')} alt="" className="w-full h-full object-cover" />
         </div>
         <div className="container-luxury relative z-10 text-center">
           <div className="section-eyebrow mb-4">Begin Your Journey</div>
