@@ -109,14 +109,25 @@ export default function AcademyPage() {
               {COURSES.map((c) => (
                 <div key={c.title} className="border border-ivory-300 bg-white shadow-card hover:shadow-luxury transition-all duration-300 rounded-xl overflow-hidden flex flex-col justify-between group">
                   <div>
-                    <div className="relative h-48 overflow-hidden bg-ivory-200">
+                    <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-ivory-100 via-ivory-200 to-cream flex items-center justify-center">
+                      {/* Ambient backdrop */}
+                      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                        <img
+                          src={c.image}
+                          alt=""
+                          aria-hidden="true"
+                          className="w-full h-full object-cover blur-xl opacity-25 scale-125"
+                        />
+                        <div className="absolute inset-0 bg-white/30 backdrop-blur-[1px]" />
+                      </div>
+
                       <img
                         src={c.image}
                         alt={c.title}
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        className="relative z-10 w-full h-full object-contain p-2 sm:p-2.5 transition-transform duration-500 group-hover:scale-105 drop-shadow-sm"
                         loading="lazy"
                       />
-                      <div className="absolute top-3 left-3 bg-burgundy text-white text-[10px] font-sans font-semibold px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                      <div className="absolute top-3 left-3 z-20 bg-burgundy text-white text-[10px] font-sans font-semibold px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm">
                         {c.level}
                       </div>
                     </div>

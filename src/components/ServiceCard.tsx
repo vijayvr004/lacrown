@@ -23,28 +23,42 @@ export default function ServiceCard({
 
   return (
     <Link to={to} className="service-card block overflow-hidden group">
-      {/* Image */}
-      <div className="relative overflow-hidden h-48 bg-ivory-200">
+      {/* Image Container */}
+      <div className="relative overflow-hidden aspect-[4/3] bg-gradient-to-br from-ivory-100 via-ivory-200 to-cream flex items-center justify-center">
         {resolvedImage && !imgError ? (
-          <img
-            src={resolvedImage}
-            alt={name}
-            onError={() => setImgError(true)}
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-            loading="lazy"
-          />
+          <>
+            {/* Ambient luxury backdrop from image palette */}
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img
+                src={resolvedImage}
+                alt=""
+                aria-hidden="true"
+                className="w-full h-full object-cover blur-xl opacity-25 scale-125"
+              />
+              <div className="absolute inset-0 bg-white/30 backdrop-blur-[1px]" />
+            </div>
+
+            {/* Squeezed full-frame high-quality image */}
+            <img
+              src={resolvedImage}
+              alt={name}
+              onError={() => setImgError(true)}
+              className="relative z-10 w-full h-full object-contain p-2 sm:p-2.5 transition-transform duration-500 group-hover:scale-105 drop-shadow-sm"
+              loading="lazy"
+            />
+          </>
         ) : (
           <div className="w-full h-full bg-gradient-to-br from-ivory-200 to-cream flex items-center justify-center">
             <img src={getAssetUrl('/assets/logo.png')} alt="" className="h-16 w-auto opacity-20" />
           </div>
         )}
         {badge && (
-          <div className="absolute top-3 left-3 bg-burgundy text-white text-[10px] font-sans font-medium px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm">
+          <div className="absolute top-3 left-3 z-20 bg-burgundy text-white text-[10px] font-sans font-medium px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm">
             {badge}
           </div>
         )}
         {category && (
-          <div className="absolute top-3 right-3 bg-ivory-100/90 backdrop-blur-sm text-burgundy text-[10px] font-sans font-semibold px-2.5 py-0.5 rounded-full border border-rose-border shadow-sm">
+          <div className="absolute top-3 right-3 z-20 bg-ivory-100/90 backdrop-blur-sm text-burgundy text-[10px] font-sans font-semibold px-2.5 py-0.5 rounded-full border border-rose-border shadow-sm">
             {category}
           </div>
         )}
