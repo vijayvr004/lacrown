@@ -168,8 +168,8 @@ export default function HomePage() {
             <div className="relative">
               <div className="aspect-[4/5] overflow-hidden">
                 <img
-                  src={getAssetUrl('/assets/hero-bg.jpg')}
-                  alt="Professional aesthetic treatment at LA CROWN"
+                  src={getAssetUrl('/images/lacrown/other/homepage/home-premier-clinic-salon.jpg')}
+                  alt="Bengaluru's Premier Luxury Aesthetic Clinic & Salon"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
