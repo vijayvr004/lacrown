@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Award, Heart, Target, Eye } from 'lucide-react';
 import Breadcrumb from '../components/Breadcrumb';
 import { BRAND } from '../data/brand';
+import { getAssetUrl } from '../utils/imageUrl';
 
 export default function AboutPage() {
   return (
@@ -45,7 +46,7 @@ export default function AboutPage() {
               <Link to="/our-team" className="btn-primary text-sm">Meet Our Team <ArrowRight size={15} /></Link>
             </div>
             <div className="aspect-[4/5] overflow-hidden rounded-2xl shadow-luxury border border-rose-border">
-              <img src="/images/services/facials/korean-glass-facial.jpg" alt="LA CROWN clinical interior" className="w-full h-full object-cover" loading="lazy" />
+              <img src={getAssetUrl('/images/about/about-premier-clinic-salon.jpg')} alt="LA CROWN Luxury Aesthetic Clinic & Salon" className="w-full h-full object-cover" loading="lazy" />
             </div>
           </div>
         </div>
