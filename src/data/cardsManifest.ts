@@ -1553,7 +1553,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'memberships',
     title: 'Crown Royale Annual VIP Membership',
     description: 'Unlimited access to priority booking, complimentary monthly hair spa & blowout, 20% off all aesthetic procedures, and VIP lounge amenities.',
-    image: '/images/lacrown/luxury-salon/memberships/salon-crown-royale-membership.webp',
+    image: '/images/lacrown/luxury-salon/memberships/loyalty-membership.png',
     alt: 'Exclusive Crown Royale VIP membership metal keycard on marble counter',
     priceNote: 'Annual subscription',
     featured: true,
@@ -1566,7 +1566,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'memberships',
     title: 'Crown Privilege Circle',
     description: 'Curated beauty loyalty circle with 15% off signature salon services, complimentary anniversary pampering, and family service sharing.',
-    image: '/images/lacrown/luxury-salon/memberships/salon-crown-privilege-circle.webp',
+    image: '/images/lacrown/luxury-salon/memberships/referral-programme.png',
     alt: 'Crown Privilege Circle members welcome kit and luxury salon perks',
     priceNote: 'Quarterly / Annual',
     featured: true

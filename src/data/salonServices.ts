@@ -1311,6 +1311,7 @@ export const SALON_SERVICES: SalonService[] = [
     ageGroup: 'Children',
     priceNote: 'Contact us for pricing',
     featured: true,
+    image: '/images/lacrown/luxury-salon/kids/kids-haircut.png'
   },
   {
     id: 'kids-hair-wash',
@@ -1321,6 +1322,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Gentle hair wash and styling for children.",
     ageGroup: 'Children',
     priceNote: 'Contact us for pricing',
+    image: '/images/lacrown/luxury-salon/kids/kids-hair-wash-and-style.png'
   },
   {
     id: 'kids-nail-care',
@@ -1331,6 +1333,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Safe, gentle nail care service for children.",
     ageGroup: 'Children',
     priceNote: 'Contact us for pricing',
+    image: '/images/lacrown/luxury-salon/kids/kids-nail-care.png'
   },
 
   // ─── LOYALTY ───
@@ -1343,7 +1346,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Join the LA CROWN Loyalty Programme and enjoy exclusive member benefits. Contact us for current programme details and terms.",
     priceNote: 'Contact us for membership details',
     featured: false,
-    image: '/images/lacrown/luxury-salon/memberships/salon-crown-royale-membership.webp'
+    image: '/images/lacrown/luxury-salon/memberships/loyalty-membership.png'
   },
   {
     id: 'referral-programme',
@@ -1354,7 +1357,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Refer a friend to LA CROWN and enjoy exclusive rewards. Contact us for current referral programme terms and conditions.",
     priceNote: 'Contact us for referral details',
     featured: false,
-    image: '/images/lacrown/luxury-salon/memberships/salon-crown-privilege-circle.webp'
+    image: '/images/lacrown/luxury-salon/memberships/referral-programme.png'
   },
 ];
 
