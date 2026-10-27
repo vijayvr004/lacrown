@@ -179,9 +179,6 @@ export default function HomePage() {
                 <div className="font-sans text-xs uppercase tracking-widest">Days a Week</div>
                 <div className="font-sans text-xs text-white/70 mt-1">10:30 AM – 9:00 PM</div>
               </div>
-              <div className="absolute top-6 -right-4 bg-white/95 backdrop-blur p-4 shadow-luxury rounded-2xl border border-rose-border hidden md:block">
-                <img src="/assets/logo.png" alt="LA CROWN Royal Crest" className="h-16 w-auto object-contain drop-shadow" />
-              </div>
             </div>
           </div>
         </div>
