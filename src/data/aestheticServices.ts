@@ -76,7 +76,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     featured: true,
     consultationRequired: true,
     medicalProcedure: true,
-    image: '/images/lacrown/aesthetic-clinic/chemical-peels/aesthetic-chemical-peels.webp',
+    image: '/images/lacrown/aesthetic-clinic/hair-restoration/hair-transplant-bio-fue.png',
     priceNote: 'Price on consultation — varies based on individual assessment and procedure extent',
   },
   {
@@ -93,7 +93,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     medicalProcedure: true,
     relatedServices: ['hair-transplant', 'prp-therapy', 'gfc-therapy'],
-    image: '/images/lacrown/aesthetic-clinic/hair-restoration/aesthetic-bio-fue.webp',
+    image: '/images/lacrown/aesthetic-clinic/hair-restoration/hair-transplant-bio-fue.png',
     priceNote: 'Price on consultation',
   },
   {
@@ -119,7 +119,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     featured: true,
     consultationRequired: true,
     medicalProcedure: true,
-    image: '/images/lacrown/aesthetic-clinic/hair-restoration/aesthetic-prp-therapy.webp',
+    image: '/images/lacrown/aesthetic-clinic/hair-restoration/prp-therapy.png',
     priceNote: 'Price on consultation',
   },
   {
@@ -137,7 +137,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     medicalProcedure: true,
     relatedServices: ['prp-therapy', 'mesotherapy', 'hair-transplant'],
-    image: '/images/lacrown/aesthetic-clinic/hair-restoration/aesthetic-gfc-therapy.webp',
+    image: '/images/lacrown/aesthetic-clinic/hair-restoration/gfc-therapy.png',
     priceNote: 'Price on consultation',
   },
   {
@@ -155,7 +155,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     medicalProcedure: true,
     relatedServices: ['prp-therapy', 'gfc-therapy'],
-    image: '/images/lacrown/aesthetic-clinic/hair-restoration/aesthetic-mesotherapy.webp',
+    image: '/images/lacrown/aesthetic-clinic/hair-restoration/mesotherapy.png',
     priceNote: 'Price on consultation',
   },
   {
@@ -172,7 +172,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     medicalProcedure: true,
     relatedServices: ['prp-therapy', 'gfc-therapy', 'hair-transplant'],
-    image: '/images/lacrown/aesthetic-clinic/hair-restoration/aesthetic-stem-cell-therapy.webp',
+    image: '/images/lacrown/aesthetic-clinic/hair-restoration/stem-cell-therapy.png',
     priceNote: 'Price on consultation',
   },
   {
@@ -188,7 +188,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     suitableFor: ['Adults with pattern baldness or thinning', 'Individuals with scalp scarring', 'Those seeking a non-surgical hair solution'],
     consultationRequired: true,
     relatedServices: ['hair-transplant'],
-    image: '/images/lacrown/aesthetic-clinic/hair-restoration/aesthetic-scalp-micro-pigmentation.webp',
+    image: '/images/lacrown/aesthetic-clinic/hair-restoration/scalp-micro-pigmentation.png',
     priceNote: 'Price on consultation',
   },
   {

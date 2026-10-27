@@ -26,7 +26,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'hair-restoration',
     title: 'Hair Transplant Consultation',
     description: 'Surgical hair restoration consultation assessing follicular density, donor suitability, and procedure planning for permanent results.',
-    image: '/images/lacrown/aesthetic-clinic/hair-restoration/aesthetic-hair-transplant.webp',
+    image: '/images/lacrown/aesthetic-clinic/hair-restoration/hair-transplant-bio-fue.png',
     alt: 'Professional clinical hair restoration consultation at LA CROWN Aesthetic Clinic',
     priceNote: 'Price on consultation',
     featured: true,
@@ -39,7 +39,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'hair-restoration',
     title: 'Bio FUE Hair Transplant',
     description: 'Follicular Unit Extraction combined with autologous platelet growth factors to support graft survival and promote natural hairline regrowth.',
-    image: '/images/lacrown/aesthetic-clinic/hair-restoration/aesthetic-bio-fue.webp',
+    image: '/images/lacrown/aesthetic-clinic/hair-restoration/hair-transplant-bio-fue.png',
     alt: 'Bio FUE hair transplant procedure with platelet enrichment in clinical setting',
     priceNote: 'Price on consultation',
     featured: true
@@ -51,7 +51,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'hair-restoration',
     title: 'PRP Hair Restoration',
     description: 'Autologous platelet-rich plasma concentrated from your blood and micro-injected into the scalp to stimulate dormant follicles.',
-    image: '/images/lacrown/aesthetic-clinic/hair-restoration/aesthetic-prp-therapy.webp',
+    image: '/images/lacrown/aesthetic-clinic/hair-restoration/prp-therapy.png',
     alt: 'PRP scalp micro-injection therapy for hair rejuvenation at LA CROWN',
     priceNote: 'Per session / packages available',
     featured: true,
@@ -64,7 +64,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'hair-restoration',
     title: 'GFC Hair Therapy',
     description: 'Next-generation Growth Factor Concentrate derived from your platelets, delivering high concentrations of targeted growth factors to the scalp.',
-    image: '/images/lacrown/aesthetic-clinic/hair-restoration/aesthetic-gfc-therapy.webp',
+    image: '/images/lacrown/aesthetic-clinic/hair-restoration/gfc-therapy.png',
     alt: 'Advanced Growth Factor Concentrate GFC scalp treatment in clinic',
     priceNote: 'Per session / package available',
     featured: true
@@ -76,7 +76,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'hair-restoration',
     title: 'Hair Mesotherapy',
     description: 'Micro-injections of pharmaceutical-grade vitamins, minerals, amino acids, and DHT blockers delivered directly into the dermal scalp layer.',
-    image: '/images/lacrown/aesthetic-clinic/hair-restoration/aesthetic-mesotherapy.webp',
+    image: '/images/lacrown/aesthetic-clinic/hair-restoration/mesotherapy.png',
     alt: 'Targeted scalp mesotherapy micro-nutrient infusion for thinning hair',
     priceNote: 'Per session'
   },
@@ -87,7 +87,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'hair-restoration',
     title: 'Stem Cell Hair Therapy',
     description: 'Advanced regenerative hair treatment utilizing concentrated biological factors to awaken dormant hair follicles and improve hair density.',
-    image: '/images/lacrown/aesthetic-clinic/hair-restoration/aesthetic-stem-cell-therapy.webp',
+    image: '/images/lacrown/aesthetic-clinic/hair-restoration/stem-cell-therapy.png',
     alt: 'Regenerative biological stem cell scalp therapy session',
     priceNote: 'Price on consultation'
   },
@@ -98,7 +98,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'hair-restoration',
     title: 'Scalp Micro-Pigmentation',
     description: 'Precision medical cosmetic pigmentation creating the natural appearance of hair follicles on thinning scalps or defined shaved hairlines.',
-    image: '/images/lacrown/aesthetic-clinic/hair-restoration/aesthetic-scalp-micro-pigmentation.webp',
+    image: '/images/lacrown/aesthetic-clinic/hair-restoration/scalp-micro-pigmentation.png',
     alt: 'Scalp micro-pigmentation SMP follicle density recreation',
     priceNote: 'Per area assessed'
   },
