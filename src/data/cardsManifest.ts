@@ -354,7 +354,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'body-slimming',
     title: 'EMSculpt Body Contouring',
     description: 'High-Intensity Focused Electromagnetic (HIFEM) technology triggering 20,000 supramaximal muscle contractions in a 30-minute session.',
-    image: '/images/lacrown/aesthetic-clinic/body-contouring/aesthetic-emsculpt.webp',
+    image: '/images/lacrown/aesthetic-clinic/body-contouring/emsculpt.png',
     alt: 'EMSculpt HIFEM electromagnetic body contouring on abdominal muscles',
     priceNote: 'From ₹5,000 (per session)',
     featured: true
@@ -366,7 +366,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'body-slimming',
     title: 'Lipo Laser Contouring',
     description: 'Non-invasive low-level diode laser pads placed against stubborn fat deposits to stimulate adipocyte lipid pore emptying and body shaping.',
-    image: '/images/lacrown/aesthetic-clinic/body-contouring/aesthetic-lipo-laser.webp',
+    image: '/images/lacrown/aesthetic-clinic/body-contouring/lipo-laser.png',
     alt: 'Lipo laser diode contouring pads positioned on waistline in clinic',
     priceNote: 'From ₹3,500'
   },
@@ -377,7 +377,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'body-slimming',
     title: 'HIFU Skin Tightening',
     description: 'High-Intensity Focused Ultrasound delivering thermal coagulation points into the SMAS layer for long-term skin tightening and lifting.',
-    image: '/images/lacrown/aesthetic-clinic/body-contouring/aesthetic-hifu.webp',
+    image: '/images/lacrown/aesthetic-clinic/body-contouring/hifu.png',
     alt: 'HIFU ultrasound skin tightening transducer treating jawline and neck',
     priceNote: 'From ₹6,000',
     featured: true
@@ -401,7 +401,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'semi-permanent-makeup',
     title: 'Semi-Permanent Lip Tinting',
     description: 'Lip blush micropigmentation infusing natural organic pigment to define the vermilion border and provide a permanent natural flush.',
-    image: '/images/lacrown/aesthetic-clinic/spmu/aesthetic-lip-tinting.webp',
+    image: '/images/lacrown/aesthetic-clinic/spmu/lip-tinting.png',
     alt: 'Semi-permanent lip tinting blush micropigmentation artistry',
     priceNote: 'From ₹7,500'
   },
@@ -412,7 +412,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'semi-permanent-makeup',
     title: 'Eyebrow Microblading',
     description: 'Hair-stroke feathering technique embedding organic mineral pigment to construct realistic, perfectly framed, symmetrical brows.',
-    image: '/images/lacrown/aesthetic-clinic/spmu/aesthetic-microblading.webp',
+    image: '/images/lacrown/aesthetic-clinic/spmu/microblading.png',
     alt: 'Eyebrow microblading precise feather hair-stroke procedure',
     priceNote: 'From ₹8,500',
     featured: true
@@ -424,7 +424,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'semi-permanent-makeup',
     title: 'Clinical Eyelash Extensions',
     description: 'Dermatologically safe semi-permanent lash extensions applied with medical-grade hypoallergenic adhesive for volume and definition.',
-    image: '/images/lacrown/aesthetic-clinic/spmu/aesthetic-eyelash-extensions.webp',
+    image: '/images/lacrown/aesthetic-clinic/spmu/eyelash-extensions.png',
     alt: 'Clinical individual eyelash extension application with precision tweezers',
     priceNote: 'From ₹3,500'
   },

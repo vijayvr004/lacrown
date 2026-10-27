@@ -644,7 +644,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     relatedServices: ['hifu', 'lipo-laser', 'cool-sculpting'],
     featured: true,
-    image: '/images/lacrown/aesthetic-clinic/body-contouring/aesthetic-emsculpt.webp',
+    image: '/images/lacrown/aesthetic-clinic/body-contouring/emsculpt.png',
     priceNote: 'Price on consultation',
   },
   {
@@ -661,7 +661,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     sessions: 'Multiple sessions recommended',
     consultationRequired: true,
     relatedServices: ['emsculpt', 'hifu'],
-    image: '/images/lacrown/aesthetic-clinic/body-contouring/aesthetic-lipo-laser.webp',
+    image: '/images/lacrown/aesthetic-clinic/body-contouring/lipo-laser.png',
     priceNote: 'Price on consultation',
   },
   {
@@ -679,7 +679,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     relatedServices: ['emsculpt', 'thread-lift'],
     featured: true,
-    image: '/images/lacrown/aesthetic-clinic/body-contouring/aesthetic-hifu.webp',
+    image: '/images/lacrown/aesthetic-clinic/body-contouring/hifu.png',
     priceNote: 'Price on consultation',
   },
   {
@@ -716,7 +716,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     relatedServices: ['microblading', 'eyelash-extensions-aesthetic'],
     featured: false,
-    image: '/images/lacrown/aesthetic-clinic/spmu/aesthetic-lip-tinting.webp',
+    image: '/images/lacrown/aesthetic-clinic/spmu/lip-tinting.png',
     priceNote: 'Contact us for pricing',
   },
   {
@@ -736,7 +736,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     consultationRequired: true,
     relatedServices: ['lip-tinting', 'eyelash-extensions-aesthetic'],
     featured: false,
-    image: '/images/lacrown/aesthetic-clinic/spmu/aesthetic-microblading.webp',
+    image: '/images/lacrown/aesthetic-clinic/spmu/microblading.png',
     priceNote: 'Contact us for pricing',
   },
   {
@@ -753,7 +753,7 @@ export const AESTHETIC_SERVICES: AestheticService[] = [
     aftercare: ['Avoid water and steam for 24–48 hours after application', 'Use oil-free makeup remover around eyes', 'Brush lashes daily with provided spoolie', 'Book infill appointments to maintain fullness'],
     consultationRequired: false,
     relatedServices: ['microblading', 'lip-tinting'],
-    image: '/images/lacrown/aesthetic-clinic/spmu/aesthetic-eyelash-extensions.webp',
+    image: '/images/lacrown/aesthetic-clinic/spmu/eyelash-extensions.png',
     priceNote: 'Contact us for pricing',
   },
 ];
