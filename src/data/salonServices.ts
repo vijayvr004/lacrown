@@ -480,7 +480,7 @@ export const SALON_SERVICES: SalonService[] = [
     category: "Women's Hair Care & Colour",
     categorySlug: 'womens-haircare',
     description: "Professional hair wash and conditioning treatment.",
-    image: '/images/lacrown/luxury-salon/womens-hair/salon-womens-hair-wash.webp',
+    image: '/images/lacrown/luxury-salon/womens-hair/womens-hair-wash-conditioning.png',
     priceNote: 'Contact us for pricing',
   },
   {
@@ -490,7 +490,7 @@ export const SALON_SERVICES: SalonService[] = [
     category: "Women's Hair Care & Colour",
     categorySlug: 'womens-haircare',
     description: "Relaxing and restorative hair spa treatment.",
-    image: '/images/lacrown/luxury-salon/womens-hair/salon-womens-hair-spa.webp',
+    image: '/images/lacrown/luxury-salon/womens-hair/womens-hair-spa.png',
     priceNote: 'Contact us for pricing',
     featured: true,
   },
@@ -502,7 +502,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'womens-haircare',
     description: "Deeply nourishing hair spa with intensive moisture replenishment.",
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/womens-hair/salon-womens-nourishing-hair-spa.webp'
+    image: '/images/lacrown/luxury-salon/womens-hair/nourishing-hair-spa.png'
   },
   {
     id: 'womens-repairing-hair-spa',
@@ -512,7 +512,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'womens-haircare',
     description: "Targeted repairing hair spa for damaged, stressed or chemically treated hair.",
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/womens-hair/salon-womens-repairing-hair-spa.webp'
+    image: '/images/lacrown/luxury-salon/womens-hair/repairing-hair-spa.png'
   },
   {
     id: 'womens-anti-dandruff',

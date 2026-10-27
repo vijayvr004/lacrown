@@ -704,7 +704,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'womens-haircut',
     title: "Women's Conditioning Hair Wash",
     description: 'Relaxing reclined basin hair wash with clarifying shampoo, acupressure scalp massage, and botanical conditioning rinse.',
-    image: '/images/lacrown/luxury-salon/womens-hair/salon-womens-hair-wash.webp',
+    image: '/images/lacrown/luxury-salon/womens-hair/womens-hair-wash-conditioning.png',
     alt: 'Relaxing luxury hair wash and scalp massage at salon shampoo basin',
     priceNote: 'Contact us for pricing'
   },
@@ -715,7 +715,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'womens-haircut',
     title: 'Classic Hair Spa',
     description: 'Deep-conditioning cream mask with ozone micro-mist steam infusion to open hair cuticles and restore moisture to dry locks.',
-    image: '/images/lacrown/luxury-salon/womens-hair/salon-womens-hair-spa.webp',
+    image: '/images/lacrown/luxury-salon/womens-hair/womens-hair-spa.png',
     alt: 'Ozone steam micro-mist hair spa treatment with deep moisture mask',
     priceNote: 'Contact us for pricing'
   },
@@ -726,7 +726,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'womens-haircut',
     title: 'Nourishing Hair Spa Ritual',
     description: 'Enriched lipid and argan oil mask massaged strand by strand to replenish depleted hair fibers, leaving silk-like suppleness.',
-    image: '/images/lacrown/luxury-salon/womens-hair/salon-womens-nourishing-hair-spa.webp',
+    image: '/images/lacrown/luxury-salon/womens-hair/nourishing-hair-spa.png',
     alt: 'Stylist applying nourishing hair spa mask strand by strand to client',
     priceNote: 'Contact us for pricing'
   },
@@ -737,7 +737,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'womens-haircut',
     title: 'Repairing Hair Spa Therapy',
     description: 'Intense bond-rebuilding and ceramide treatment repairing damage from bleaching, excessive heat, and environmental stress.',
-    image: '/images/lacrown/luxury-salon/womens-hair/salon-womens-repairing-hair-spa.webp',
+    image: '/images/lacrown/luxury-salon/womens-hair/repairing-hair-spa.png',
     alt: 'Bond repairing deep hair therapy treatment for chemically treated hair',
     priceNote: 'Contact us for pricing'
   },
