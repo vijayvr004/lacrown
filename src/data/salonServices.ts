@@ -1211,7 +1211,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Luxurious full body polishing treatment using exfoliating scrubs and nourishing masks for silky, glowing skin.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/lacrown/luxury-salon/body-polishing/salon-classic-body-polishing.webp'
+    image: '/images/lacrown/luxury-salon/body-polishing/full-body-polishing.png'
   },
   {
     id: 'back-polish',
@@ -1221,7 +1221,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'body-polishing',
     description: "Targeted back exfoliation and polishing treatment.",
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/body-polishing/salon-bridal-body-polishing.webp'
+    image: '/images/lacrown/luxury-salon/body-polishing/back-polishing.png'
   },
   {
     id: 'luxury-body-polish',
@@ -1231,7 +1231,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'body-polishing',
     description: "A premium body polishing ritual with high-end exfoliants and skin-nourishing treatments.",
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/body-polishing/salon-luxury-gold-body-polishing.webp'
+    image: '/images/lacrown/luxury-salon/body-polishing/luxury-body-polishing.png'
   },
 
   // ─── MAKEUP ───
@@ -1244,7 +1244,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Glamorous party makeup for events, celebrations, and special occasions.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/lacrown/luxury-salon/bridal-makeup/salon-party-makeup.webp'
+    image: '/images/lacrown/luxury-salon/bridal-makeup/party-makeup.png'
   },
   {
     id: 'engagement-makeup',
@@ -1254,7 +1254,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'makeup',
     description: "Elegant engagement makeup for one of your most special occasions.",
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/bridal-makeup/salon-engagement-makeup.webp'
+    image: '/images/lacrown/luxury-salon/bridal-makeup/engagement-makeup.png'
   },
   {
     id: 'bridal-makeup',
@@ -1266,7 +1266,7 @@ export const SALON_SERVICES: SalonService[] = [
     priceNote: 'Price on consultation — bespoke packages available',
     consultationRequired: true,
     featured: true,
-    image: '/images/lacrown/luxury-salon/bridal-makeup/salon-signature-bridal-makeup.webp'
+    image: '/images/lacrown/luxury-salon/bridal-makeup/bridal-makeup.png'
   },
   {
     id: 'reception-makeup',
@@ -1276,7 +1276,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'makeup',
     description: "Stunning reception makeup for the celebration after your wedding.",
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/bridal-makeup/salon-reception-makeup.webp'
+    image: '/images/lacrown/luxury-salon/bridal-makeup/reception-makeup.png'
   },
   {
     id: 'airbrush-makeup',
