@@ -905,7 +905,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'luxury-facials',
     description: "A foundational cleansing and hydration facial suitable for regular skin maintenance.",
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/facials/salon-clean-up.webp'
+    image: '/images/lacrown/luxury-salon/facials/basic-facial.png'
   },
   {
     id: 'salon-brightening-facial',
@@ -916,7 +916,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Brightening facial targeting dullness and uneven skin tone for a radiant complexion.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/lacrown/luxury-salon/facials/salon-fruit-facial.webp'
+    image: '/images/lacrown/luxury-salon/facials/brightening-facial.png'
   },
   {
     id: 'salon-detan-facial',
@@ -926,7 +926,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'luxury-facials',
     description: "Targeted de-tan facial to address sun-induced pigmentation and dullness.",
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/facials/salon-radiance-facial.webp'
+    image: '/images/lacrown/luxury-salon/facials/de-tan-facial.png'
   },
   {
     id: 'salon-anti-acne-facial',
@@ -936,7 +936,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'luxury-facials',
     description: "Targeted facial treatment to address acne, blemishes and oily skin concerns.",
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/facials/salon-gold-radiance-facial.webp'
+    image: '/images/lacrown/luxury-salon/facials/anti-acne-facial.png'
   },
   {
     id: 'salon-luxury-facial',
@@ -971,7 +971,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "A luxurious salon anti-ageing facial using premium actives to address fine lines, dullness, and loss of firmness. Suitable for all genders.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/lacrown/luxury-salon/anti-ageing/salon-anti-ageing-facial.webp'
+    image: '/images/lacrown/luxury-salon/anti-ageing/anti-ageing-beauty-facial.png'
   },
   {
     id: 'salon-firming-treatment',
@@ -981,7 +981,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'anti-ageing-salon',
     description: "Salon-grade firming treatment to support skin tone and radiance.",
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/anti-ageing/salon-collagen-rejuvenation-facial.webp'
+    image: '/images/lacrown/luxury-salon/anti-ageing/firming-lifting-treatment.png'
   },
   {
     id: 'salon-eye-treatment',
@@ -991,7 +991,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'anti-ageing-salon',
     description: "Targeted eye treatment to address dark circles, puffiness, and fine lines around the eye area.",
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/anti-ageing/salon-skin-firming-lift-treatment.webp'
+    image: '/images/lacrown/luxury-salon/anti-ageing/eye-revitalising-treatment.png'
   },
 
   // ─── HAND & FOOT CARE ───

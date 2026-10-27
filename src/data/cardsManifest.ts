@@ -1106,7 +1106,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'luxury-facials',
     title: 'Express Deep Clean-Up',
     description: 'Essential 45-minute facial including gentle cleansing, enzymatic exfoliation, blackhead extraction, and balancing clay mask.',
-    image: '/images/lacrown/luxury-salon/facials/salon-clean-up.webp',
+    image: '/images/lacrown/luxury-salon/facials/basic-facial.png',
     alt: 'Deep clean-up facial with gentle blackhead extraction and steam',
     priceNote: 'Contact us for pricing'
   },
@@ -1117,7 +1117,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'luxury-facials',
     title: 'Organic Fresh Fruit Facial',
     description: 'Enzyme-rich fresh organic fruit pulp pack (papaya, strawberry, orange) replenishing natural vitamins and mild acids.',
-    image: '/images/lacrown/luxury-salon/facials/salon-fruit-facial.webp',
+    image: '/images/lacrown/luxury-salon/facials/brightening-facial.png',
     alt: 'Organic fresh fruit pulp facial mask nourishing client skin',
     priceNote: 'Contact us for pricing'
   },
@@ -1128,7 +1128,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'luxury-facials',
     title: 'Skin Radiance Glow Facial',
     description: 'Vitamin C and mulberry extract facial with lymphatic drainage facial massage to brighten dull, fatigued complexions.',
-    image: '/images/lacrown/luxury-salon/facials/salon-radiance-facial.webp',
+    image: '/images/lacrown/luxury-salon/facials/de-tan-facial.png',
     alt: 'Skin radiance brightening facial massage with citrus vitamin C serum',
     priceNote: 'Contact us for pricing',
     featured: true
@@ -1140,7 +1140,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'luxury-facials',
     title: '24K Gold Radiance Facial',
     description: 'Opulent gold foil mask, 24K gold serum massage, and thermal mask imparting a rich, regal, celebratory golden radiance.',
-    image: '/images/lacrown/luxury-salon/facials/salon-gold-radiance-facial.webp',
+    image: '/images/lacrown/luxury-salon/facials/anti-acne-facial.png',
     alt: '24K pure gold leaf luxury facial mask applied to face for bridal glow',
     priceNote: 'Contact us for pricing',
     featured: true,
@@ -1178,7 +1178,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'anti-ageing-beauty',
     title: 'Cellular Anti-Ageing Facial',
     description: 'Retinol-alternative botanical bakuchiol and ceramide treatment stimulating micro-circulation and smoothing fine lines.',
-    image: '/images/lacrown/luxury-salon/anti-ageing/salon-anti-ageing-facial.webp',
+    image: '/images/lacrown/luxury-salon/anti-ageing/anti-ageing-beauty-facial.png',
     alt: 'Anti-ageing facial treatment with firming massage technique',
     priceNote: 'Contact us for pricing'
   },
@@ -1189,7 +1189,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'anti-ageing-beauty',
     title: 'Collagen Rejuvenation Facial',
     description: 'Marine collagen biocellulose sheet mask infused with ultrasound waves for deep dermal absorption and plump hydration.',
-    image: '/images/lacrown/luxury-salon/anti-ageing/salon-collagen-rejuvenation-facial.webp',
+    image: '/images/lacrown/luxury-salon/anti-ageing/firming-lifting-treatment.png',
     alt: 'Marine collagen sheet mask and ultrasound infusion facial',
     priceNote: 'Contact us for pricing',
     featured: true
@@ -1201,7 +1201,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'anti-ageing-beauty',
     title: 'Skin Firming & Contour Lift',
     description: 'Microcurrent neuromuscular stimulation and gua sha contouring tightening jawline, cheekbones, and sagging neck tissue.',
-    image: '/images/lacrown/luxury-salon/anti-ageing/salon-skin-firming-lift-treatment.webp',
+    image: '/images/lacrown/luxury-salon/anti-ageing/eye-revitalising-treatment.png',
     alt: 'Microcurrent contouring lifting wand firming jawline and cheeks',
     priceNote: 'Contact us for pricing'
   },
