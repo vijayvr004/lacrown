@@ -233,6 +233,7 @@ export const SALON_SERVICES: SalonService[] = [
     category: "Men's Hair Care & Colour",
     categorySlug: 'mens-haircare',
     description: "Professional hair wash and conditioning service.",
+    image: '/images/lacrown/luxury-salon/mens-haircare/mens-hair-wash.png',
     priceNote: 'Contact us for pricing',
   },
   {
@@ -242,6 +243,7 @@ export const SALON_SERVICES: SalonService[] = [
     category: "Men's Hair Care & Colour",
     categorySlug: 'mens-haircare',
     description: "Nourishing oil infusion treatment for scalp and hair health.",
+    image: '/images/lacrown/luxury-salon/mens-haircare/mens-oil-infusion.png',
     priceNote: 'Contact us for pricing',
   },
   {
@@ -251,6 +253,7 @@ export const SALON_SERVICES: SalonService[] = [
     category: "Men's Hair Care & Colour",
     categorySlug: 'mens-haircare',
     description: "Deep nourishing hair spa for men to restore moisture and vitality.",
+    image: '/images/lacrown/luxury-salon/mens-haircare/mens-nourishing-hair-spa.png',
     priceNote: 'Contact us for pricing',
     featured: true,
   },
@@ -261,6 +264,7 @@ export const SALON_SERVICES: SalonService[] = [
     category: "Men's Hair Care & Colour",
     categorySlug: 'mens-haircare',
     description: "Targeted anti-dandruff treatment to address flaking and scalp irritation.",
+    image: '/images/lacrown/luxury-salon/mens-haircare/mens-anti-dandruff-control.png',
     priceNote: 'Contact us for pricing',
   },
   {
