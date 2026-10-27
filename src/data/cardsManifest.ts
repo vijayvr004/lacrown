@@ -840,7 +840,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'threading-grooming',
     title: 'Eyebrows Threading & Shaping',
     description: 'Precision 100% antibacterial cotton thread hair removal shaping symmetrical, crisp brow arches tailored to your face.',
-    image: '/images/lacrown/luxury-salon/threading/salon-eyebrows-threading.webp',
+    image: '/images/lacrown/luxury-salon/threading/eyebrow-threading.png',
     alt: 'Precision cotton thread eyebrow shaping and arch definition in salon',
     priceNote: 'Contact us for pricing',
     featured: true
@@ -852,7 +852,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'threading-grooming',
     title: 'Upper Lip Threading',
     description: 'Fast, smooth removal of fine upper lip hair from the follicle without chemical irritation, leaving a velvety texture.',
-    image: '/images/lacrown/luxury-salon/threading/salon-upper-lip-threading.webp',
+    image: '/images/lacrown/luxury-salon/threading/upper-lip-threading.png',
     alt: 'Gentle upper lip threading hair removal with antibacterial thread',
     priceNote: 'Contact us for pricing'
   },
@@ -863,7 +863,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'threading-grooming',
     title: 'Lower Lip Threading',
     description: 'Delicate removal of stray fuzz and shadow hair beneath the lower lip line for clean skin and smooth lipstick application.',
-    image: '/images/lacrown/luxury-salon/threading/salon-lower-lip-threading.webp',
+    image: '/images/lacrown/luxury-salon/threading/lower-lip-threading.png',
     alt: 'Lower lip threading contouring for flawless facial skin canvas',
     priceNote: 'Contact us for pricing'
   },
@@ -874,7 +874,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'threading-grooming',
     title: 'Chin Threading',
     description: 'Targeted removal of stubborn chin and jawline hairs, preventing ingrowns and leaving clean, smooth skin.',
-    image: '/images/lacrown/luxury-salon/threading/salon-chin-threading.webp',
+    image: '/images/lacrown/luxury-salon/threading/chin-threading.png',
     alt: 'Clean chin threading hair removal session with calming aloe finish',
     priceNote: 'Contact us for pricing'
   },

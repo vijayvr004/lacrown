@@ -664,7 +664,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Precise eyebrow shaping using threading technique.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/lacrown/luxury-salon/threading/salon-eyebrows-threading.webp'
+    image: '/images/lacrown/luxury-salon/threading/eyebrow-threading.png'
   },
   {
     id: 'upper-lip-threading',
@@ -674,7 +674,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'threading',
     description: "Upper lip hair removal by threading.",
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/threading/salon-upper-lip-threading.webp'
+    image: '/images/lacrown/luxury-salon/threading/upper-lip-threading.png'
   },
   {
     id: 'lower-lip-threading',
@@ -684,7 +684,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'threading',
     description: "Lower lip hair removal by threading.",
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/threading/salon-lower-lip-threading.webp'
+    image: '/images/lacrown/luxury-salon/threading/lower-lip-threading.png'
   },
   {
     id: 'chin-threading',
@@ -694,7 +694,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'threading',
     description: "Chin hair removal by threading.",
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/threading/salon-chin-threading.webp'
+    image: '/images/lacrown/luxury-salon/threading/chin-threading.png'
   },
   {
     id: 'jawline-threading',
