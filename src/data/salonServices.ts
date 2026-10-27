@@ -747,7 +747,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'waxing',
     description: "Gentle face waxing for smooth, hair-free facial skin.",
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/waxing/salon-full-front-waxing.webp'
+    image: '/images/lacrown/luxury-salon/waxing/face-waxing.png'
   },
   {
     id: 'underarm-waxing',
@@ -758,7 +758,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Effective underarm hair removal by waxing.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/lacrown/luxury-salon/waxing/salon-underarms-waxing.webp'
+    image: '/images/lacrown/luxury-salon/waxing/underarm-waxing.png'
   },
   {
     id: 'half-arm-waxing',
@@ -768,7 +768,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'waxing',
     description: "Waxing for the lower arm.",
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/waxing/salon-half-arms-waxing.webp'
+    image: '/images/lacrown/luxury-salon/waxing/half-arm-waxing.png'
   },
   {
     id: 'full-arm-waxing',
@@ -778,7 +778,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'waxing',
     description: "Complete arm waxing for smooth, hair-free arms.",
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/waxing/salon-full-arms-waxing.webp'
+    image: '/images/lacrown/luxury-salon/waxing/full-arm-waxing.png'
   },
   {
     id: 'half-leg-waxing',
@@ -842,7 +842,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Targeted de-tan treatment for the face to address sun-induced pigmentation.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/lacrown/luxury-salon/detan-bleach/salon-face-neck-detan.webp'
+    image: '/images/lacrown/luxury-salon/detan-bleach/face-de-tan.png'
   },
   {
     id: 'full-body-detan',
@@ -852,7 +852,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'detan-bleach',
     description: "Comprehensive full body de-tan treatment.",
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/detan-bleach/salon-full-body-detan.webp'
+    image: '/images/lacrown/luxury-salon/detan-bleach/full-body-de-tan.png'
   },
   {
     id: 'face-bleach',
@@ -863,7 +863,7 @@ export const SALON_SERVICES: SalonService[] = [
     description: "Professional face bleach treatment to lighten facial hair and brighten skin tone.",
     priceNote: 'Contact us for pricing',
     featured: true,
-    image: '/images/lacrown/luxury-salon/detan-bleach/salon-half-arms-detan.webp'
+    image: '/images/lacrown/luxury-salon/detan-bleach/face-bleach.png'
   },
   {
     id: 'full-body-bleach',
@@ -873,7 +873,7 @@ export const SALON_SERVICES: SalonService[] = [
     categorySlug: 'detan-bleach',
     description: "Full body bleach treatment for an even, brightened skin tone.",
     priceNote: 'Contact us for pricing',
-    image: '/images/lacrown/luxury-salon/detan-bleach/salon-full-legs-detan.webp'
+    image: '/images/lacrown/luxury-salon/detan-bleach/full-body-bleach.png'
   },
   {
     id: 'arms-detan',

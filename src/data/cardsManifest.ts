@@ -932,7 +932,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'waxing',
     title: 'Full Arms Waxing',
     description: 'Gentle liposoluble chocolate wax hair removal from fingertips to shoulders, leaving soft, smooth skin for up to 4 weeks.',
-    image: '/images/lacrown/luxury-salon/waxing/salon-full-arms-waxing.webp',
+    image: '/images/lacrown/luxury-salon/waxing/full-arm-waxing.png',
     alt: 'Full arms liposoluble waxing service with soothing botanical post-lotion',
     priceNote: 'Contact us for pricing'
   },
@@ -943,7 +943,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'waxing',
     title: 'Half Arms Waxing',
     description: 'Quick, thorough hair removal from wrists to elbows using low-temperature peel-off wax suitable for sensitive skin.',
-    image: '/images/lacrown/luxury-salon/waxing/salon-half-arms-waxing.webp',
+    image: '/images/lacrown/luxury-salon/waxing/half-arm-waxing.png',
     alt: 'Half arm waxing hair removal on client in comfortable treatment room',
     priceNote: 'Contact us for pricing'
   },
@@ -954,7 +954,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'waxing',
     title: 'Underarms Waxing',
     description: 'Painless hard stripless wax removing coarse underarm hairs from the root while reducing dark shadow over time.',
-    image: '/images/lacrown/luxury-salon/waxing/salon-underarms-waxing.webp',
+    image: '/images/lacrown/luxury-salon/waxing/underarm-waxing.png',
     alt: 'Stripless hard wax underarm hair removal for smooth, clear underarms',
     priceNote: 'Contact us for pricing'
   },
@@ -988,7 +988,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'waxing',
     title: 'Full Front Waxing',
     description: 'Smooth, hygienic hair removal across the torso and abdomen using hypoallergenic wax in a private treatment suite.',
-    image: '/images/lacrown/luxury-salon/waxing/salon-full-front-waxing.webp',
+    image: '/images/lacrown/luxury-salon/waxing/face-waxing.png',
     alt: 'Hygienic torso and front waxing in private luxury salon suite',
     priceNote: 'Contact us for pricing'
   },
@@ -1036,7 +1036,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'detan-bleach',
     title: 'Face & Neck De-Tan Pack',
     description: 'Kojic and milk protein clarifying mask breaking down sun-induced tan melanin on face and neck for refreshed skin clarity.',
-    image: '/images/lacrown/luxury-salon/detan-bleach/salon-face-neck-detan.webp',
+    image: '/images/lacrown/luxury-salon/detan-bleach/face-de-tan.png',
     alt: 'Aesthetician brushing clarifying de-tan milk pack onto face and neck',
     priceNote: 'Contact us for pricing',
     featured: true
@@ -1059,7 +1059,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'detan-bleach',
     title: 'Half Arms De-Tan',
     description: 'Targeted brightening scrub and pack specifically reversing sun exposure tanning on forearms and hands.',
-    image: '/images/lacrown/luxury-salon/detan-bleach/salon-half-arms-detan.webp',
+    image: '/images/lacrown/luxury-salon/detan-bleach/face-bleach.png',
     alt: 'Half arm sun tan reversal treatment with brightening botanical mask',
     priceNote: 'Contact us for pricing'
   },
@@ -1070,7 +1070,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'detan-bleach',
     title: 'Full Legs De-Tan Ritual',
     description: 'Full leg exfoliation and de-tan clay mask removing stubborn outdoor tan lines and reviving smooth, even-toned legs.',
-    image: '/images/lacrown/luxury-salon/detan-bleach/salon-full-legs-detan.webp',
+    image: '/images/lacrown/luxury-salon/detan-bleach/full-body-bleach.png',
     alt: 'Full legs de-tan mask application and hydrating skin wrap',
     priceNote: 'Contact us for pricing'
   },
@@ -1092,7 +1092,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'detan-bleach',
     title: 'Full Body De-Tan Radiance Ritual',
     description: 'Complete head-to-toe body de-tan exfoliation, brightening body wrap, and steam rinse delivering uniform luminous skin.',
-    image: '/images/lacrown/luxury-salon/detan-bleach/salon-full-body-detan.webp',
+    image: '/images/lacrown/luxury-salon/detan-bleach/full-body-de-tan.png',
     alt: 'Full body luxury de-tan wrap and radiance spa ritual',
     priceNote: 'Contact us for pricing',
     featured: true
