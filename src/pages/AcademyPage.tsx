@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { GraduationCap, Users, CheckCircle } from 'lucide-react';
 import Breadcrumb from '../components/Breadcrumb';
+import { getAssetUrl } from '../utils/imageUrl';
 
 const COURSES = [
   {
@@ -47,7 +48,7 @@ export default function AcademyPage() {
     <div>
       <section className="relative py-24 bg-burgundy text-white overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/assets/hero-bg.jpg" alt="" className="w-full h-full object-cover" />
+          <img src={getAssetUrl('/assets/hero-bg.jpg')} alt="" className="w-full h-full object-cover" />
           <div className="absolute inset-0 hero-overlay" />
         </div>
         <div className="container-luxury relative z-10">
@@ -93,7 +94,12 @@ export default function AcademyPage() {
             </div>
 
             <div className="aspect-[4/3] bg-ivory-200 overflow-hidden shadow-card">
-              <img src="/assets/hero-bg.jpg" alt="LA CROWN Academy" className="w-full h-full object-cover" />
+              <img
+                src={getAssetUrl('/images/lacrown/other/academy/academy-shaping-leaders.jpg')}
+                alt="LA CROWN Academy - Shaping Aesthetic & Beauty Leaders"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
           </div>
 
@@ -113,7 +119,7 @@ export default function AcademyPage() {
                       {/* Ambient backdrop */}
                       <div className="absolute inset-0 overflow-hidden pointer-events-none">
                         <img
-                          src={c.image}
+                          src={getAssetUrl(c.image)}
                           alt=""
                           aria-hidden="true"
                           className="w-full h-full object-cover blur-xl opacity-25 scale-125"
@@ -122,7 +128,7 @@ export default function AcademyPage() {
                       </div>
 
                       <img
-                        src={c.image}
+                        src={getAssetUrl(c.image)}
                         alt={c.title}
                         className="relative z-10 w-full h-full object-contain p-2 sm:p-2.5 transition-transform duration-500 group-hover:scale-105 drop-shadow-sm"
                         loading="lazy"
