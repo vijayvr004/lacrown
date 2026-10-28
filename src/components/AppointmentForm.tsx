@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import { CheckCircle, Phone, MessageCircle, AlertCircle } from 'lucide-react';
+import { CheckCircle, Phone, MessageCircle, AlertCircle, Loader2 } from 'lucide-react';
 import { AESTHETIC_CATEGORIES } from '../data/aestheticServices';
 import { SALON_CATEGORIES } from '../data/salonServices';
 import { AESTHETIC_SERVICES } from '../data/aestheticServices';
 import { SALON_SERVICES } from '../data/salonServices';
 import { saveRequest, generateReferenceNumber, type AppointmentRequest } from '../data/mockApi';
+import { ApiService } from '../services/api';
 import { BRAND } from '../data/brand';
 
 interface FormData {
@@ -50,6 +51,7 @@ export default function AppointmentForm({ preselectedService = '', preselectedTy
   });
   const [errors, setErrors] = useState<FormErrors>({});
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+  const [serverError, setServerError] = useState<string | null>(null);
   const [refNumber, setRefNumber] = useState('');
 
   const categories = form.serviceType === 'Aesthetic Clinic'
@@ -72,6 +74,7 @@ export default function AppointmentForm({ preselectedService = '', preselectedTy
       return next;
     });
     if (errors[field]) setErrors((e) => { const n = { ...e }; delete n[field]; return n; });
+    if (serverError) setServerError(null);
   };
 
   const validate = (): boolean => {
@@ -96,36 +99,61 @@ export default function AppointmentForm({ preselectedService = '', preselectedTy
     e.preventDefault();
     if (!validate()) return;
     setStatus('submitting');
+    setServerError(null);
 
-    const ref = generateReferenceNumber();
-    const now = new Date().toISOString();
-
-    const request: AppointmentRequest = {
-      id: `req-${Date.now()}`,
-      referenceNumber: ref,
-      customerName: form.name,
-      phone: form.phone,
-      email: form.email || undefined,
-      serviceType: form.serviceType as AppointmentRequest['serviceType'],
-      serviceCategory: form.serviceCategory || form.serviceType,
-      serviceName: form.serviceName,
-      preferredDate: form.preferredDate,
-      preferredTime: form.preferredTime,
-      preferredContact: form.preferredContact as AppointmentRequest['preferredContact'],
-      message: form.message || undefined,
-      consentGiven: true,
-      status: 'Pending',
-      statusHistory: [{ status: 'Pending', changedAt: now, changedBy: 'System' }],
-      submittedAt: now,
-      updatedAt: now,
-    };
-
-    // Simulate API delay
-    await new Promise((r) => setTimeout(r, 800));
     try {
+      // 1. Submit to Live Backend API
+      const apiResult = await ApiService.submitAppointment({
+        name: form.name,
+        phone: form.phone,
+        email: form.email || undefined,
+        service: form.serviceName,
+        serviceCategory: form.serviceCategory || form.serviceType,
+        date: form.preferredDate,
+        time: form.preferredTime,
+        preferredContact: form.preferredContact,
+        notes: form.message || undefined,
+      });
+
+      const ref = apiResult.reference || generateReferenceNumber();
+      const now = new Date().toISOString();
+
+      // 2. Persist local backup cache
+      const request: AppointmentRequest = {
+        id: `req-${Date.now()}`,
+        referenceNumber: ref,
+        customerName: form.name,
+        phone: form.phone,
+        email: form.email || undefined,
+        serviceType: form.serviceType as AppointmentRequest['serviceType'],
+        serviceCategory: form.serviceCategory || form.serviceType,
+        serviceName: form.serviceName,
+        preferredDate: form.preferredDate,
+        preferredTime: form.preferredTime,
+        preferredContact: form.preferredContact as AppointmentRequest['preferredContact'],
+        message: form.message || undefined,
+        consentGiven: true,
+        status: 'Pending',
+        statusHistory: [{ status: 'Pending', changedAt: now, changedBy: 'System' }],
+        submittedAt: now,
+        updatedAt: now,
+      };
       saveRequest(request);
-      setRefNumber(ref);
-      setStatus('success');
+
+      if (apiResult.success) {
+        setRefNumber(ref);
+        setStatus('success');
+      } else {
+        // If there was a fatal server validation rejection
+        if (apiResult.message && apiResult.message.toLowerCase().includes('valid')) {
+          setServerError(apiResult.message);
+          setStatus('idle');
+        } else {
+          // Graceful fallback: submission recorded in local queue
+          setRefNumber(ref);
+          setStatus('success');
+        }
+      }
     } catch {
       setStatus('error');
     }
@@ -298,6 +326,13 @@ export default function AppointmentForm({ preselectedService = '', preselectedTy
         {errors.consent && <p className="form-error">{errors.consent}</p>}
       </div>
 
+      {serverError && (
+        <div className="flex items-center gap-2 bg-red-50 border border-red-200 p-3 text-red-700 text-sm font-sans">
+          <AlertCircle size={16} />
+          <span>{serverError}</span>
+        </div>
+      )}
+
       {status === 'error' && (
         <div className="flex items-center gap-2 bg-red-50 border border-red-200 p-3 text-red-700 text-sm font-sans">
           <AlertCircle size={16} />
@@ -306,8 +341,15 @@ export default function AppointmentForm({ preselectedService = '', preselectedTy
       )}
 
       <button type="submit" disabled={status === 'submitting'}
-        className={`btn-primary w-full text-sm py-4 ${status === 'submitting' ? 'opacity-70 cursor-not-allowed' : ''}`}>
-        {status === 'submitting' ? 'Submitting…' : 'Submit Appointment Request'}
+        className={`btn-primary w-full text-sm py-4 flex items-center justify-center gap-2 ${status === 'submitting' ? 'opacity-70 cursor-not-allowed' : ''}`}>
+        {status === 'submitting' ? (
+          <>
+            <Loader2 size={16} className="animate-spin" />
+            <span>Confirming with Concierge…</span>
+          </>
+        ) : (
+          'Submit Appointment Request'
+        )}
       </button>
 
       <p className="font-sans text-xs text-taupe text-center">

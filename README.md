@@ -96,14 +96,111 @@ npm run preview
 
 ---
 
-## 6. Backend Integration Layer Specification
+## 6. Full-Stack Architecture & Backend Integration
 
-The mock adapter in `src/data/mockApi.ts` is structured to seamlessly plug into a production backend. The recommended REST API endpoints are:
+The project features a decoupled, production-ready full-stack architecture:
 
-- `POST /api/requests` — Submit new appointment request.
-- `GET /api/admin/requests` — Retrieve filtered request table.
-- `GET /api/admin/requests/:id` — Request detail and history trail.
-- `PATCH /api/admin/requests/:id/status` — Update status with audit note.
-- `PATCH /api/admin/requests/:id/notes` — Save internal clinic notes.
-- `POST /api/admin/auth/login` — Authenticate staff with JWT/session cookie.
-- `POST /api/admin/auth/logout` — Revoke administrative session.
+- **Frontend:** React 19 + TypeScript + Vite 8 SPA (Deployable to Vercel).
+- **Backend Service:** Node.js + Express 4.22 REST API located in `backend/` (Deployable to Render).
+- **Database:** Neon Serverless PostgreSQL with auto-migrated schema (`backend/db/schema.sql`).
+- **Email Service:** Resend Transactional Email API for executive manager alerts & patient confirmations.
+
+```
+Website Frontend (React 19 / Vite)
+        |
+        | HTTP/HTTPS JSON Requests (VITE_API_BASE_URL)
+        v
+Backend REST API (Node.js / Express)
+        |
+        +---> Neon Serverless PostgreSQL (Queries, Insertions, Updates)
+        |
+        +---> Resend Email API (Manager Dispatch & Client Confirmations)
+```
+
+### Active API Endpoints
+
+| Method | Route | Description | Auth / Security |
+| :--- | :--- | :--- | :--- |
+| `GET` | `/health` / `/api/health` | Service uptime, DB connectivity, Resend status | Public |
+| `POST` | `/api/appointments` | Book consultation, save to DB, send emails | Rate-Limited |
+| `GET` | `/api/appointments` | List all appointments | `X-Admin-Key` |
+| `PATCH`| `/api/appointments/:id/status` | Update appointment status | `X-Admin-Key` |
+| `PATCH`| `/api/appointments/:id/notes` | Update staff internal notes | `X-Admin-Key` |
+| `POST` | `/api/enquiries/franchise` | Submit franchise expression of interest | Rate-Limited |
+| `GET` | `/api/enquiries/franchise` | List franchise inquiries | `X-Admin-Key` |
+| `PATCH`| `/api/enquiries/franchise/:id/status` | Update franchise inquiry status | `X-Admin-Key` |
+| `POST` | `/api/enquiries/contact` | Submit general message or clinical query | Rate-Limited |
+| `GET` | `/api/enquiries/contact` | List general contact messages | `X-Admin-Key` |
+| `POST` | `/api/admin/login` | Verify administrator credentials | Secure Verification |
+| `GET` | `/api/admin/overview` | Aggregated metrics, recent bookings & inquiries | `X-Admin-Key` |
+
+---
+
+## 7. Local Development Guide
+
+### Quick Start (Both Frontend & Backend)
+
+1. **Install Frontend Dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Install Backend Dependencies:**
+   ```bash
+   npm run backend:install
+   ```
+
+3. **Configure Environment:**
+   - In root, copy `.env.example` to `.env`:
+     ```bash
+     cp .env.example .env
+     ```
+   - In `backend/`, copy `.env.example` to `.env`:
+     ```bash
+     cd backend && cp .env.example .env && cd ..
+     ```
+
+4. **Start Backend Server:**
+   ```bash
+   npm run backend
+   # or with live file watcher:
+   npm run backend:dev
+   ```
+   Server runs on `http://localhost:8000`.
+
+5. **Start Frontend Dev Server (in a second terminal):**
+   ```bash
+   npm run dev
+   ```
+   Frontend runs on `http://localhost:5173`. Requests to `/api` and `/health` automatically proxy to `http://localhost:8000`.
+
+6. **Run Backend Verification Tests:**
+   ```bash
+   npm --prefix backend test
+   ```
+
+---
+
+## 8. Production Deployment Guide
+
+### A. Deploy Backend to Render
+1. Push this repository to GitHub.
+2. In [Render Dashboard](https://dashboard.render.com), create a new **Web Service**.
+3. Set **Root Directory** to `backend`.
+4. Build Command: `npm install` | Start Command: `npm start`.
+5. Add Environment Variables:
+   - `NODE_ENV` = `production`
+   - `DATABASE_URL` = *(Your Neon PostgreSQL connection string)*
+   - `RESEND_API_KEY` = *(Your Resend API Key)*
+   - `MANAGER_EMAIL` = `lacrownaesthetics1111@gmail.com`
+   - `EMAIL_FROM` = `La Crown Concierge <onboarding@resend.dev>`
+   - `CLIENT_ORIGIN` = `https://lacrown-pink.vercel.app`
+   - `ADMIN_SECRET_KEY` = *(A secure random secret token)*
+
+### B. Deploy Frontend to Vercel
+1. In [Vercel Dashboard](https://vercel.com), import your repository.
+2. Root Directory: `./` (Root).
+3. Framework Preset: **Vite**.
+4. In **Environment Variables**, set:
+   - `VITE_API_BASE_URL` = `https://<your-render-backend-url>.onrender.com/api`
+5. Deploy. All forms, appointment bookings, franchise proposals, contact queries, and the administrative dashboard will immediately connect to your live backend.

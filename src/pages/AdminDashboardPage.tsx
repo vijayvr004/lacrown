@@ -1,14 +1,15 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import {
   LogOut, Search, Download, CheckCircle,
   AlertCircle, RefreshCw, ChevronRight,
-  ExternalLink
+  ExternalLink, Database
 } from 'lucide-react';
 import {
   checkAdminSession, clearAdminSession, getAllRequests, updateRequestStatus,
   updateRequestNotes, getDashboardStats, type AppointmentRequest, type RequestStatus
 } from '../data/mockApi';
+import { ApiService } from '../services/api';
 
 export default function AdminDashboardPage() {
   const navigate = useNavigate();
@@ -22,6 +23,85 @@ export default function AdminDashboardPage() {
   const [newStatus, setNewStatus] = useState<RequestStatus>('Pending');
   const [internalNoteDraft, setInternalNoteDraft] = useState('');
   const [toast, setToast] = useState<string | null>(null);
+  const [dbConnected, setDbConnected] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+
+  const adminKey = sessionStorage.getItem('lacrown_admin_key') || 'default-secret-change-in-production';
+
+  const loadData = useCallback(async () => {
+    setIsLoading(true);
+    const localList = getAllRequests();
+
+    try {
+      const res = await ApiService.getAdminOverview(adminKey);
+
+      if (res.success && res.data) {
+        setDbConnected(Boolean(res.data.databaseConnected));
+
+        if (res.data.databaseConnected && Array.isArray(res.data.appointments) && res.data.appointments.length > 0) {
+          // Map PostgreSQL rows to UI AppointmentRequest structure
+          const dbRequests: AppointmentRequest[] = res.data.appointments.map((row: any) => ({
+            id: String(row.id || row.reference),
+            referenceNumber: row.reference,
+            customerName: row.name,
+            phone: row.phone,
+            email: row.email?.includes('lacrown-guest') ? undefined : row.email,
+            serviceType: (row.service || '').toLowerCase().includes('salon') ? 'Salon' : 'Aesthetic Clinic',
+            serviceCategory: row.doctor || 'Clinical Services',
+            serviceName: row.service || 'Consultation',
+            preferredDate: row.preferred_date || new Date().toISOString().slice(0, 10),
+            preferredTime: row.preferred_time || '11:00 AM',
+            preferredContact: 'WhatsApp',
+            message: row.notes || undefined,
+            consentGiven: true,
+            status: (row.status?.toLowerCase().includes('complete')
+              ? 'Completed'
+              : row.status?.toLowerCase().includes('progress')
+              ? 'In Progress'
+              : row.status?.toLowerCase().includes('cancel')
+              ? 'Cancelled'
+              : 'Pending') as RequestStatus,
+            statusHistory: [
+              {
+                status: (row.status || 'Pending') as RequestStatus,
+                changedAt: row.created_at || new Date().toISOString(),
+                changedBy: 'System Concierge'
+              }
+            ],
+            internalNotes: row.notes || '',
+            submittedAt: row.created_at || new Date().toISOString(),
+            updatedAt: row.updated_at || row.created_at || new Date().toISOString(),
+          }));
+
+          // Merge without duplicates by reference
+          const existingRefs = new Set(dbRequests.map((r) => r.referenceNumber));
+          const uncommittedLocal = localList.filter((r) => !existingRefs.has(r.referenceNumber));
+          const combined = [...dbRequests, ...uncommittedLocal];
+
+          setRequests(combined);
+
+          const todayStr = new Date().toDateString();
+          setStats({
+            total: combined.length,
+            pending: combined.filter((r) => r.status === 'Pending').length,
+            inProgress: combined.filter((r) => r.status === 'In Progress').length,
+            completed: combined.filter((r) => r.status === 'Completed').length,
+            cancelled: combined.filter((r) => r.status === 'Cancelled').length,
+            today: combined.filter((r) => new Date(r.submittedAt).toDateString() === todayStr).length,
+          });
+          return;
+        }
+      }
+    } catch {
+      setDbConnected(false);
+    } finally {
+      setIsLoading(false);
+    }
+
+    // Default to local cache
+    setRequests(localList);
+    setStats(getDashboardStats());
+  }, [adminKey]);
 
   useEffect(() => {
     if (!checkAdminSession()) {
@@ -29,13 +109,7 @@ export default function AdminDashboardPage() {
       return;
     }
     loadData();
-  }, [navigate]);
-
-  const loadData = () => {
-    const list = getAllRequests();
-    setRequests(list);
-    setStats(getDashboardStats());
-  };
+  }, [navigate, loadData]);
 
   const showToast = (msg: string) => {
     setToast(msg);
@@ -43,6 +117,7 @@ export default function AdminDashboardPage() {
   };
 
   const handleLogout = () => {
+    sessionStorage.removeItem('lacrown_admin_key');
     clearAdminSession();
     navigate('/admin/login');
   };
@@ -54,8 +129,15 @@ export default function AdminDashboardPage() {
     setInternalNoteDraft(req.internalNotes || '');
   };
 
-  const handleSaveStatus = () => {
+  const handleSaveStatus = async () => {
     if (!selectedRequest) return;
+
+    // 1. Live Backend update
+    if (dbConnected) {
+      await ApiService.updateAppointmentStatus(selectedRequest.id, newStatus, adminKey);
+    }
+
+    // 2. Local cache update
     const updated = updateRequestStatus(
       selectedRequest.id,
       newStatus,
@@ -69,8 +151,15 @@ export default function AdminDashboardPage() {
     }
   };
 
-  const handleSaveNotes = () => {
+  const handleSaveNotes = async () => {
     if (!selectedRequest) return;
+
+    // 1. Live Backend update
+    if (dbConnected) {
+      await ApiService.updateAppointmentNotes(selectedRequest.id, internalNoteDraft, adminKey);
+    }
+
+    // 2. Local cache update
     const updated = updateRequestNotes(selectedRequest.id, internalNoteDraft);
     if (updated) {
       setSelectedRequest(updated);
@@ -161,13 +250,42 @@ export default function AdminDashboardPage() {
         </div>
       </header>
 
-      {/* Development environment banner */}
-      <div className="bg-amber-100 border-b border-amber-300 px-6 py-2 text-xs text-amber-900 flex items-center justify-between">
+      {/* Dynamic Environment & Database Connectivity Banner */}
+      <div
+        className={`border-b px-6 py-2.5 text-xs flex items-center justify-between ${
+          dbConnected
+            ? 'bg-emerald-50 border-emerald-300 text-emerald-900'
+            : 'bg-amber-50 border-amber-300 text-amber-900'
+        }`}
+      >
         <div className="flex items-center gap-2">
-          <AlertCircle size={14} className="text-amber-700" />
-          <span><strong>Development Demo Storage:</strong> Data updates persist in local demo adapter. Ready for REST API endpoint binding.</span>
+          {dbConnected ? (
+            <>
+              <Database size={15} className="text-emerald-700" />
+              <span>
+                <strong>Live PostgreSQL Connected:</strong> Real-time synchronization active with Neon Database & Resend Email Services.
+              </span>
+            </>
+          ) : (
+            <>
+              <AlertCircle size={15} className="text-amber-700" />
+              <span>
+                <strong>Local Operation Mode:</strong> Operating with local cache. Start backend service to sync with live PostgreSQL.
+              </span>
+            </>
+          )}
         </div>
-        <span className="text-[11px] text-amber-800">Auth: admin@lacrown.in</span>
+        <div className="flex items-center gap-3">
+          <button
+            onClick={() => loadData()}
+            disabled={isLoading}
+            className="flex items-center gap-1 text-[11px] font-semibold text-burgundy hover:text-gold"
+          >
+            <RefreshCw size={12} className={isLoading ? 'animate-spin' : ''} />
+            <span>Refresh</span>
+          </button>
+          <span className="text-[11px] opacity-75">Auth: admin@lacrown.in</span>
+        </div>
       </div>
 
       {/* Toast Alert */}

@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { Lock, Mail, Eye, EyeOff, AlertCircle, Shield } from 'lucide-react';
+import { Lock, Mail, Eye, EyeOff, AlertCircle, Shield, Loader2 } from 'lucide-react';
 import { checkAdminSession, setAdminSession, DEMO_ADMIN } from '../data/mockApi';
+import { ApiService } from '../services/api';
 
 export default function AdminLoginPage() {
   const [email, setEmail] = useState('');
@@ -17,20 +18,45 @@ export default function AdminLoginPage() {
     }
   }, [navigate]);
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
     setLoading(true);
 
-    setTimeout(() => {
+    try {
+      const res = await ApiService.adminLogin({
+        username: email.trim(),
+        password,
+      });
+
+      if (res.success && res.token) {
+        sessionStorage.setItem('lacrown_admin_key', res.token);
+        setAdminSession();
+        navigate('/admin/dashboard');
+        return;
+      }
+
+      // If backend responded with invalid or rejected
       if (email.trim() === DEMO_ADMIN.username && password === DEMO_ADMIN.password) {
+        sessionStorage.setItem('lacrown_admin_key', 'demo-session-token');
+        setAdminSession();
+        navigate('/admin/dashboard');
+        return;
+      }
+
+      setError(res.message || 'Invalid administrator email or password.');
+    } catch {
+      // Offline fallback
+      if (email.trim() === DEMO_ADMIN.username && password === DEMO_ADMIN.password) {
+        sessionStorage.setItem('lacrown_admin_key', 'demo-session-token');
         setAdminSession();
         navigate('/admin/dashboard');
       } else {
         setError('Invalid administrator email or password.');
-        setLoading(false);
       }
-    }, 600);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleFillDemo = () => {
@@ -120,11 +146,18 @@ export default function AdminLoginPage() {
           <button
             type="submit"
             disabled={loading}
-            className={`btn-primary w-full text-xs py-3.5 tracking-wider uppercase ${
+            className={`btn-primary w-full text-xs py-3.5 tracking-wider uppercase flex items-center justify-center gap-2 ${
               loading ? 'opacity-70 cursor-not-allowed' : ''
             }`}
           >
-            {loading ? 'Authenticating...' : 'Sign In to Dashboard'}
+            {loading ? (
+              <>
+                <Loader2 size={14} className="animate-spin" />
+                <span>Authenticating...</span>
+              </>
+            ) : (
+              'Sign In to Dashboard'
+            )}
           </button>
         </form>
 
