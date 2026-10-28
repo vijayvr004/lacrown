@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/Layout';
 import ScrollToTop from './components/ScrollToTop';
+import LuxuryCurtainTransition from './components/LuxuryCurtainTransition';
 
 // Public Pages
 import HomePage from './pages/HomePage';
@@ -34,6 +35,7 @@ export default function App() {
   return (
     <BrowserRouter basename={import.meta.env.BASE_URL}>
       <ScrollToTop />
+      <LuxuryCurtainTransition />
       <Routes>
         {/* Admin Routes (Standalone Layout) */}
         <Route path="/admin" element={<Navigate to="/admin/dashboard" replace />} />
