@@ -1637,7 +1637,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'academy-training',
     title: 'Diploma in Cosmetology & Clinical Skincare',
     description: 'In-depth diploma curriculum covering skin biology, modern aesthetic facial treatments, chemical peel protocols, and salon hygiene standards.',
-    image: '/images/lacrown/other/academy/academy-cosmetology-skincare.webp',
+    image: '/images/lacrown/other/academy/academy-cosmetology-skincare.png',
     alt: 'Cosmetology academy instructor demonstrating clinical facial technique to students',
     priceNote: 'Modular Certification',
     featured: true
@@ -1649,7 +1649,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'academy-training',
     title: 'Masterclass in Semi-Permanent Makeup (SPMU)',
     description: 'Precision artistry certification in microblading hair strokes, lip blush tinting, shading geometry, color theory, and sterilization hygiene.',
-    image: '/images/lacrown/other/academy/academy-spmu-masterclass.webp',
+    image: '/images/lacrown/other/academy/academy-spmu-masterclass.png',
     alt: 'Masterclass training session in eyebrow microblading mapping and pigments',
     priceNote: 'Certificate Course',
     featured: true
@@ -1661,7 +1661,7 @@ export const CARDS_MANIFEST: CardRecord[] = [
     categorySlug: 'academy-training',
     title: 'Advanced Hair Styling & Texture Transformation',
     description: 'Creative cutting mastery, international French balayage application, keratin smoothing protocols, and executive styling portfolios.',
-    image: '/images/lacrown/other/academy/academy-hair-styling-texture.webp',
+    image: '/images/lacrown/other/academy/academy-hair-styling-texture.png',
     alt: 'Professional salon academy students learning balayage color placement',
     priceNote: 'Professional Series',
     featured: true

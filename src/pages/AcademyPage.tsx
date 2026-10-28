@@ -1,32 +1,45 @@
 import { useState } from 'react';
-import { GraduationCap, Users, CheckCircle } from 'lucide-react';
+import { GraduationCap, Users, CheckCircle, X, Maximize2 } from 'lucide-react';
 import Breadcrumb from '../components/Breadcrumb';
 import { getAssetUrl } from '../utils/imageUrl';
 
-const COURSES = [
+interface CourseItem {
+  title: string;
+  duration: string;
+  level: string;
+  image: string;
+  overview: string;
+  modules: string[];
+  objectPosition: string;
+}
+
+const COURSES: CourseItem[] = [
   {
     title: 'Diploma in Cosmetology & Clinical Skincare',
     duration: 'Comprehensive Modular Course',
     level: 'Beginner to Advanced',
-    image: '/images/lacrown/other/academy/academy-cosmetology-skincare.webp',
+    image: '/images/lacrown/other/academy/academy-cosmetology-skincare.png',
     overview: 'In-depth foundation covering skin biology, modern aesthetic facial treatments, chemical peel fundamentals, and salon hygiene standards.',
     modules: ['Skin Anatomy & Physiology', 'Advanced Facial Techniques & Vortex Extraction', 'Chemical Peeling Protocols', 'Sterilization & Client Consultation'],
+    objectPosition: 'object-[center_16%]',
   },
   {
     title: 'Masterclass in Semi-Permanent Makeup (SPMU)',
     duration: 'Specialized Certificate Training',
     level: 'Intermediate Practitioners',
-    image: '/images/lacrown/other/academy/academy-spmu-masterclass.webp',
+    image: '/images/lacrown/other/academy/academy-spmu-masterclass.png',
     overview: 'Precision artistry training in microblading techniques, lip tinting, shading, color theory, and aftercare management.',
     modules: ['Eyebrow Mapping & Architecture', 'Microblading Stroke Techniques', 'Lip Neutralization & Tinting', 'Safety, Needles & Pigment Science'],
+    objectPosition: 'object-[center_35%]',
   },
   {
     title: 'Advanced Hair Styling & Texture Transformation',
     duration: 'Professional Salon Series',
     level: 'Salon Stylists',
-    image: '/images/lacrown/other/academy/academy-hair-styling-texture.webp',
+    image: '/images/lacrown/other/academy/academy-hair-styling-texture.png',
     overview: 'Creative cutting mastery, international balayage application, keratin smoothing protocols, and executive men’s grooming techniques.',
     modules: ['Geometric & Creative Haircuts', 'Balayage & Ombré Freehand Techniques', 'Keratin & Rebonding Science', 'Client Consultations & Styling Portfolio'],
+    objectPosition: 'object-[center_20%]',
   },
 ];
 
@@ -37,6 +50,7 @@ export default function AcademyPage() {
   const [email, setEmail] = useState('');
   const [course, setCourse] = useState(COURSES[0].title);
   const [notes, setNotes] = useState('');
+  const [selectedCourse, setSelectedCourse] = useState<CourseItem | null>(null);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -111,64 +125,171 @@ export default function AcademyPage() {
               <div className="gold-divider" />
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
               {COURSES.map((c) => (
-                <div key={c.title} className="border border-ivory-300 bg-white shadow-card hover:shadow-luxury transition-all duration-300 rounded-xl overflow-hidden flex flex-col justify-between group">
+                <div
+                  key={c.title}
+                  className="border border-rose-border/60 bg-white shadow-card hover:shadow-luxury transition-all duration-300 rounded-2xl overflow-hidden flex flex-col justify-between group"
+                >
                   <div>
-                    <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-ivory-100 via-ivory-200 to-cream flex items-center justify-center">
-                      {/* Ambient backdrop */}
-                      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                        <img
-                          src={getAssetUrl(c.image)}
-                          alt=""
-                          aria-hidden="true"
-                          className="w-full h-full object-cover blur-xl opacity-25 scale-125"
-                        />
-                        <div className="absolute inset-0 bg-white/30 backdrop-blur-[1px]" />
-                      </div>
-
+                    {/* Compact Image Container with Clean Edge-to-Edge Fitting */}
+                    <div
+                      onClick={() => setSelectedCourse(c)}
+                      className="relative aspect-[3/2] overflow-hidden bg-ivory-100 cursor-pointer"
+                      title="Click to view crystal-clear high resolution course preview"
+                    >
                       <img
                         src={getAssetUrl(c.image)}
                         alt={c.title}
-                        className="relative z-10 w-full h-full object-contain p-2 sm:p-2.5 transition-transform duration-500 group-hover:scale-105 drop-shadow-sm"
+                        className={`w-full h-full object-cover ${c.objectPosition} transition-transform duration-500 group-hover:scale-105`}
                         loading="lazy"
                       />
-                      <div className="absolute top-3 left-3 z-20 bg-burgundy text-white text-[10px] font-sans font-semibold px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                      <div className="absolute top-2.5 left-2.5 z-10 bg-burgundy/90 backdrop-blur-sm text-white text-[9px] font-sans font-semibold px-2.5 py-0.5 rounded-full uppercase tracking-wider shadow-sm">
                         {c.level}
                       </div>
-                    </div>
-                    <div className="p-6 pb-2">
-                      <div className="flex items-center justify-between text-xs font-sans text-taupe mb-2">
-                        <span className="text-gold font-semibold uppercase tracking-wider">{c.duration}</span>
+                      <div className="absolute bottom-2.5 right-2.5 z-10 opacity-0 group-hover:opacity-100 transition-opacity bg-charcoal/75 backdrop-blur-sm text-gold text-[10px] px-2.5 py-1 rounded-md flex items-center gap-1 shadow-sm">
+                        <Maximize2 size={11} /> Open High-Res
                       </div>
-                      <h3 className="font-serif text-xl text-burgundy font-semibold mb-3 leading-snug">{c.title}</h3>
-                      <p className="font-sans text-sm text-taupe leading-relaxed mb-5">{c.overview}</p>
+                    </div>
 
-                      <h4 className="font-serif text-xs text-charcoal uppercase tracking-wider font-semibold mb-3">Core Modules:</h4>
-                      <ul className="space-y-2 mb-6">
-                        {c.modules.map((m) => (
-                          <li key={m} className="font-sans text-xs text-taupe flex items-start gap-2">
-                            <CheckCircle size={14} className="text-gold flex-shrink-0 mt-0.5" />
-                            <span>{m}</span>
+                    <div className="p-4 sm:p-5 pb-2">
+                      <div className="text-[11px] font-sans font-semibold text-gold uppercase tracking-wider mb-1">
+                        {c.duration}
+                      </div>
+                      <h3
+                        onClick={() => setSelectedCourse(c)}
+                        className="font-serif text-lg text-burgundy font-semibold mb-2 leading-snug cursor-pointer hover:text-burgundy-700 transition-colors line-clamp-1"
+                        title={c.title}
+                      >
+                        {c.title}
+                      </h3>
+                      <p className="font-sans text-xs text-taupe leading-relaxed mb-4 line-clamp-2">
+                        {c.overview}
+                      </p>
+
+                      <h4 className="font-serif text-[11px] text-charcoal uppercase tracking-wider font-semibold mb-2">Core Modules:</h4>
+                      <ul className="space-y-1.5 mb-5">
+                        {c.modules.slice(0, 3).map((m) => (
+                          <li key={m} className="font-sans text-xs text-taupe flex items-start gap-1.5">
+                            <CheckCircle size={13} className="text-gold flex-shrink-0 mt-0.5" />
+                            <span className="line-clamp-1">{m}</span>
                           </li>
                         ))}
+                        {c.modules.length > 3 && (
+                          <li
+                            onClick={() => setSelectedCourse(c)}
+                            className="font-sans text-[11px] text-gold hover:underline cursor-pointer pt-0.5"
+                          >
+                            +{c.modules.length - 3} more modules (click to open)
+                          </li>
+                        )}
                       </ul>
                     </div>
                   </div>
 
-                  <div className="p-6 pt-0">
+                  <div className="p-4 sm:p-5 pt-0 flex gap-2">
+                    <button
+                      type="button"
+                      onClick={() => setSelectedCourse(c)}
+                      className="btn-secondary text-xs flex-1 text-center py-2"
+                    >
+                      View Details
+                    </button>
                     <a
                       href="#enrolment-form"
                       onClick={() => setCourse(c.title)}
-                      className="btn-secondary text-xs w-full text-center block mt-auto"
+                      className="btn-primary text-xs flex-1 text-center py-2"
                     >
-                      Enquire for this Course
+                      Enquire Now
                     </a>
                   </div>
                 </div>
               ))}
             </div>
           </div>
+
+          {/* High-Resolution Course Detail Modal */}
+          {selectedCourse && (
+            <div
+              className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-charcoal/80 backdrop-blur-sm animate-fade-in"
+              onClick={() => setSelectedCourse(null)}
+            >
+              <div
+                className="bg-white rounded-2xl max-w-3xl w-full overflow-hidden shadow-2xl border border-rose-border max-h-[90vh] flex flex-col md:flex-row relative"
+                onClick={(e) => e.stopPropagation()}
+              >
+                {/* Close Button */}
+                <button
+                  onClick={() => setSelectedCourse(null)}
+                  className="absolute top-3 right-3 z-20 w-8 h-8 rounded-full bg-white/90 hover:bg-white text-charcoal flex items-center justify-center shadow-md transition-colors"
+                  aria-label="Close"
+                >
+                  <X size={18} />
+                </button>
+
+                {/* Left: Razor-Sharp High-Res Image Showcase */}
+                <div className="md:w-1/2 bg-ivory-100 flex items-center justify-center relative overflow-hidden">
+                  <img
+                    src={getAssetUrl(selectedCourse.image)}
+                    alt={selectedCourse.title}
+                    className="w-full h-full max-h-[360px] md:max-h-[560px] object-cover object-center"
+                    loading="eager"
+                  />
+                  <div className="absolute bottom-3 left-3 bg-burgundy/85 backdrop-blur-md text-gold text-xs px-3 py-1 rounded-full border border-gold/30 font-serif">
+                    LA CROWN Academy
+                  </div>
+                </div>
+
+                {/* Right: Comprehensive Details & Syllabus */}
+                <div className="p-6 md:p-8 md:w-1/2 flex flex-col justify-between overflow-y-auto">
+                  <div>
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="bg-burgundy text-white text-[10px] font-sans font-semibold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+                        {selectedCourse.level}
+                      </span>
+                      <span className="text-gold font-sans font-semibold text-xs uppercase tracking-wider">
+                        {selectedCourse.duration}
+                      </span>
+                    </div>
+
+                    <h3 className="font-serif text-2xl text-charcoal font-semibold mb-2 leading-snug">
+                      {selectedCourse.title}
+                    </h3>
+                    <div className="gold-divider-left mb-4" />
+
+                    <p className="font-sans text-sm text-taupe leading-relaxed mb-6">
+                      {selectedCourse.overview}
+                    </p>
+
+                    <h4 className="font-serif text-xs text-charcoal uppercase tracking-wider font-semibold mb-3">
+                      Core Syllabus & Modules:
+                    </h4>
+                    <ul className="space-y-2 mb-6">
+                      {selectedCourse.modules.map((m) => (
+                        <li key={m} className="font-sans text-xs text-taupe flex items-start gap-2">
+                          <CheckCircle size={15} className="text-gold flex-shrink-0 mt-0.5" />
+                          <span>{m}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="pt-4 border-t border-ivory-300">
+                    <a
+                      href="#enrolment-form"
+                      onClick={() => {
+                        setCourse(selectedCourse.title);
+                        setSelectedCourse(null);
+                      }}
+                      className="btn-gold text-xs w-full text-center block"
+                    >
+                      Enquire for this Course
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
 
           {/* Enrolment Form */}
           <div id="enrolment-form" className="bg-ivory-100 p-8 md:p-12 border border-ivory-300 max-w-3xl mx-auto">
