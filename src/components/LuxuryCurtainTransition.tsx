@@ -205,18 +205,18 @@ export default function LuxuryCurtainTransition() {
 
         {/* Primary Luxury Curtain (Brand Burgundy with Center Royal Crest Logo) */}
         <div className="luxury-curtain-panel luxury-curtain-primary flex flex-col items-center justify-center select-none pointer-events-none">
-          <div className="flex flex-col items-center justify-center text-center px-4 max-w-sm">
+          <div className="flex flex-col items-center justify-center text-center px-6 max-w-xl">
             <img
               src={getAssetUrl('/assets/logo.png')}
               alt="LA CROWN Crest"
-              className="h-16 sm:h-20 md:h-24 w-auto object-contain drop-shadow-[0_12px_24px_rgba(0,0,0,0.5)] mb-3 animate-fade-in"
+              className="h-28 sm:h-40 md:h-52 lg:h-60 w-auto object-contain drop-shadow-[0_16px_36px_rgba(0,0,0,0.65)] mb-4 animate-fade-in transition-all duration-300"
               loading="eager"
             />
-            <div className="font-serif text-white text-lg sm:text-2xl tracking-[0.25em] uppercase font-semibold drop-shadow-md">
+            <div className="font-serif text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-[0.25em] uppercase font-bold drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]">
               LA CROWN
             </div>
-            <div className="w-12 h-0.5 bg-gold my-2 opacity-80" />
-            <div className="font-sans text-gold-200 text-[9px] sm:text-[10px] tracking-[0.3em] uppercase font-semibold">
+            <div className="w-20 sm:w-28 md:w-36 h-0.5 bg-gradient-to-r from-transparent via-gold to-transparent my-3 sm:my-4 opacity-90" />
+            <div className="font-sans text-gold-200 text-xs sm:text-sm md:text-base tracking-[0.35em] uppercase font-semibold drop-shadow-sm">
               Luxury Aesthetic Clinic & Salon
             </div>
           </div>
