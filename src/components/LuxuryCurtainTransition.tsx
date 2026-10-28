@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useRef, useState, useCallback } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { getAssetUrl } from '../utils/imageUrl';
 
 interface LuxuryCurtainContextValue {
   navigateWithCurtain: (to: string) => void;
@@ -202,8 +203,24 @@ export default function LuxuryCurtainTransition() {
         {/* Secondary Accent Panel (Deep Wine with Champagne Gold leading edge) */}
         <div className="luxury-curtain-panel luxury-curtain-secondary" />
 
-        {/* Primary Luxury Curtain (Brand Burgundy) */}
-        <div className="luxury-curtain-panel luxury-curtain-primary" />
+        {/* Primary Luxury Curtain (Brand Burgundy with Center Royal Crest Logo) */}
+        <div className="luxury-curtain-panel luxury-curtain-primary flex flex-col items-center justify-center select-none pointer-events-none">
+          <div className="flex flex-col items-center justify-center text-center px-4 max-w-sm">
+            <img
+              src={getAssetUrl('/assets/logo.png')}
+              alt="LA CROWN Crest"
+              className="h-16 sm:h-20 md:h-24 w-auto object-contain drop-shadow-[0_12px_24px_rgba(0,0,0,0.5)] mb-3 animate-fade-in"
+              loading="eager"
+            />
+            <div className="font-serif text-white text-lg sm:text-2xl tracking-[0.25em] uppercase font-semibold drop-shadow-md">
+              LA CROWN
+            </div>
+            <div className="w-12 h-0.5 bg-gold my-2 opacity-80" />
+            <div className="font-sans text-gold-200 text-[9px] sm:text-[10px] tracking-[0.3em] uppercase font-semibold">
+              Luxury Aesthetic Clinic & Salon
+            </div>
+          </div>
+        </div>
       </div>
     </LuxuryCurtainContext.Provider>
   );
