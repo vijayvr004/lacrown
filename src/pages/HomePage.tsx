@@ -1,14 +1,10 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Phone, Star, Award, Shield, Clock, MapPin, Calendar, ChevronRight } from 'lucide-react';
 import { BRAND } from '../data/brand';
-import { getFeaturedServices } from '../data/aestheticServices';
-import { getFeaturedSalonServices } from '../data/salonServices';
+import { FEATURED_AESTHETIC_HOMEPAGE as FEATURED_AESTHETIC, FEATURED_SALON_HOMEPAGE as FEATURED_SALON } from '../data/featuredHomepageServices';
 import ServiceCard from '../components/ServiceCard';
 import FAQAccordion from '../components/FAQAccordion';
 import { getAssetUrl } from '../utils/imageUrl';
-
-const FEATURED_AESTHETIC = getFeaturedServices().slice(0, 8);
-const FEATURED_SALON = getFeaturedSalonServices().slice(0, 8);
 
 const HOMEPAGE_GALLERY_PREVIEWS = [
   { id: 1, alt: 'HydraFacial Vortex Cleansing Ritual', src: '/images/services/facials/hydrafacial-treatment.jpg' },
@@ -509,7 +505,15 @@ export default function HomePage() {
       {/* ── FINAL CTA ── */}
       <section className="py-24 bg-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
-          <img src={getAssetUrl('/assets/hero-bg.jpg')} alt="" className="w-full h-full object-cover" />
+          <img
+            src={getAssetUrl('/assets/hero-bg.jpg')}
+            alt=""
+            className="w-full h-full object-cover"
+            loading="lazy"
+            decoding="async"
+            width={1024}
+            height={576}
+          />
         </div>
         <div className="container-luxury relative z-10 text-center">
           <div className="section-eyebrow mb-4">Begin Your Journey</div>
