@@ -8,9 +8,19 @@ import { getAssetUrl } from '../utils/imageUrl';
 export default function AestheticClinicPage() {
   return (
     <div>
+      {/* Hero */}
       <section className="relative py-24 bg-burgundy text-white overflow-hidden">
         <div className="absolute inset-0">
-          <img src={getAssetUrl('/assets/hero-bg.jpg')} alt="" className="w-full h-full object-cover" />
+          <img
+            src={getAssetUrl('/images/heroes/aesthetic-clinic-hero.jpg')}
+            alt="LA CROWN Aesthetic Clinic"
+            className="w-full h-full object-cover object-center"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            width={1020}
+            height={768}
+          />
           <div className="absolute inset-0 hero-overlay" />
         </div>
         <div className="container-luxury relative z-10">
