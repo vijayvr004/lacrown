@@ -99,12 +99,34 @@ async function createAppointment(req, res, next) {
       created_at: new Date()
     };
 
-    notificationService.dispatchRequestNotification({
-      category: 'services',
-      requestRecord
-    }).catch(emailErr => {
-      console.error('[APPOINTMENT] Resend email delivery failed:', emailErr.message);
-    });
+    let notifResult = null;
+    try {
+      notifResult = await notificationService.dispatchRequestNotification({
+        category: 'services',
+        requestRecord
+      });
+    } catch (emailErr) {
+      console.error('[APPOINTMENT] Notification dispatch failed:', emailErr.message);
+    }
+
+    if (!notifResult || !notifResult.success) {
+      try {
+        console.log('[APPOINTMENT] Triggering backup manager alert via emailService...');
+        await emailService.sendAppointmentEmailToManager({
+          reference,
+          name,
+          email,
+          phone,
+          service,
+          doctor,
+          date,
+          time,
+          notes
+        });
+      } catch (backupErr) {
+        console.warn('[APPOINTMENT] Backup manager alert notice:', backupErr.message);
+      }
+    }
 
     // 3. Dispatch Client Confirmation Email (Fire and forget if client provided a real email)
     if (rawEmail) {

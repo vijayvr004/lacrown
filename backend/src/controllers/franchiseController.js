@@ -85,12 +85,32 @@ async function createFranchiseEnquiry(req, res, next) {
       created_at: new Date()
     };
 
-    notificationService.dispatchRequestNotification({
-      category: 'franchise',
-      requestRecord
-    }).catch(emailErr => {
-      console.error('[FRANCHISE] Resend email delivery failed:', emailErr.message);
-    });
+    let notifResult = null;
+    try {
+      notifResult = await notificationService.dispatchRequestNotification({
+        category: 'franchise',
+        requestRecord
+      });
+    } catch (emailErr) {
+      console.error('[FRANCHISE] Notification dispatch failed:', emailErr.message);
+    }
+
+    if (!notifResult || !notifResult.success) {
+      try {
+        console.log('[FRANCHISE] Triggering backup manager alert via emailService...');
+        await emailService.sendFranchiseEmailToManager({
+          reference,
+          name: name.trim(),
+          email: email.trim(),
+          phone: phone.trim(),
+          city: city.trim(),
+          investment: investment.trim(),
+          message: message.trim()
+        });
+      } catch (backupErr) {
+        console.warn('[FRANCHISE] Backup manager alert notice:', backupErr.message);
+      }
+    }
 
     // 3. Dispatch Client Confirmation Email
     emailService.sendClientConfirmationEmail({

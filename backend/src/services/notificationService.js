@@ -280,7 +280,7 @@ async function dispatchRequestNotification({ category, requestRecord }) {
     // 2. Generate the genuine .xlsx Excel workbook
     const excelBuffer = await meta.generateWorkbook(records);
 
-    // 3. Prepare email content and attachment
+    // 3. Prepare email content and attachment (Base64 encoded for Resend API)
     const emailSubject = `${meta.subjectPrefix}${reference}`;
     const emailHtml = buildNotificationHtml({
       category,
@@ -288,10 +288,15 @@ async function dispatchRequestNotification({ category, requestRecord }) {
       filename: meta.filename
     });
 
+    const base64Content = Buffer.isBuffer(excelBuffer)
+      ? excelBuffer.toString('base64')
+      : Buffer.from(excelBuffer).toString('base64');
+
     const attachments = [
       {
         filename: meta.filename,
-        content: excelBuffer
+        content: base64Content,
+        contentType: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
       }
     ];
 
@@ -299,16 +304,52 @@ async function dispatchRequestNotification({ category, requestRecord }) {
 
     // 4. Send via Resend
     if (resendClient && config.resendApiKey) {
-      const emailResult = await resendClient.emails.send({
-        from: config.emailFrom,
-        to: recipient.trim(),
-        subject: emailSubject,
-        html: emailHtml,
-        attachments: attachments
-      });
+      let emailResult;
+      try {
+        emailResult = await resendClient.emails.send({
+          from: config.emailFrom,
+          to: recipient.trim(),
+          subject: emailSubject,
+          html: emailHtml,
+          attachments: attachments
+        });
+      } catch (directErr) {
+        console.warn(`[NOTIFICATION] Direct Resend API exception for ${category}:`, directErr.message);
+        emailResult = { error: directErr };
+      }
 
-      emailId = emailResult?.data?.id || emailResult?.id || null;
-      console.log(`[NOTIFICATION] Successfully sent ${category} alert with ${meta.filename} to ${recipient} (Message ID: ${emailId})`);
+      // Check if Resend returned an error
+      if (emailResult && emailResult.error) {
+        console.error(`[NOTIFICATION] Resend with attachment failed for ${category}:`, emailResult.error);
+
+        // Fallback: Dispatch notification without attachment so admin is always alerted!
+        console.log(`[NOTIFICATION] Attempting emergency notification delivery without attachment to ${recipient}...`);
+        try {
+          const fallbackHtml = emailHtml + `
+            <div style="margin-top:20px;padding:12px;background:#fef2f2;border:1px solid #fecaca;border-radius:6px;font-size:12px;color:#991b1b;">
+              <strong>Concierge Alert:</strong> Excel attachment could not be directly attached (${emailResult.error.message || 'Attachment transfer limit'}). The complete request ledger is saved in Neon PostgreSQL and downloadable from the Admin Portal.
+            </div>`;
+
+          const fallbackResult = await resendClient.emails.send({
+            from: config.emailFrom,
+            to: recipient.trim(),
+            subject: `${emailSubject} [Notice: Excel available in Admin Portal]`,
+            html: fallbackHtml
+          });
+
+          if (fallbackResult && fallbackResult.error) {
+            throw new Error(`Resend Error: ${fallbackResult.error.message || JSON.stringify(fallbackResult.error)}`);
+          }
+
+          emailId = fallbackResult?.data?.id || null;
+          console.log(`[NOTIFICATION] Emergency fallback notification successfully sent to ${recipient} (Message ID: ${emailId})`);
+        } catch (fallbackErr) {
+          throw new Error(`Resend rejected notification: ${emailResult.error.message || fallbackErr.message}`);
+        }
+      } else {
+        emailId = emailResult?.data?.id || null;
+        console.log(`[NOTIFICATION] Successfully sent ${category} alert with ${meta.filename} to ${recipient} (Message ID: ${emailId})`);
+      }
 
       await logNotificationAudit({
         reference,

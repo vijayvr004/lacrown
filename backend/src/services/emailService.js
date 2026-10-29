@@ -243,7 +243,73 @@ async function sendFranchiseEmailToManager(data) {
 }
 
 /**
- * 3. Send General Contact Message to Manager
+ * 3. Send Academy Enrolment Notification to Manager
+ */
+async function sendAcademyEmailToManager(data) {
+  const cleanPhone = (data.phone || '').replace(/[^0-9]/g, '');
+  const waLink = `https://wa.me/${cleanPhone}`;
+  const telLink = `tel:${data.phone}`;
+  const mailLink = `mailto:${data.email}`;
+
+  const content = `
+    <div style="border-left:4px solid #760d25;padding-left:14px;margin-bottom:24px;">
+      <p style="margin:0;font-size:15px;color:#541122;font-weight:600;">
+        New Academy Enrolment Enquiry from <b>${data.name}</b>.
+      </p>
+      <p style="margin:4px 0 0;font-size:13px;color:#746970;">
+        Reference: <strong style="color:#760d25;">${data.reference}</strong>
+      </p>
+    </div>
+
+    <!-- Details Table -->
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border:1px solid #ebd9c5;border-radius:8px;background:#fdfcfb;margin-bottom:24px;">
+      <tr>
+        <td style="padding:12px 16px;font-weight:600;font-size:13px;color:#541122;width:35%;border-bottom:1px solid #f0e2d5;">Applicant Name</td>
+        <td style="padding:12px 16px;font-size:13px;color:#300814;border-bottom:1px solid #f0e2d5;">${data.name}</td>
+      </tr>
+      <tr>
+        <td style="padding:12px 16px;font-weight:600;font-size:13px;color:#541122;border-bottom:1px solid #f0e2d5;">Enquired Course</td>
+        <td style="padding:12px 16px;font-size:13px;color:#760d25;font-weight:700;border-bottom:1px solid #f0e2d5;">${data.course}</td>
+      </tr>
+      <tr>
+        <td style="padding:12px 16px;font-weight:600;font-size:13px;color:#541122;border-bottom:1px solid #f0e2d5;">Phone Number</td>
+        <td style="padding:12px 16px;font-size:13px;color:#300814;border-bottom:1px solid #f0e2d5;">
+          <a href="${telLink}" style="color:#760d25;text-decoration:none;font-weight:600;">${data.phone}</a>
+          ${cleanPhone ? ` &nbsp;&bull;&nbsp; <a href="${waLink}" style="color:#2e7d32;text-decoration:none;font-weight:600;">WhatsApp &rarr;</a>` : ''}
+        </td>
+      </tr>
+      <tr>
+        <td style="padding:12px 16px;font-weight:600;font-size:13px;color:#541122;border-bottom:1px solid #f0e2d5;">Email Address</td>
+        <td style="padding:12px 16px;font-size:13px;color:#300814;border-bottom:1px solid #f0e2d5;">
+          <a href="${mailLink}" style="color:#760d25;text-decoration:none;">${data.email}</a>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding:12px 16px;font-weight:600;font-size:13px;color:#541122;">Applicant Notes / Goals</td>
+        <td style="padding:12px 16px;font-size:13px;color:#555555;font-style:italic;">${data.message ? data.message.replace(/\n/g, '<br>') : 'None provided'}</td>
+      </tr>
+    </table>
+  `;
+
+  const html = wrapEmailTemplate({
+    title: 'Academy Enrolment Enquiry',
+    badge: 'Admissions Desk Action',
+    content,
+    actionUrl: telLink,
+    actionText: 'Contact Applicant via Phone'
+  });
+
+  const recipient = config.academyRequestEmail || config.managerEmail;
+
+  return sendResendEmail({
+    to: recipient,
+    subject: `🎓 [Academy Enquiry] ${data.name} - ${data.course} [${data.reference}]`,
+    html
+  });
+}
+
+/**
+ * 4. Send General Contact Message to Manager
  */
 async function sendContactEmailToManager(data) {
   const cleanPhone = (data.phone || '').replace(/[^0-9]/g, '');
@@ -391,6 +457,7 @@ async function sendResendEmail({ to, subject, html }) {
 module.exports = {
   sendAppointmentEmailToManager,
   sendFranchiseEmailToManager,
+  sendAcademyEmailToManager,
   sendContactEmailToManager,
   sendClientConfirmationEmail
 };

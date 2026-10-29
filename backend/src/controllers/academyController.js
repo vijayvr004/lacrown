@@ -95,10 +95,32 @@ async function createAcademyEnquiry(req, res, next) {
     }
 
     // 2. Dispatch Immediate Notification with Excel Attachment (Workbook 2: LaCrown_Academy_Requests.xlsx)
-    notificationService.dispatchRequestNotification({
-      category: 'academy',
-      requestRecord: academyRecord
-    }).catch(err => console.error('[ACADEMY] Notification dispatch error:', err.message));
+    let notifResult = null;
+    try {
+      notifResult = await notificationService.dispatchRequestNotification({
+        category: 'academy',
+        requestRecord: academyRecord
+      });
+    } catch (notifErr) {
+      console.error('[ACADEMY] Notification dispatch error:', notifErr.message);
+    }
+
+    // Backup dispatch through emailService if notification service returned not sent
+    if (!notifResult || !notifResult.success) {
+      try {
+        console.log('[ACADEMY] Triggering backup manager alert via emailService...');
+        await emailService.sendAcademyEmailToManager({
+          reference,
+          name,
+          email,
+          phone,
+          course,
+          message
+        });
+      } catch (backupErr) {
+        console.warn('[ACADEMY] Backup manager alert notice:', backupErr.message);
+      }
+    }
 
     // 3. Dispatch Client Confirmation Email if real email provided
     if (rawEmail && isValidEmail(rawEmail)) {
