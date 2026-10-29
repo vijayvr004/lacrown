@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { X } from 'lucide-react';
 import Breadcrumb from '../components/Breadcrumb';
+import { getAssetUrl } from '../utils/imageUrl';
 
 const GALLERY_ITEMS = [
   { id: 1, category: 'treatments', alt: 'HydraFacial Vortex Cleansing Ritual', src: '/images/services/facials/hydrafacial-treatment.jpg' },
@@ -47,7 +48,12 @@ export default function GalleryPage() {
     <div onKeyDown={handleKeyDown}>
       <section className="relative py-20 bg-burgundy text-white overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/assets/hero-bg.jpg" alt="" className="w-full h-full object-cover" />
+          <img
+            src={getAssetUrl('/images/heroes/gallery-hero.png')}
+            alt="LA CROWN Gallery"
+            className="w-full h-full object-cover object-center"
+            loading="eager"
+          />
           <div className="absolute inset-0 hero-overlay" />
         </div>
         <div className="container-luxury relative z-10">

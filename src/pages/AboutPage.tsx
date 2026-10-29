@@ -10,7 +10,12 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="relative py-24 bg-burgundy text-white overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/assets/hero-bg.jpg" alt="" className="w-full h-full object-cover" />
+          <img
+            src={getAssetUrl('/images/heroes/about-hero.png')}
+            alt="About LA CROWN"
+            className="w-full h-full object-cover object-center"
+            loading="eager"
+          />
           <div className="absolute inset-0 hero-overlay" />
         </div>
         <div className="container-luxury relative z-10">

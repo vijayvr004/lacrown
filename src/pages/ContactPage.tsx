@@ -4,6 +4,7 @@ import Breadcrumb from '../components/Breadcrumb';
 import AppointmentForm from '../components/AppointmentForm';
 import { ApiService } from '../services/api';
 import { BRAND } from '../data/brand';
+import { getAssetUrl } from '../utils/imageUrl';
 
 export default function ContactPage() {
   const [activeTab, setActiveTab] = useState<'consultation' | 'message'>('consultation');
@@ -51,7 +52,12 @@ export default function ContactPage() {
     <div>
       <section className="relative py-20 bg-burgundy text-white overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/assets/hero-bg.jpg" alt="" className="w-full h-full object-cover" />
+          <img
+            src={getAssetUrl('/images/heroes/contact-us-hero.png')}
+            alt="Contact LA CROWN"
+            className="w-full h-full object-cover object-center"
+            loading="eager"
+          />
           <div className="absolute inset-0 hero-overlay" />
         </div>
         <div className="container-luxury relative z-10">

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Building2, TrendingUp, ShieldCheck, CheckCircle, Award, Loader2, AlertCircle } from 'lucide-react';
 import Breadcrumb from '../components/Breadcrumb';
 import { ApiService } from '../services/api';
+import { getAssetUrl } from '../utils/imageUrl';
 
 export default function FranchisePage() {
   const [submitted, setSubmitted] = useState(false);
@@ -50,7 +51,12 @@ export default function FranchisePage() {
     <div>
       <section className="relative py-24 bg-burgundy text-white overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/assets/hero-bg.jpg" alt="" className="w-full h-full object-cover" />
+          <img
+            src={getAssetUrl('/images/heroes/franchise-hero.png')}
+            alt="LA CROWN Franchise"
+            className="w-full h-full object-cover object-center"
+            loading="eager"
+          />
           <div className="absolute inset-0 hero-overlay" />
         </div>
         <div className="container-luxury relative z-10">

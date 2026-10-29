@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { AlertCircle } from 'lucide-react';
 import Breadcrumb from '../components/Breadcrumb';
 import { TEAM } from '../data/team';
+import { getAssetUrl } from '../utils/imageUrl';
 
 function TeamCard({ member }: { member: typeof TEAM[0] }) {
   return (
@@ -55,7 +56,12 @@ export default function OurTeamPage() {
     <div>
       <section className="relative py-24 bg-burgundy text-white overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/assets/hero-bg.jpg" alt="" className="w-full h-full object-cover" />
+          <img
+            src={getAssetUrl('/images/heroes/our-team-hero.png')}
+            alt="LA CROWN Team"
+            className="w-full h-full object-cover object-center"
+            loading="eager"
+          />
           <div className="absolute inset-0 hero-overlay" />
         </div>
         <div className="container-luxury relative z-10">

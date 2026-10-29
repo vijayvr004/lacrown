@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Clock, ArrowRight } from 'lucide-react';
 import Breadcrumb from '../components/Breadcrumb';
+import { getAssetUrl } from '../utils/imageUrl';
 
 export const BLOG_POSTS = [
   {
@@ -151,7 +152,12 @@ export default function BlogPage() {
     <div>
       <section className="relative py-20 bg-burgundy text-white overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/assets/hero-bg.jpg" alt="" className="w-full h-full object-cover" />
+          <img
+            src={getAssetUrl('/images/heroes/blog-hero.png')}
+            alt="LA CROWN Blog"
+            className="w-full h-full object-cover object-center"
+            loading="eager"
+          />
           <div className="absolute inset-0 hero-overlay" />
         </div>
         <div className="container-luxury relative z-10">

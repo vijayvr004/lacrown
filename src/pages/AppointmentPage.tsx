@@ -2,13 +2,19 @@ import Breadcrumb from '../components/Breadcrumb';
 import AppointmentForm from '../components/AppointmentForm';
 import { BRAND } from '../data/brand';
 import { Phone, MessageCircle } from 'lucide-react';
+import { getAssetUrl } from '../utils/imageUrl';
 
 export default function AppointmentPage() {
   return (
     <div>
       <section className="relative py-20 bg-burgundy text-white overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/assets/hero-bg.jpg" alt="" className="w-full h-full object-cover" />
+          <img
+            src={getAssetUrl('/images/heroes/appointment-hero.png')}
+            alt="Book an Appointment at LA CROWN"
+            className="w-full h-full object-cover object-center"
+            loading="eager"
+          />
           <div className="absolute inset-0 hero-overlay" />
         </div>
         <div className="container-luxury relative z-10">
