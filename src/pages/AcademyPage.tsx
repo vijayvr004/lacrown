@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { GraduationCap, Users, CheckCircle, X, Maximize2 } from 'lucide-react';
+import { GraduationCap, Users, CheckCircle, X, Maximize2, Loader2, AlertCircle } from 'lucide-react';
 import Breadcrumb from '../components/Breadcrumb';
 import { getAssetUrl } from '../utils/imageUrl';
+import { ApiService } from '../services/api';
 
 interface CourseItem {
   title: string;
@@ -45,6 +46,10 @@ const COURSES: CourseItem[] = [
 
 export default function AcademyPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [refNumber, setRefNumber] = useState('');
+
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
@@ -52,10 +57,33 @@ export default function AcademyPage() {
   const [notes, setNotes] = useState('');
   const [selectedCourse, setSelectedCourse] = useState<CourseItem | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!name || !phone) return;
-    setSubmitted(true);
+    if (!name.trim() || !phone.trim() || !course.trim()) return;
+
+    setLoading(true);
+    setErrorMessage(null);
+
+    try {
+      const res = await ApiService.submitAcademyEnquiry({
+        name: name.trim(),
+        phone: phone.trim(),
+        email: email.trim() || undefined,
+        course: course.trim(),
+        message: notes.trim() || undefined,
+      });
+
+      if (res.success) {
+        setRefNumber(res.reference || `LC-AC-${Date.now().toString().slice(-6)}`);
+        setSubmitted(true);
+      } else {
+        setErrorMessage(res.message || 'Unable to submit your enquiry at this time. Please try again.');
+      }
+    } catch {
+      setErrorMessage('A network error occurred while connecting to the admissions desk. Please try again later.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -306,13 +334,38 @@ export default function AcademyPage() {
             </div>
 
             {submitted ? (
-              <div className="bg-green-50 border border-green-200 p-6 text-center text-green-800 font-sans">
-                <CheckCircle size={32} className="mx-auto mb-2 text-green-600" />
-                <h4 className="font-serif text-xl font-semibold mb-1">Thank You for Your Enquiry!</h4>
-                <p className="text-sm">Our Academy admissions team will connect with you at {phone} with full course details.</p>
+              <div className="bg-green-50 border border-green-200 p-8 text-center text-green-900 font-sans rounded-sm">
+                <CheckCircle size={36} className="mx-auto mb-3 text-green-600" />
+                <h4 className="font-serif text-2xl font-semibold mb-2 text-charcoal">Enquiry Successfully Registered</h4>
+                <div className="inline-block bg-white border border-green-300 text-green-800 text-xs font-semibold px-3 py-1 rounded-full mb-3">
+                  Reference: {refNumber}
+                </div>
+                <p className="text-sm text-taupe max-w-md mx-auto mb-4">
+                  Thank you, <strong>{name}</strong>. Your enquiry for <strong>{course}</strong> has been logged into our database, and our admissions team has been immediately notified with the updated registration ledger.
+                </p>
+                <p className="text-xs text-taupe">We will connect with you at <strong>{phone}</strong> shortly.</p>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setSubmitted(false);
+                    setName('');
+                    setPhone('');
+                    setEmail('');
+                    setNotes('');
+                  }}
+                  className="mt-6 text-xs text-burgundy font-semibold hover:underline"
+                >
+                  Submit another enquiry
+                </button>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
+                {errorMessage && (
+                  <div className="bg-red-50 border border-red-200 text-red-700 text-sm p-4 rounded-sm flex items-start gap-2">
+                    <AlertCircle size={18} className="flex-shrink-0 mt-0.5 text-red-500" />
+                    <span>{errorMessage}</span>
+                  </div>
+                )}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label className="form-label">Full Name *</label>
@@ -374,8 +427,13 @@ export default function AcademyPage() {
                   />
                 </div>
 
-                <button type="submit" className="btn-primary w-full text-xs py-3.5">
-                  Submit Academy Enquiry
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="btn-primary w-full text-xs py-3.5 flex items-center justify-center gap-2 disabled:opacity-70"
+                >
+                  {loading && <Loader2 size={16} className="animate-spin" />}
+                  {loading ? 'Submitting Enquiry...' : 'Submit Academy Enquiry'}
                 </button>
               </form>
             )}

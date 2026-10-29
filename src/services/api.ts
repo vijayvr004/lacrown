@@ -25,6 +25,19 @@ export interface FranchisePayload {
   notes?: string;
 }
 
+export interface AcademyPayload {
+  name: string;
+  phone: string;
+  email?: string;
+  course: string;
+  trainingProgramme?: string;
+  preferredBatch?: string;
+  preferredStartDate?: string;
+  educationQualification?: string;
+  experience?: string;
+  message?: string;
+}
+
 export interface ContactPayload {
   name: string;
   phone: string;
@@ -196,6 +209,16 @@ export const ApiService = {
    */
   async submitFranchiseEnquiry(payload: FranchisePayload): Promise<ApiResponse> {
     return apiFetch('/enquiries/franchise', {
+      method: 'POST',
+      body: JSON.stringify(payload),
+    });
+  },
+
+  /**
+   * Submit Academy Enrolment & Training Programme Enquiry
+   */
+  async submitAcademyEnquiry(payload: AcademyPayload): Promise<ApiResponse> {
+    return apiFetch('/academy', {
       method: 'POST',
       body: JSON.stringify(payload),
     });

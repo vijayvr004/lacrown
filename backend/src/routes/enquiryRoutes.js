@@ -2,7 +2,14 @@ const express = require('express');
 const router = express.Router();
 const franchiseController = require('../controllers/franchiseController');
 const contactController = require('../controllers/contactController');
+const academyController = require('../controllers/academyController');
 const { formSubmissionLimiter } = require('../middleware/rateLimiter');
+
+// POST /api/enquiries/academy
+router.post('/academy', formSubmissionLimiter, academyController.createAcademyEnquiry);
+
+// GET /api/enquiries/academy
+router.get('/academy', academyController.listAcademyEnquiries);
 
 // POST /api/enquiries/franchise
 router.post('/franchise', formSubmissionLimiter, franchiseController.createFranchiseEnquiry);

@@ -1,5 +1,6 @@
 const db = require('../config/db');
 const emailService = require('../services/emailService');
+const notificationService = require('../services/notificationService');
 const config = require('../config/env');
 
 function generateReference() {
@@ -70,30 +71,26 @@ async function createFranchiseEnquiry(req, res, next) {
       }
     }
 
-    // 2. Send Manager Email via Resend
-    try {
-      const emailResult = await emailService.sendFranchiseEmailToManager({
-        reference,
-        name: name.trim(),
-        email: email.trim(),
-        phone: phone.trim(),
-        city: city.trim(),
-        investment: investment.trim(),
-        message: message.trim()
-      });
+    // 2. Dispatch Immediate Notification with Excel Attachment (Workbook 3: LaCrown_Franchise_Requests.xlsx)
+    const requestRecord = franchiseRecord || {
+      reference,
+      name: name.trim(),
+      email: email.trim(),
+      phone: phone.trim(),
+      city: city.trim(),
+      investment: investment.trim(),
+      message: message.trim(),
+      status: 'New Prospectus Requested',
+      notification_status: 'pending',
+      created_at: new Date()
+    };
 
-      emailSent = true;
-      emailId = emailResult?.id || null;
-
-      if (franchiseRecord && db.pool) {
-        await db.query(
-          `UPDATE franchise_enquiries SET email_sent = $1, email_id = $2, updated_at = CURRENT_TIMESTAMP WHERE reference = $3`,
-          [emailSent, emailId, reference]
-        ).catch(e => console.warn('[DB] Could not update franchise email status:', e.message));
-      }
-    } catch (emailErr) {
+    notificationService.dispatchRequestNotification({
+      category: 'franchise',
+      requestRecord
+    }).catch(emailErr => {
       console.error('[FRANCHISE] Resend email delivery failed:', emailErr.message);
-    }
+    });
 
     // 3. Dispatch Client Confirmation Email
     emailService.sendClientConfirmationEmail({

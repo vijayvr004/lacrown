@@ -77,8 +77,9 @@ app.get('/', (req, res) => {
     endpoints: {
       health: '/health',
       appointments: '/api/appointments',
-      franchise: '/api/enquiries/franchise',
-      contact: '/api/enquiries/contact',
+      academy: '/api/academy',
+      franchise: '/api/franchise',
+      contact: '/api/contact',
       adminOverview: '/api/admin/overview'
     },
     frontend: 'https://lacrown-pink.vercel.app'

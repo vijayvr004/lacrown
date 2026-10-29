@@ -34,6 +34,11 @@ const config = {
   emailFrom: process.env.EMAIL_FROM || 'La Crown Concierge <onboarding@resend.dev>',
   auditEmail: process.env.AUDIT_EMAIL || '',
 
+  // Categorized Email Routing
+  servicesRequestEmail: process.env.SERVICES_REQUEST_EMAIL || process.env.MANAGER_EMAIL || 'lacrownaesthetics1111@gmail.com',
+  academyRequestEmail: process.env.ACADEMY_REQUEST_EMAIL || process.env.MANAGER_EMAIL || 'lacrownaesthetics1111@gmail.com',
+  franchiseRequestEmail: process.env.FRANCHISE_REQUEST_EMAIL || process.env.MANAGER_EMAIL || 'lacrownaesthetics1111@gmail.com',
+
   // Security & Clinic Info
   adminSecretKey: process.env.ADMIN_SECRET_KEY || 'default-secret-change-in-production',
   clinicName: process.env.CLINIC_NAME || 'La Crown Luxury Aesthetic Clinic',

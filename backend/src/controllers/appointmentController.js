@@ -1,5 +1,6 @@
 const db = require('../config/db');
 const emailService = require('../services/emailService');
+const notificationService = require('../services/notificationService');
 const config = require('../config/env');
 
 /**
@@ -81,33 +82,29 @@ async function createAppointment(req, res, next) {
       }
     }
 
-    // 2. Send Manager Email via Resend
-    try {
-      const emailResult = await emailService.sendAppointmentEmailToManager({
-        reference,
-        name,
-        email,
-        phone,
-        service,
-        doctor,
-        date,
-        time,
-        notes
-      });
+    // 2. Dispatch Immediate Notification with Excel Attachment (Workbook 1: LaCrown_Services_Requests.xlsx)
+    const requestRecord = appointmentRecord || {
+      reference,
+      name,
+      email,
+      phone,
+      service,
+      doctor,
+      preferred_date: date,
+      preferred_time: time,
+      notes,
+      branch: 'Jayanagar, Bengaluru',
+      status: 'Pending Concierge Call',
+      notification_status: 'pending',
+      created_at: new Date()
+    };
 
-      emailSent = true;
-      emailId = emailResult?.id || null;
-
-      // Update database record if saved
-      if (appointmentRecord && db.pool) {
-        await db.query(
-          `UPDATE appointments SET email_sent = $1, email_id = $2, updated_at = CURRENT_TIMESTAMP WHERE reference = $3`,
-          [emailSent, emailId, reference]
-        ).catch(e => console.warn('[DB] Could not update email status:', e.message));
-      }
-    } catch (emailErr) {
+    notificationService.dispatchRequestNotification({
+      category: 'services',
+      requestRecord
+    }).catch(emailErr => {
       console.error('[APPOINTMENT] Resend email delivery failed:', emailErr.message);
-    }
+    });
 
     // 3. Dispatch Client Confirmation Email (Fire and forget if client provided a real email)
     if (rawEmail) {
