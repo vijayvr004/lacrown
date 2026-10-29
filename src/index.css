@@ -213,6 +213,15 @@
     @apply transition-all duration-500 ease-in-out;
   }
 
+  /* Mobile visual completeness acceleration for Speed Index */
+  @media (max-width: 640px) {
+    .animate-fade-in,
+    .animate-slide-up,
+    .animate-slide-in-left {
+      animation-duration: 0.2s !important;
+    }
+  }
+
   /* Reduced motion */
   @media (prefers-reduced-motion: reduce) {
     .animate-fade-in,
