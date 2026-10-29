@@ -21,7 +21,9 @@ router.use('/enquiries', enquiryRoutes);
 
 // Convenient direct endpoint aliases
 router.post('/contact', formSubmissionLimiter, contactController.createContactMessage);
+router.get('/contact', contactController.listContactMessages);
 router.post('/franchise', formSubmissionLimiter, franchiseController.createFranchiseEnquiry);
+router.get('/franchise', franchiseController.listFranchiseEnquiries);
 
 // Administrative Authentication & Portal Management
 router.post('/admin/login', (req, res) => {

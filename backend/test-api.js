@@ -53,7 +53,17 @@ contactController.createContactMessage(mockReq, mockRes, (err) => {
 assert.strictEqual(resStatus, 400, 'Incomplete contact body should return 400');
 console.log('✓ [TEST] Contact controller enforces required field validation');
 
-// 6. Test App Loading & Middleware
+// 6. Test Admin Login Validation
+const apiRouter = require('./src/routes/api');
+mockReq = { body: { username: 'wrong', password: 'bad' } };
+// Find admin/login handler
+const adminLoginLayer = apiRouter.stack.find(l => l.route && l.route.path === '/admin/login');
+assert.ok(adminLoginLayer, 'Admin login route must exist in apiRouter');
+adminLoginLayer.route.stack[0].handle(mockReq, mockRes);
+assert.strictEqual(resStatus, 401, 'Invalid admin credentials should return 401');
+console.log('✓ [TEST] Admin login route enforces secure authentication');
+
+// 7. Test App Loading & Middleware
 const app = require('./src/server');
 assert.ok(app, 'Express app loaded and configured successfully');
 console.log('✓ [TEST] Express application mounts all routes and middleware');

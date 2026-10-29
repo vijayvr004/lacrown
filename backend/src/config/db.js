@@ -81,7 +81,8 @@ async function checkHealth() {
   } catch (err) {
     return {
       connected: false,
-      error: err.message
+      message: 'Database connection unavailable',
+      error: config.isProduction ? 'Database unreachable or authenticating' : err.message
     };
   }
 }

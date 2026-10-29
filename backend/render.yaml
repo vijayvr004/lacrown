@@ -5,10 +5,10 @@
 
 services:
   - type: web
-    name: la-crown-backend
+    name: lacrown-backend
     runtime: node
     plan: free
-    region: oregon # or ohio, frankfurt, singapore
+    region: oregon # or frankfurt, singapore
     rootDir: backend
     buildCommand: npm install
     startCommand: npm start
@@ -25,12 +25,10 @@ services:
         sync: false
         # Paste your Resend API Key (re_...) here
       - key: MANAGER_EMAIL
-        sync: false
-        # Paste the manager's email address who should receive all form alerts
+        value: lacrownaesthetics1111@gmail.com
       - key: EMAIL_FROM
         value: "La Crown Concierge <onboarding@resend.dev>"
       - key: CLIENT_ORIGIN
-        sync: false
-        # Paste your live Vercel frontend URL here (e.g., https://la-crown.vercel.app)
+        value: https://lacrown-pink.vercel.app
       - key: ADMIN_SECRET_KEY
         generateValue: true

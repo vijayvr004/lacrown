@@ -1,8 +1,9 @@
 const dotenv = require('dotenv');
 const path = require('path');
 
-// Load .env file from root of backend
+// Load .env file from root of backend, then root of repository if present
 dotenv.config({ path: path.resolve(__dirname, '../../.env') });
+dotenv.config({ path: path.resolve(__dirname, '../../../.env') });
 
 const config = {
   port: parseInt(process.env.PORT, 10) || 8000,
@@ -19,7 +20,9 @@ const config = {
         'http://localhost:3000',
         'http://127.0.0.1:5500',
         'https://lacrown-pink.vercel.app',
-        'https://la-crown.vercel.app'
+        'https://lacrown.vercel.app',
+        'https://la-crown.vercel.app',
+        'https://lacrown-7a01.onrender.com'
       ],
 
   // Database Connection (Neon PostgreSQL)
@@ -27,7 +30,7 @@ const config = {
 
   // Resend Email Configuration
   resendApiKey: process.env.RESEND_API_KEY || '',
-  managerEmail: process.env.MANAGER_EMAIL || 'manager@lacrownclinic.com',
+  managerEmail: process.env.MANAGER_EMAIL || 'lacrownaesthetics1111@gmail.com',
   emailFrom: process.env.EMAIL_FROM || 'La Crown Concierge <onboarding@resend.dev>',
   auditEmail: process.env.AUDIT_EMAIL || '',
 

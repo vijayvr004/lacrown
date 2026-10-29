@@ -39,44 +39,60 @@ app.use(morgan(config.isProduction ? 'combined' : 'dev'));
 app.use(express.json({ limit: '1mb' }));
 app.use(express.urlencoded({ extended: true, limit: '1mb' }));
 
-// Static Frontend Files (serves luxury website directly from backend if Root Directory is backend)
-const publicDir = path.join(__dirname, '../public');
-if (fs.existsSync(publicDir)) {
-  app.use(express.static(publicDir));
-}
-
-// Render / Platform Top-Level Health Check Endpoint
-app.get('/health', async (req, res) => {
+// Top-Level Health Check Endpoint for Render, Load Balancers, and Uptime Monitors
+const handleHealthCheck = async (req, res) => {
   const dbHealth = await db.checkHealth();
-  const isHealthy = dbHealth.connected || !config.databaseUrl;
-  res.status(isHealthy ? 200 : 503).json({
-    status: isHealthy ? 'healthy' : 'degraded',
+  const isHealthy = Boolean(dbHealth.connected);
+
+  // Return HTTP 200 with accurate status to prevent Render from killing the process on cold-start
+  res.status(200).json({
+    status: isHealthy ? 'healthy' : (config.databaseUrl ? 'degraded' : 'unconfigured'),
     service: 'la-crown-backend',
-    uptime: process.uptime(),
+    uptime: Math.floor(process.uptime()),
     timestamp: new Date().toISOString(),
-    neonDatabase: dbHealth
+    environment: config.nodeEnv,
+    neonDatabase: {
+      connected: isHealthy,
+      database: dbHealth.database || (isHealthy ? 'neondb' : undefined),
+      message: dbHealth.message || (isHealthy ? 'Connected to Neon PostgreSQL' : 'Database offline or waking up')
+    },
+    resend: {
+      configured: Boolean(config.resendApiKey)
+    }
   });
-});
+};
 
-// Mount Main API Router
-app.use('/api', apiRoutes);
+app.get('/health', handleHealthCheck);
+app.get('/health/', handleHealthCheck);
+app.get('/api/health', handleHealthCheck);
+app.get('/api/health/', handleHealthCheck);
 
-// Frontend SPA HTML Fallback (Serves index.html for root and client routes)
-app.get('*', (req, res, next) => {
-  if (req.path.startsWith('/api') || req.path === '/health') return next();
-  const indexPath = path.join(publicDir, 'index.html');
-  if (fs.existsSync(indexPath)) {
-    return res.sendFile(indexPath);
-  }
-  // Fallback API welcome if no frontend files found
+// API Root Information Directory
+app.get('/', (req, res) => {
   res.json({
-    service: 'La Crown Luxury Aesthetic Clinic API',
+    service: 'La Crown Luxury Aesthetic Clinic & Salon REST API',
     status: 'online',
     version: '1.0.0',
-    documentation: '/api',
-    health: '/health'
+    health: '/health',
+    endpoints: {
+      health: '/health',
+      appointments: '/api/appointments',
+      franchise: '/api/enquiries/franchise',
+      contact: '/api/enquiries/contact',
+      adminOverview: '/api/admin/overview'
+    },
+    frontend: 'https://lacrown-pink.vercel.app'
   });
 });
+
+// Mount Main API Router under /api
+app.use('/api', apiRoutes);
+
+// Optional static assets (images, icons) without intercepting API or health routes
+const publicDir = path.join(__dirname, '../public');
+if (fs.existsSync(publicDir)) {
+  app.use('/static', express.static(publicDir));
+}
 
 // 404 & Centralized Error Handlers
 app.use(notFoundHandler);

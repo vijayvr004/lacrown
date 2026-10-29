@@ -5,16 +5,20 @@ const config = require('../config/env');
 
 router.get('/', async (req, res) => {
   const dbHealth = await db.checkHealth();
-  const isHealthy = dbHealth.connected || !config.databaseUrl;
+  const isHealthy = Boolean(dbHealth.connected);
 
   const status = {
-    status: isHealthy ? 'healthy' : 'degraded',
+    status: isHealthy ? 'healthy' : (config.databaseUrl ? 'degraded' : 'unconfigured'),
     service: 'la-crown-backend',
     uptimeSeconds: Math.floor(process.uptime()),
     timestamp: new Date().toISOString(),
     environment: config.nodeEnv,
     integrations: {
-      neonDatabase: dbHealth,
+      neonDatabase: {
+        connected: isHealthy,
+        database: dbHealth.database || (isHealthy ? 'neondb' : undefined),
+        message: dbHealth.message || (isHealthy ? 'Connected to Neon PostgreSQL' : 'Database offline or waking up')
+      },
       resendEmail: {
         configured: Boolean(config.resendApiKey),
         managerRecipient: config.managerEmail ? 'configured' : 'missing'
@@ -22,8 +26,7 @@ router.get('/', async (req, res) => {
     }
   };
 
-  const httpCode = isHealthy ? 200 : 503;
-  return res.status(httpCode).json(status);
+  return res.status(200).json(status);
 });
 
 module.exports = router;

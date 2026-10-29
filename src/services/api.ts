@@ -60,20 +60,33 @@ export interface AdminOverviewData {
 
 // Resolve API Base URL gracefully across Development and Production
 export const getApiBaseUrl = (): string => {
-  // 1. Environment variable (Vite)
-  const envUrl = import.meta.env.VITE_API_BASE_URL;
-  if (envUrl && typeof envUrl === 'string' && envUrl.trim()) {
-    return envUrl.trim().replace(/\/+$/, '');
+  let envUrl = import.meta.env.VITE_API_BASE_URL;
+
+  // Runtime window config override if provided
+  if (!envUrl && typeof window !== 'undefined' && (window as any).__CONFIG__?.API_BASE_URL) {
+    envUrl = (window as any).__CONFIG__.API_BASE_URL;
   }
 
-  // 2. Global runtime config (window.__CONFIG__)
-  if (typeof window !== 'undefined' && (window as any).__CONFIG__?.API_BASE_URL) {
-    return (window as any).__CONFIG__.API_BASE_URL.trim().replace(/\/+$/, '');
+  const isLocalhost = typeof window !== 'undefined' && 
+    (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
+
+  // If no environment variable is provided:
+  if (!envUrl || typeof envUrl !== 'string' || !envUrl.trim()) {
+    if (isLocalhost) {
+      return '/api'; // Proxied by Vite to http://localhost:8000/api
+    }
+    // Production default: Target the deployed La Crown Render backend directly
+    return 'https://lacrown-7a01.onrender.com/api';
   }
 
-  // 3. In development Vite proxy, default to '/api'
-  // In production if VITE_API_BASE_URL is not set, default to '/api'
-  return '/api';
+  let cleanUrl = envUrl.trim().replace(/\/+$/, '');
+
+  // If origin was provided without /api (e.g. https://lacrown-7a01.onrender.com), normalize with /api
+  if (cleanUrl.startsWith('http') && !cleanUrl.endsWith('/api')) {
+    cleanUrl = `${cleanUrl}/api`;
+  }
+
+  return cleanUrl;
 };
 
 /**
@@ -85,7 +98,15 @@ async function apiFetch<T>(
   adminKey?: string
 ): Promise<ApiResponse<T>> {
   const baseUrl = getApiBaseUrl();
-  const cleanEndpoint = endpoint.startsWith('/') ? endpoint : `/${endpoint}`;
+  let cleanEndpoint = endpoint.startsWith('/') ? endpoint : `/${endpoint}`;
+
+  // Prevent accidental /api/api duplicate prefix
+  if (baseUrl.endsWith('/api') && cleanEndpoint.startsWith('/api/')) {
+    cleanEndpoint = cleanEndpoint.slice(4);
+  } else if (baseUrl.endsWith('/api') && cleanEndpoint === '/api') {
+    cleanEndpoint = '';
+  }
+
   const url = `${baseUrl}${cleanEndpoint}`;
 
   const headers: Record<string, string> = {
@@ -151,7 +172,7 @@ export const ApiService = {
    * Health Check
    */
   async checkHealth(): Promise<any> {
-    const baseUrl = getApiBaseUrl().replace(/\/api$/, '');
+    const baseUrl = getApiBaseUrl().replace(/\/api\/?$/, '');
     try {
       const res = await fetch(`${baseUrl}/health`);
       return await res.json();
