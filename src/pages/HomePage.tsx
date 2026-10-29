@@ -88,8 +88,8 @@ export default function HomePage() {
             <source
               media="(max-width: 640px)"
               srcSet={getAssetUrl('/assets/hero-bg-mobile.jpg')}
-              width={640}
-              height={720}
+              width={540}
+              height={304}
             />
             <img
               src={getAssetUrl('/assets/hero-bg.jpg')}
