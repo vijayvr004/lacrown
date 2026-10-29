@@ -17,8 +17,8 @@ export default function Footer() {
               <img
                 src={getAssetUrl('/assets/logo.png')}
                 alt="LA CROWN"
-                width={56}
-                height={56}
+                width={280}
+                height={317}
                 loading="lazy"
                 decoding="async"
                 className="h-14 w-auto object-contain drop-shadow transition-transform duration-300 group-hover:scale-105"
