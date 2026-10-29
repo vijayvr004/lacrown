@@ -10,10 +10,14 @@ export default function AppointmentPage() {
       <section className="relative py-20 bg-burgundy text-white overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src={getAssetUrl('/images/heroes/appointment-hero.png')}
+            src={getAssetUrl('/images/heroes/appointment-hero.jpg')}
             alt="Book an Appointment at LA CROWN"
             className="w-full h-full object-cover object-center"
             loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            width={1400}
+            height={600}
           />
           <div className="absolute inset-0 hero-overlay" />
         </div>

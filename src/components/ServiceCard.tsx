@@ -29,9 +29,12 @@ export default function ServiceCard({
           <img
             src={resolvedImage}
             alt={name}
+            width={600}
+            height={400}
             onError={() => setImgError(true)}
             className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
             loading="lazy"
+            decoding="async"
           />
         ) : (
           <div className="w-full h-full bg-gradient-to-br from-ivory-200 to-cream flex items-center justify-center">

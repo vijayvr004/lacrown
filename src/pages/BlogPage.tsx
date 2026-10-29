@@ -153,10 +153,14 @@ export default function BlogPage() {
       <section className="relative py-20 bg-burgundy text-white overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src={getAssetUrl('/images/heroes/blog-hero.png')}
+            src={getAssetUrl('/images/heroes/blog-hero.jpg')}
             alt="LA CROWN Blog"
             className="w-full h-full object-cover object-center"
             loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            width={1400}
+            height={600}
           />
           <div className="absolute inset-0 hero-overlay" />
         </div>

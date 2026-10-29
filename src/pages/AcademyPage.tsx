@@ -91,10 +91,14 @@ export default function AcademyPage() {
       <section className="relative py-24 bg-burgundy text-white overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src={getAssetUrl('/images/heroes/academy-hero.png')}
+            src={getAssetUrl('/images/heroes/academy-hero.jpg')}
             alt="LA CROWN Academy"
             className="w-full h-full object-cover object-center"
             loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            width={1400}
+            height={600}
           />
           <div className="absolute inset-0 hero-overlay" />
         </div>

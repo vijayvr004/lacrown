@@ -209,6 +209,9 @@ export default function LuxuryCurtainTransition() {
             <img
               src={getAssetUrl('/assets/logo.png')}
               alt="LA CROWN Crest"
+              width={200}
+              height={226}
+              decoding="async"
               className="h-28 sm:h-40 md:h-52 lg:h-60 w-auto object-contain drop-shadow-[0_16px_36px_rgba(0,0,0,0.65)] mb-4 animate-fade-in transition-all duration-300"
               loading="eager"
             />

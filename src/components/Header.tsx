@@ -162,6 +162,10 @@ export default function Header() {
             <img
               src={getAssetUrl('/assets/logo.png')}
               alt="LA CROWN Royal Crest"
+              width={52}
+              height={52}
+              fetchPriority="high"
+              decoding="async"
               className="h-11 md:h-13 w-auto object-contain drop-shadow-sm transition-transform duration-300 group-hover:scale-105"
             />
             <div>

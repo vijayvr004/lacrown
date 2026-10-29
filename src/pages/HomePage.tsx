@@ -10,6 +10,17 @@ import { getAssetUrl } from '../utils/imageUrl';
 const FEATURED_AESTHETIC = getFeaturedServices().slice(0, 8);
 const FEATURED_SALON = getFeaturedSalonServices().slice(0, 8);
 
+const HOMEPAGE_GALLERY_PREVIEWS = [
+  { id: 1, alt: 'HydraFacial Vortex Cleansing Ritual', src: '/images/services/facials/hydrafacial-treatment.jpg' },
+  { id: 2, alt: 'Aesthetic Dermatology Consultation Suite', src: '/images/services/aesthetic/dermal-fillers-botox.jpg' },
+  { id: 3, alt: 'Laser Hair Removal with Sapphire Cooling', src: '/images/services/laser/laser-hair-removal.jpg' },
+  { id: 4, alt: 'Executive Men’s Barber & Grooming Lounge', src: '/images/services/salon/mens-haircut.jpg' },
+  { id: 5, alt: 'Caramel Balayage & Gloss Styling', src: '/images/services/hair/balayage-hair-colour.jpg' },
+  { id: 6, alt: 'Bespoke Royal South Asian Bridal Makeup', src: '/images/services/makeup/bridal-makeup.jpg' },
+  { id: 7, alt: 'Korean Glass Skin Infusion Ritual', src: '/images/services/facials/korean-glass-facial.jpg' },
+  { id: 8, alt: 'Clinical Hair Restoration', src: '/images/services/hair/hair-transplant.jpg' },
+];
+
 const HOMEPAGE_FAQS = [
   {
     q: 'How do I book an appointment at LA CROWN?',
@@ -77,12 +88,24 @@ export default function HomePage() {
         aria-label="Hero"
       >
         <div className="absolute inset-0">
-          <img
-            src={getAssetUrl('/assets/hero-bg.jpg')}
-            alt=""
-            className="w-full h-full object-cover object-center"
-            loading="eager"
-          />
+          <picture>
+            <source
+              media="(max-width: 640px)"
+              srcSet={getAssetUrl('/assets/hero-bg-mobile.jpg')}
+              width={640}
+              height={720}
+            />
+            <img
+              src={getAssetUrl('/assets/hero-bg.jpg')}
+              alt="LA CROWN Luxury Aesthetic Clinic & Salon Jayanagar Bengaluru"
+              className="w-full h-full object-cover object-center"
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
+              width={1024}
+              height={576}
+            />
+          </picture>
           <div className="absolute inset-0 hero-overlay" />
         </div>
 
@@ -170,8 +193,11 @@ export default function HomePage() {
                 <img
                   src={getAssetUrl('/images/lacrown/other/homepage/home-premier-clinic-salon.jpg')}
                   alt="Bengaluru's Premier Luxury Aesthetic Clinic & Salon"
+                  width={600}
+                  height={750}
                   className="w-full h-full object-cover"
                   loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-burgundy text-white p-6 shadow-burgundy hidden md:block">
@@ -197,7 +223,15 @@ export default function HomePage() {
             {/* Aesthetic Clinic */}
             <div className="group relative overflow-hidden bg-burgundy text-white rounded-2xl border border-gold/20 shadow-luxury">
               <div className="absolute inset-0 opacity-25">
-                <img src={getAssetUrl('/images/lacrown/other/homepage/home-aesthetic-clinic.webp')} alt="LA CROWN Aesthetic Clinic" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                <img
+                  src={getAssetUrl('/images/lacrown/other/homepage/home-aesthetic-clinic.webp')}
+                  alt="LA CROWN Aesthetic Clinic"
+                  width={600}
+                  height={400}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
               </div>
               <div className="relative p-10">
                 <div className="font-script text-gold text-2xl mb-2">Aesthetic Clinic</div>
@@ -229,7 +263,15 @@ export default function HomePage() {
             {/* Salon */}
             <div className="group relative overflow-hidden bg-burgundy-900 text-white rounded-2xl border border-gold/20 shadow-luxury">
               <div className="absolute inset-0 opacity-25">
-                <img src={getAssetUrl('/images/lacrown/other/homepage/home-luxury-salon.webp')} alt="LA CROWN Luxury Salon" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                <img
+                  src={getAssetUrl('/images/lacrown/other/homepage/home-luxury-salon.webp')}
+                  alt="LA CROWN Luxury Salon"
+                  width={600}
+                  height={400}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
               </div>
               <div className="relative p-10">
                 <div className="font-script text-gold text-2xl mb-2">Luxury Salon</div>
@@ -297,10 +339,13 @@ export default function HomePage() {
             <div className="relative">
               <div className="aspect-[3/4] overflow-hidden max-w-md mx-auto lg:mx-0">
                 <img
-                  src="/assets/founder.png"
+                  src={getAssetUrl('/assets/founder.png')}
                   alt="Sunitha Devaraj, Founder of LA CROWN"
+                  width={400}
+                  height={533}
                   className="w-full h-full object-cover object-top"
                   loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="absolute bottom-0 right-0 md:right-8 lg:-right-4 bg-burgundy text-white p-5 shadow-burgundy max-w-xs">
@@ -391,13 +436,16 @@ export default function HomePage() {
             <div className="gold-divider" />
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-            {Array.from({ length: 8 }).map((_, i) => (
-              <div key={i} className="aspect-square overflow-hidden bg-ivory-200 group cursor-pointer">
+            {HOMEPAGE_GALLERY_PREVIEWS.map((item) => (
+              <div key={item.id} className="aspect-square overflow-hidden bg-ivory-200 group cursor-pointer">
                 <img
-                  src="/assets/hero-bg.jpg"
-                  alt={`LA CROWN gallery image ${i + 1}`}
+                  src={getAssetUrl(item.src)}
+                  alt={item.alt}
+                  width={400}
+                  height={400}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
+                  decoding="async"
                 />
               </div>
             ))}

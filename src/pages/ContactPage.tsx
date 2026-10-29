@@ -53,10 +53,14 @@ export default function ContactPage() {
       <section className="relative py-20 bg-burgundy text-white overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src={getAssetUrl('/images/heroes/contact-us-hero.png')}
+            src={getAssetUrl('/images/heroes/contact-us-hero.jpg')}
             alt="Contact LA CROWN"
             className="w-full h-full object-cover object-center"
             loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            width={1400}
+            height={600}
           />
           <div className="absolute inset-0 hero-overlay" />
         </div>
